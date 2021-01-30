@@ -1,0 +1,10 @@
+<map id="ncine::AppConfiguration" name="ncine::AppConfiguration">
+<area shape="rect" id="Node000001" title="The class storing initialization settings for an nCine application." alt="" coords="48,273,225,299"/>
+<area shape="rect" id="Node000002" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="5,141,97,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,180,45,215,48,232,55,248,68,261,85,271,83,275,65,266,50,251,43,234,39,215,42,180"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_vector2.html" title=" " alt="" coords="143,141,304,167"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,181,214,216,196,251,182,265,165,275,162,271,178,261,192,248,209,214,218,180"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="147,15,299,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,54,226,141,221,141,221,54"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="314,16,322,20,326,28,318,37,300,42,299,37,315,33,321,27,319,24,312,20"/>
+</map>

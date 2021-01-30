@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><strong>ncine.rect</strong></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.rect</code></h1>
+<p>The table containing rectangle related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.rect.create">ncine.rect.create (x, y, w, h)</a></td>
+	<td class="summary">Creates a rect table from top-left point and size</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.rect.create_center_size">ncine.rect.create_center_size (x, y, w, h)</a></td>
+	<td class="summary">Creates a vec2 table from center and size</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.rect.create_min_max">ncine.rect.create_min_max (min_x, min_y, max_x, max_y)</a></td>
+	<td class="summary">Creates a vec2 table from its components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.get_center">ncine.vec2.get_center (rect)</a></td>
+	<td class="summary">Calculates the center of the rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.get_min">ncine.vec2.get_min (rect)</a></td>
+	<td class="summary">Calculates the minimum coordinates of the rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.get_max">ncine.vec2.get_max (rect)</a></td>
+	<td class="summary">Calculates the maximum coordinates of the rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.set_center">ncine.vec2.set_center (rect, x, y)</a></td>
+	<td class="summary">Retains rectangle size but moves its center to another position</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.rect.set_min_max">ncine.rect.set_min_max (min_x, min_y, max_x, max_y)</a></td>
+	<td class="summary">Sets rectangle minimum and maximum coordinates</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.invert_size">ncine.vec2.invert_size (rect)</a></td>
+	<td class="summary">Inverts rectangle size and moves (x, y) to a different angle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.contains_point">ncine.vec2.contains_point (rect, x, y)</a></td>
+	<td class="summary">Returns <code>true</code> if the point is inside this rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.contains">ncine.vec2.contains (rect0, rect1)</a></td>
+	<td class="summary">Returns <code>true</code> if the other rectangle is contained inside this one</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.overlaps">ncine.vec2.overlaps (rect0, rect1)</a></td>
+	<td class="summary">Returns <code>true</code> if this rect does overlap the other rectangle in any way</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.intersect">ncine.vec2.intersect (rect0, rect1)</a></td>
+	<td class="summary">Intersects this rectangle with the other rectangle</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.rect">ncine.rect</a></td>
+	<td class="summary">A rectangle in 2D</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.rect.create"></a>
+    <strong>ncine.rect.create (x, y, w, h)</strong>
+    </dt>
+    <dd>
+    Creates a rect table from top-left point and size
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         The top-left X coordinate (left with positive width)
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The top-left Y coordinate (top with positive height)
+        </li>
+        <li><span class="parameter">w</span>
+            <span class="types"><span class="type">number</span></span>
+         The width
+        </li>
+        <li><span class="parameter">h</span>
+            <span class="types"><span class="type">number</span></span>
+         The height
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.rect.create_center_size"></a>
+    <strong>ncine.rect.create_center_size (x, y, w, h)</strong>
+    </dt>
+    <dd>
+    Creates a vec2 table from center and size
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         The center X coordinate
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The center Y coordinate
+        </li>
+        <li><span class="parameter">w</span>
+            <span class="types"><span class="type">number</span></span>
+         The width
+        </li>
+        <li><span class="parameter">h</span>
+            <span class="types"><span class="type">number</span></span>
+         The height
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.rect.create_min_max"></a>
+    <strong>ncine.rect.create_min_max (min_x, min_y, max_x, max_y)</strong>
+    </dt>
+    <dd>
+    Creates a vec2 table from its components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">min_x</span>
+            <span class="types"><span class="type">number</span></span>
+         The minimum X coordinate
+        </li>
+        <li><span class="parameter">min_y</span>
+            <span class="types"><span class="type">number</span></span>
+         The minimum Y coordinate
+        </li>
+        <li><span class="parameter">max_x</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum X coordinate
+        </li>
+        <li><span class="parameter">max_y</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum Y coordinate
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.get_center"></a>
+    <strong>ncine.vec2.get_center (rect)</strong>
+    </dt>
+    <dd>
+    Calculates the center of the rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+        The center coordinates
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.get_min"></a>
+    <strong>ncine.vec2.get_min (rect)</strong>
+    </dt>
+    <dd>
+    Calculates the minimum coordinates of the rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+        The minimum coordinates
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.get_max"></a>
+    <strong>ncine.vec2.get_max (rect)</strong>
+    </dt>
+    <dd>
+    Calculates the maximum coordinates of the rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+        The maximum coordinates
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.set_center"></a>
+    <strong>ncine.vec2.set_center (rect, x, y)</strong>
+    </dt>
+    <dd>
+    Retains rectangle size but moves its center to another position
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.rect.set_min_max"></a>
+    <strong>ncine.rect.set_min_max (min_x, min_y, max_x, max_y)</strong>
+    </dt>
+    <dd>
+    Sets rectangle minimum and maximum coordinates
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">min_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">min_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">max_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">max_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.invert_size"></a>
+    <strong>ncine.vec2.invert_size (rect)</strong>
+    </dt>
+    <dd>
+    Inverts rectangle size and moves (x, y) to a different angle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.contains_point"></a>
+    <strong>ncine.vec2.contains_point (rect, x, y)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the point is inside this rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.contains"></a>
+    <strong>ncine.vec2.contains (rect0, rect1)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the other rectangle is contained inside this one
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect0</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+        <li><span class="parameter">rect1</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.overlaps"></a>
+    <strong>ncine.vec2.overlaps (rect0, rect1)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if this rect does overlap the other rectangle in any way
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect0</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+        <li><span class="parameter">rect1</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.intersect"></a>
+    <strong>ncine.vec2.intersect (rect0, rect1)</strong>
+    </dt>
+    <dd>
+    Intersects this rectangle with the other rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect0</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+        <li><span class="parameter">rect1</span>
+            <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.rect.html#ncine.rect">ncine.rect</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.rect"></a>
+    <strong>ncine.rect</strong>
+    </dt>
+    <dd>
+    A rectangle in 2D
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         The top-left X coordinate (left with positive width)
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The top-left Y coordinate (top with positive height)
+        </li>
+        <li><span class="parameter">w</span>
+            <span class="types"><span class="type">number</span></span>
+         The width
+        </li>
+        <li><span class="parameter">h</span>
+            <span class="types"><span class="type">number</span></span>
+         The height
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

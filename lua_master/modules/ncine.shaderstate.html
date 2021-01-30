@@ -1,0 +1,1243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><strong>ncine.shaderstate</strong></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.shaderstate</code></h1>
+<p>The table containing shader state related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.new">ncine.shaderstate.new (node, shader)</a></td>
+	<td class="summary">Constructs a shaderstate object and assigns to it a node and a shader.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.delete">ncine.shaderstate.delete (shaderstate)</a></td>
+	<td class="summary">Destroys a shaderstate object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.get_node">ncine.shaderstate.get_node (shaderstate)</a></td>
+	<td class="summary">Returns the drawable node affected by the shader state</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_node">ncine.shaderstate.set_node (shaderstate, node)</a></td>
+	<td class="summary">Sets the drawable node affected by the shader state</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.get_shader">ncine.shaderstate.get_shader (shaderstate)</a></td>
+	<td class="summary">Return the associated custom shader</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_shader">ncine.shaderstate.set_shader (shaderstate, shader)</a></td>
+	<td class="summary">Sets the associated custom shader</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.reset_shader">ncine.shaderstate.reset_shader (shaderstate)</a></td>
+	<td class="summary">Triggers a shader update without setting a new shader</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_texture">ncine.shaderstate.set_texture (shaderstate, unit, texture)</a></td>
+	<td class="summary">Assigns a texture to the specified texture unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_vector">ncine.shaderstate.set_uniform_int_vector (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets an integer uniform with an array of values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_value1">ncine.shaderstate.set_uniform_int_value1 (shaderstate, block_name, name, value0)</a></td>
+	<td class="summary">Sets an integer uniform with one value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_value2">ncine.shaderstate.set_uniform_int_value2 (shaderstate, block_name, name, value0, value1)</a></td>
+	<td class="summary">Sets an integer uniform with two values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_value3">ncine.shaderstate.set_uniform_int_value3 (shaderstate, block_name, name, value0, value1, value2)</a></td>
+	<td class="summary">Sets an integer uniform with three values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_value4">ncine.shaderstate.set_uniform_int_value4 (shaderstate, block_name, name, value0, value1, value2, value3)</a></td>
+	<td class="summary">Sets an integer uniform with four values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_vector2">ncine.shaderstate.set_uniform_int_vector2 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets an integer uniform with a <code>ncine.vec2</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_vector3">ncine.shaderstate.set_uniform_int_vector3 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets an integer uniform with a <code>ncine.vec3</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_int_vector4">ncine.shaderstate.set_uniform_int_vector4 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets an integer uniform with a <code>ncine.vec4</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_vector">ncine.shaderstate.set_uniform_float_vector (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets a float uniform with an array of values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_value1">ncine.shaderstate.set_uniform_float_value1 (shaderstate, block_name, name, value0)</a></td>
+	<td class="summary">Sets a float uniform with one value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_value2">ncine.shaderstate.set_uniform_float_value2 (shaderstate, block_name, name, value0, value1)</a></td>
+	<td class="summary">Sets a float uniform with two values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_value3">ncine.shaderstate.set_uniform_float_value3 (shaderstate, block_name, name, value0, value1, value2)</a></td>
+	<td class="summary">Sets a float uniform with three values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_value4">ncine.shaderstate.set_uniform_float_value4 (shaderstate, block_name, name, value0, value1, value2, value3)</a></td>
+	<td class="summary">Sets a float uniform with four values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_vector2">ncine.shaderstate.set_uniform_float_vector2 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets a float uniform with a <code>ncine.vec2</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_vector3">ncine.shaderstate.set_uniform_float_vector3 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets a float uniform with a <code>ncine.vec3</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_vector4">ncine.shaderstate.set_uniform_float_vector4 (shaderstate, block_name, name, vector)</a></td>
+	<td class="summary">Sets a float uniform with a <code>ncine.vec4</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shaderstate.set_uniform_float_color">ncine.shaderstate.set_uniform_float_color (shaderstate, block_name, name, color)</a></td>
+	<td class="summary">Sets a float uniform with a <code>ncine.color</code></td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#shaderstateObj">shaderstateObj</a></td>
+	<td class="summary">The light user data of a shaderstate object</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.shaderstate.new"></a>
+    <strong>ncine.shaderstate.new (node, shader)</strong>
+    </dt>
+    <dd>
+    Constructs a shaderstate object and assigns to it a node and a shader. </p>
+
+<p>Don&rsquo;t forget to call <a href="lua://ncine.shaderstate.delete">delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><span class="type">ncine.drawable_node.drawablenodeObj</span></span>
+
+
+        </li>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">ncine.shader.shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+        A new shader object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.delete"></a>
+    <strong>ncine.shaderstate.delete (shaderstate)</strong>
+    </dt>
+    <dd>
+    Destroys a shaderstate object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+         The shaderstate object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.get_node"></a>
+    <strong>ncine.shaderstate.get_node (shaderstate)</strong>
+    </dt>
+    <dd>
+    Returns the drawable node affected by the shader state
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.drawable_node.drawablenodeObj</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_node"></a>
+    <strong>ncine.shaderstate.set_node (shaderstate, node)</strong>
+    </dt>
+    <dd>
+    Sets the drawable node affected by the shader state
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">node</span>
+            <span class="types"><span class="type">ncine.drawable_node.drawablenodeObj</span> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the node has been changed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.get_shader"></a>
+    <strong>ncine.shaderstate.get_shader (shaderstate)</strong>
+    </dt>
+    <dd>
+    Return the associated custom shader
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">ncine.shader.shaderObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_shader"></a>
+    <strong>ncine.shaderstate.set_shader (shaderstate, shader)</strong>
+    </dt>
+    <dd>
+    Sets the associated custom shader
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">ncine.shader.shaderObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader has been changed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.reset_shader"></a>
+    <strong>ncine.shaderstate.reset_shader (shaderstate)</strong>
+    </dt>
+    <dd>
+    Triggers a shader update without setting a new shader
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_texture"></a>
+    <strong>ncine.shaderstate.set_texture (shaderstate, unit, texture)</strong>
+    </dt>
+    <dd>
+    Assigns a texture to the specified texture unit
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the texture has been assigned
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_vector"></a>
+    <strong>ncine.shaderstate.set_uniform_int_vector (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with an array of values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">integer[]</span></span>
+         An array of 1 to 4 integer elements
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_value1"></a>
+    <strong>ncine.shaderstate.set_uniform_int_value1 (shaderstate, block_name, name, value0)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with one value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_value2"></a>
+    <strong>ncine.shaderstate.set_uniform_int_value2 (shaderstate, block_name, name, value0, value1)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with two values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_value3"></a>
+    <strong>ncine.shaderstate.set_uniform_int_value3 (shaderstate, block_name, name, value0, value1, value2)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with three values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value2</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_value4"></a>
+    <strong>ncine.shaderstate.set_uniform_int_value4 (shaderstate, block_name, name, value0, value1, value2, value3)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with four values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value2</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value3</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_vector2"></a>
+    <strong>ncine.shaderstate.set_uniform_int_vector2 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with a <code>ncine.vec2</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_vector3"></a>
+    <strong>ncine.shaderstate.set_uniform_int_vector3 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with a <code>ncine.vec3</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_int_vector4"></a>
+    <strong>ncine.shaderstate.set_uniform_int_vector4 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets an integer uniform with a <code>ncine.vec4</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec4</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_vector"></a>
+    <strong>ncine.shaderstate.set_uniform_float_vector (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with an array of values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">number[]</span></span>
+         An array of 1 to 4 float elements
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_value1"></a>
+    <strong>ncine.shaderstate.set_uniform_float_value1 (shaderstate, block_name, name, value0)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with one value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_value2"></a>
+    <strong>ncine.shaderstate.set_uniform_float_value2 (shaderstate, block_name, name, value0, value1)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with two values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_value3"></a>
+    <strong>ncine.shaderstate.set_uniform_float_value3 (shaderstate, block_name, name, value0, value1, value2)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with three values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value2</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_value4"></a>
+    <strong>ncine.shaderstate.set_uniform_float_value4 (shaderstate, block_name, name, value0, value1, value2, value3)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with four values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">value0</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value1</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value2</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">value3</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_vector2"></a>
+    <strong>ncine.shaderstate.set_uniform_float_vector2 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with a <code>ncine.vec2</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_vector3"></a>
+    <strong>ncine.shaderstate.set_uniform_float_vector3 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with a <code>ncine.vec3</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_vector4"></a>
+    <strong>ncine.shaderstate.set_uniform_float_vector4 (shaderstate, block_name, name, vector)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with a <code>ncine.vec4</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">vector</span>
+            <span class="types"><span class="type">ncine.vec4</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shaderstate.set_uniform_float_color"></a>
+    <strong>ncine.shaderstate.set_uniform_float_color (shaderstate, block_name, name, color)</strong>
+    </dt>
+    <dd>
+    Sets a float uniform with a <code>ncine.color</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shaderstate</span>
+            <span class="types"><a class="type" href="../modules/ncine.shaderstate.html#shaderstateObj">shaderstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">block_name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         It can be an empty string
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Uniform name
+        </li>
+        <li><span class="parameter">color</span>
+            <span class="types"><span class="type">ncine.color</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the uniform has been found and updated
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "shaderstateObj"></a>
+    <strong>shaderstateObj</strong>
+    </dt>
+    <dd>
+    The light user data of a shaderstate object
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
