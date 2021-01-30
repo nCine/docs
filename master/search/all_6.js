@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['g_0',['g',['../classncine_1_1_color.html#a48e838d6234ee46f825c1446cc9a1141',1,'ncine::Color::g()'],['../classncine_1_1_colorf.html#a5cb22b9e82b05d91675c1aa31d8eb256',1,'ncine::Colorf::g()'],['../classncine_1_1_color_hdr.html#a7e7ef06ec614343210c80fd657dd6ce1',1,'ncine::ColorHdr::g()']]],
+  ['gain_1',['gain',['../classncine_1_1_i_audio_player.html#a61db8eacf478d42d9e30b116906f3ba3',1,'ncine::IAudioPlayer::gain()'],['../classncine_1_1_audio_effect_slot.html#a08414e255b5e44046cba0bb6980ffa02',1,'ncine::AudioEffectSlot::gain()'],['../classncine_1_1_i_audio_device.html#a7a09047537a82ece9fa0fb0572560dbd',1,'ncine::IAudioDevice::gain()'],['../classncine_1_1_null_audio_device.html#af08123ea050f9af3839d9838221c96f7',1,'ncine::NullAudioDevice::gain()']]],
+  ['gain_5f_2',['gain_',['../classncine_1_1_i_audio_player.html#a606ab61bea83a4f2b580d1c0b43326ea',1,'ncine::IAudioPlayer']]],
+  ['gfxcapabilities_3',['gfxCapabilities',['../classncine_1_1_service_locator.html#a7675291285e9eee9b5468a91bf69e578',1,'ncine::ServiceLocator']]],
+  ['gfxdevice_4',['gfxDevice',['../classncine_1_1_application.html#a11815c72bd70147525268242f87ffa32',1,'ncine::Application']]],
+  ['glarrayintvalues_5',['GLArrayIntValues',['../structncine_1_1_i_gfx_capabilities_1_1_g_l_array_int_values.html',1,'ncine::IGfxCapabilities']]],
+  ['glcontextinfo_6',['glcontextinfo',['../structncine_1_1_i_gfx_device_1_1_g_l_context_info.html',1,'ncine::IGfxDevice::GLContextInfo'],['../classncine_1_1_i_gfx_device.html#a39da5c61cd0c359529a104914b412821',1,'ncine::IGfxDevice::glContextInfo() const']]],
+  ['glcontextinfo_5f_7',['glContextInfo_',['../classncine_1_1_i_gfx_device.html#a87fbd247e63c3a8d14139658177ff0b1',1,'ncine::IGfxDevice']]],
+  ['glcoreprofile_8',['glCoreProfile',['../classncine_1_1_app_configuration.html#a6bbbd52b67e1f6aedde732ab937aedbd',1,'ncine::AppConfiguration']]],
+  ['glextensions_9',['GLExtensions',['../structncine_1_1_i_gfx_capabilities_1_1_g_l_extensions.html',1,'ncine::IGfxCapabilities']]],
+  ['glforwardcompatible_10',['glForwardCompatible',['../classncine_1_1_app_configuration.html#ad88d5ec8fa57f819a8e42b911cb17746',1,'ncine::AppConfiguration']]],
+  ['glinfostrings_11',['glinfostrings',['../structncine_1_1_i_gfx_capabilities_1_1_gl_info_strings.html',1,'ncine::IGfxCapabilities::GlInfoStrings'],['../classncine_1_1_i_gfx_capabilities.html#a9bbe67ba513737a8f3e75f6520d5356a',1,'ncine::IGfxCapabilities::glInfoStrings() const =0'],['../classncine_1_1_null_gfx_capabilities.html#a391760af95be33b3213b4d3f35c17ecc',1,'ncine::NullGfxCapabilities::glInfoStrings()']]],
+  ['glintvalues_12',['GLIntValues',['../structncine_1_1_i_gfx_capabilities_1_1_g_l_int_values.html',1,'ncine::IGfxCapabilities']]],
+  ['glmajorversion_13',['glMajorVersion',['../classncine_1_1_app_configuration.html#a6dd82b94ce15e2fc66495b2d127eba23',1,'ncine::AppConfiguration']]],
+  ['glminorversion_14',['glMinorVersion',['../classncine_1_1_app_configuration.html#a19ade5f69284fbefd257f0b746b22490',1,'ncine::AppConfiguration']]],
+  ['glversion_15',['glversion',['../classncine_1_1_i_gfx_capabilities.html#ae00860a16dd61eeb8b89ac42b061eac9',1,'ncine::IGfxCapabilities::glVersion()'],['../classncine_1_1_null_gfx_capabilities.html#a936bdc9766d6bdb721a105aa5cdaca65',1,'ncine::NullGfxCapabilities::glVersion()'],['../classncine_1_1_i_gfx_capabilities.html#a2d25b40e632ba3377f9fbfe3e77132c0',1,'ncine::IGfxCapabilities::GLVersion']]],
+  ['glyph_16',['glyph',['../classncine_1_1_font.html#adfbfae58f9f7c4c1b38012eeddc94787',1,'ncine::Font']]],
+  ['glyph_5fin_5falpha_17',['GLYPH_IN_ALPHA',['../classncine_1_1_font.html#a735257cb2d67a869321ca78922bee774ac3f41d4335f8001e38791691dda0a503',1,'ncine::Font']]],
+  ['glyph_5fin_5fred_18',['GLYPH_IN_RED',['../classncine_1_1_font.html#a735257cb2d67a869321ca78922bee774a9cae41236d13d44b6de15ca44c9ef2a2',1,'ncine::Font']]],
+  ['glyph_5fsprite_19',['GLYPH_SPRITE',['../classncine_1_1_font.html#a735257cb2d67a869321ca78922bee774ab1ecf50aee154cc519c4d9ee6cc98507',1,'ncine::Font']]],
+  ['gpuctxscope_20',['GpuCtxScope',['../classtracy_1_1_gpu_ctx_scope.html',1,'tracy']]],
+  ['greenbits_21',['greenBits',['../classncine_1_1_display_mode.html#ab2dd388af23add484c4edf38b855271b',1,'ncine::DisplayMode']]],
+  ['guisettings_22',['guisettings',['../structncine_1_1_application_1_1_gui_settings.html',1,'ncine::Application::GuiSettings'],['../classncine_1_1_application.html#a50b5f790192336a0eec2fe0025e35433',1,'ncine::Application::guiSettings()']]],
+  ['guitexid_23',['guiTexId',['../classncine_1_1_texture.html#a001cae2dddc4b2bd1ef320f338b5d1b4',1,'ncine::Texture']]]
+];

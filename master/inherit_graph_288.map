@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classnctl_1_1_i_allocator.html" title="The allocator interface." alt="" coords="5,129,121,155"/>
+<area shape="rect" id="Node000001" href="$classnctl_1_1_free_list_allocator.html" title="A free list allocator." alt="" coords="169,5,332,31"/>
+<area shape="poly" id="edge38_Node000000_Node000001" title=" " alt="" coords="81,117,119,77,168,40,193,28,196,33,171,44,122,81,85,120"/>
+<area shape="rect" id="Node000002" href="$classnctl_1_1_linear_allocator.html" title="A linear allocator." alt="" coords="175,55,327,80"/>
+<area shape="poly" id="edge39_Node000000_Node000002" title=" " alt="" coords="99,120,168,89,202,78,203,83,170,94,102,125"/>
+<area shape="rect" id="Node000003" href="$classnctl_1_1_malloc_allocator.html" title="The allocator class based on malloc and free" alt="" coords="173,104,328,129"/>
+<area shape="poly" id="edge40_Node000000_Node000003" title=" " alt="" coords="135,130,173,124,174,130,135,135"/>
+<area shape="rect" id="Node000004" href="$classnctl_1_1_pool_allocator.html" title="A pool allocator." alt="" coords="181,153,321,179"/>
+<area shape="poly" id="edge41_Node000000_Node000004" title=" " alt="" coords="135,148,181,154,180,160,135,154"/>
+<area shape="rect" id="Node000005" href="$classnctl_1_1_proxy_allocator.html" title="A proxy allocator." alt="" coords="176,203,325,228"/>
+<area shape="poly" id="edge42_Node000000_Node000005" title=" " alt="" coords="103,158,170,188,207,200,205,205,168,192,101,163"/>
+<area shape="rect" id="Node000006" href="$classnctl_1_1_stack_allocator.html" title="A stack allocator." alt="" coords="177,252,325,277"/>
+<area shape="poly" id="edge43_Node000000_Node000006" title=" " alt="" coords="86,164,123,201,171,237,199,250,196,254,168,242,120,205,83,168"/>
+</map>
