@@ -1,0 +1,1312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><strong>ncine.viewport</strong></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.viewport</code></h1>
+<p>The table containing viewport related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.new">ncine.viewport.new ()</a></td>
+	<td class="summary">Constructs a viewport object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.delete">ncine.viewport.delete (viewport)</a></td>
+	<td class="summary">Destroys a viewport object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_type">ncine.viewport.get_type (viewport)</a></td>
+	<td class="summary">Returns the viewport type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_texture">ncine.viewport.get_texture (viewport, index)</a></td>
+	<td class="summary">Returns the texture at the specified viewport&rsquo;s FBO color attachment index, if any</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_texture">ncine.viewport.set_texture (viewport, index, texture)</a></td>
+	<td class="summary">Adds or removes a texture at the specified viewport&rsquo;s FBO color attachment index</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_depth_stencil_format">ncine.viewport.get_depth_stencil_format (viewport)</a></td>
+	<td class="summary">Returns the depth and stencil format of the viewport&rsquo;s FBO renderbuffer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_depth_stencil_format">ncine.viewport.set_depth_stencil_format (viewport, depth_stencil_format)</a></td>
+	<td class="summary">Sets the depth and stencil format of the viewport&rsquo;s FBO renderbuffer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.remove_all_textures">ncine.viewport.remove_all_textures (viewport)</a></td>
+	<td class="summary">Removes all textures and the depth stencil renderbuffer from the viewport&rsquo;s FBO</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_width">ncine.viewport.get_width (viewport)</a></td>
+	<td class="summary">Returns viewport&rsquo;s FBO width or zero if no texture is present</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_height">ncine.viewport.get_height (viewport)</a></td>
+	<td class="summary">Returns viewport&rsquo;s FBO height or zero if no texture is present</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_num_color_attachments">ncine.viewport.get_num_color_attachments (viewport)</a></td>
+	<td class="summary">Returns the number of color attachments of the viewport&rsquo;s FBO</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_viewport_rect">ncine.viewport.get_viewport_rect (viewport)</a></td>
+	<td class="summary">Returns the OpenGL viewport rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_viewport_rect">ncine.viewport.set_viewport_rect (viewport, rect)</a></td>
+	<td class="summary">Sets the OpenGL viewport rectangle through a <code>ncine.rect</code> table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_viewport_rect">ncine.viewport.set_viewport_rect (viewport, x, y, w, h)</a></td>
+	<td class="summary">Sets the OpenGL viewport rectangle through rectangle components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_scissor_rect">ncine.viewport.get_scissor_rect (viewport)</a></td>
+	<td class="summary">Returns the OpenGL scissor test rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_scissor_rect">ncine.viewport.set_scissor_rect (viewport, rect)</a></td>
+	<td class="summary">Sets the OpenGL scissor test rectangle through a <code>ncine.rect</code> table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_scissor_rect">ncine.viewport.set_scissor_rect (viewport, x, y, w, h)</a></td>
+	<td class="summary">Sets the OpenGL scissor test rectangle through rectangle components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_culling_rect">ncine.viewport.get_culling_rect (viewport)</a></td>
+	<td class="summary">Returns the rectangle for screen culling</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_last_frame_cleared">ncine.viewport.get_last_frame_cleared (viewport)</a></td>
+	<td class="summary">Returns the last frame this viewport was cleared</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_clear_mode">ncine.viewport.get_clear_mode (viewport)</a></td>
+	<td class="summary">Returns the viewport clear mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_clear_mode">ncine.viewport.set_clear_mode (viewport, clear_mode)</a></td>
+	<td class="summary">Sets the viewport clear mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_clear_color">ncine.viewport.get_clear_color (viewport)</a></td>
+	<td class="summary">Returns the viewport clear color as a <code>ncine.color</code> table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_clear_color">ncine.viewport.set_clear_color (viewport, clear_color)</a></td>
+	<td class="summary">Sets the viewport clear color through a <code>ncine.color</code> table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_clear_color">ncine.viewport.set_clear_color (viewport, r, g, b, a)</a></td>
+	<td class="summary">Sets the viewport clear color through color components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_rootnode">ncine.viewport.get_rootnode (viewport)</a></td>
+	<td class="summary">Returns the root node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_rootnode">ncine.viewport.set_rootnode (viewport, rootnode)</a></td>
+	<td class="summary">Sets or removes the root node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.clear_chain">ncine.viewport.clear_chain ()</a></td>
+	<td class="summary">Clears the array of viewports to be drawn before the screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.push_back_chain">ncine.viewport.push_back_chain (viewport)</a></td>
+	<td class="summary">Pushes a viewport to the back of the array of viewports to be drawn before the screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.push_front_chain">ncine.viewport.push_front_chain (viewport)</a></td>
+	<td class="summary">Pushes a viewport to the front of the array of viewports to be drawn before the screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.get_camera">ncine.viewport.get_camera (viewport)</a></td>
+	<td class="summary">Returns the camera used for rendering</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_camera">ncine.viewport.set_camera (viewport, camera)</a></td>
+	<td class="summary">Sets the camera to be used for rendering</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport.set_glframebuffer_label">ncine.viewport.set_glframebuffer_label (viewport, label)</a></td>
+	<td class="summary">Sets the OpenGL object label for the viewport framebuffer object</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#viewportObj">viewportObj</a></td>
+	<td class="summary">The light user data of a viewport object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.viewport_type">ncine.viewport_type</a></td>
+	<td class="summary">Viewport types (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.clear_mode">ncine.clear_mode</a></td>
+	<td class="summary">Clear modes (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.depth_stencil_format">ncine.depth_stencil_format</a></td>
+	<td class="summary">Depth and stencil formats (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.viewport.new"></a>
+    <strong>ncine.viewport.new ()</strong>
+    </dt>
+    <dd>
+    Constructs a viewport object. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.viewport.html#ncine.viewport.delete">ncine.viewport.delete</a> when you are done with it!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+        A new viewport object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.delete"></a>
+    <strong>ncine.viewport.delete (viewport)</strong>
+    </dt>
+    <dd>
+    Destroys a viewport object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+         The viewport object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_type"></a>
+    <strong>ncine.viewport.get_type (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the viewport type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.viewport_type</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_texture"></a>
+    <strong>ncine.viewport.get_texture (viewport, index)</strong>
+    </dt>
+    <dd>
+    Returns the texture at the specified viewport&rsquo;s FBO color attachment index, if any
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_texture"></a>
+    <strong>ncine.viewport.set_texture (viewport, index, texture)</strong>
+    </dt>
+    <dd>
+    Adds or removes a texture at the specified viewport&rsquo;s FBO color attachment index
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if a texture has been added or removed successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_depth_stencil_format"></a>
+    <strong>ncine.viewport.get_depth_stencil_format (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the depth and stencil format of the viewport&rsquo;s FBO renderbuffer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.depth_stencil_format</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_depth_stencil_format"></a>
+    <strong>ncine.viewport.set_depth_stencil_format (viewport, depth_stencil_format)</strong>
+    </dt>
+    <dd>
+    Sets the depth and stencil format of the viewport&rsquo;s FBO renderbuffer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">depth_stencil_format</span>
+            <span class="types"><span class="type">ncine.depth_stencil_format</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if a new depth and stencil format has been successfully set
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.remove_all_textures"></a>
+    <strong>ncine.viewport.remove_all_textures (viewport)</strong>
+    </dt>
+    <dd>
+    Removes all textures and the depth stencil renderbuffer from the viewport&rsquo;s FBO
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the viewport is not the screen and all textures have been removed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_width"></a>
+    <strong>ncine.viewport.get_width (viewport)</strong>
+    </dt>
+    <dd>
+    Returns viewport&rsquo;s FBO width or zero if no texture is present
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_height"></a>
+    <strong>ncine.viewport.get_height (viewport)</strong>
+    </dt>
+    <dd>
+    Returns viewport&rsquo;s FBO height or zero if no texture is present
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_num_color_attachments"></a>
+    <strong>ncine.viewport.get_num_color_attachments (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the number of color attachments of the viewport&rsquo;s FBO
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_viewport_rect"></a>
+    <strong>ncine.viewport.get_viewport_rect (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the OpenGL viewport rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.rect</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_viewport_rect"></a>
+    <strong>ncine.viewport.set_viewport_rect (viewport, rect)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL viewport rectangle through a <code>ncine.rect</code> table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+            <span class="types"><span class="type">ncine.rect</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_viewport_rect"></a>
+    <strong>ncine.viewport.set_viewport_rect (viewport, x, y, w, h)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL viewport rectangle through rectangle components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">w</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">h</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_scissor_rect"></a>
+    <strong>ncine.viewport.get_scissor_rect (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the OpenGL scissor test rectangle
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.rect</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_scissor_rect"></a>
+    <strong>ncine.viewport.set_scissor_rect (viewport, rect)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL scissor test rectangle through a <code>ncine.rect</code> table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+            <span class="types"><span class="type">ncine.rect</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_scissor_rect"></a>
+    <strong>ncine.viewport.set_scissor_rect (viewport, x, y, w, h)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL scissor test rectangle through rectangle components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">w</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">h</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_culling_rect"></a>
+    <strong>ncine.viewport.get_culling_rect (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the rectangle for screen culling
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.rect</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_last_frame_cleared"></a>
+    <strong>ncine.viewport.get_last_frame_cleared (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the last frame this viewport was cleared
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_clear_mode"></a>
+    <strong>ncine.viewport.get_clear_mode (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the viewport clear mode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.clear_mode</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_clear_mode"></a>
+    <strong>ncine.viewport.set_clear_mode (viewport, clear_mode)</strong>
+    </dt>
+    <dd>
+    Sets the viewport clear mode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">clear_mode</span>
+            <span class="types"><span class="type">ncine.clear_mode</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_clear_color"></a>
+    <strong>ncine.viewport.get_clear_color (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the viewport clear color as a <code>ncine.color</code> table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.color</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_clear_color"></a>
+    <strong>ncine.viewport.set_clear_color (viewport, clear_color)</strong>
+    </dt>
+    <dd>
+    Sets the viewport clear color through a <code>ncine.color</code> table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">clear_color</span>
+            <span class="types"><span class="type">ncine.color</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_clear_color"></a>
+    <strong>ncine.viewport.set_clear_color (viewport, r, g, b, a)</strong>
+    </dt>
+    <dd>
+    Sets the viewport clear color through color components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">r</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">g</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">b</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">a</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_rootnode"></a>
+    <strong>ncine.viewport.get_rootnode (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the root node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_rootnode"></a>
+    <strong>ncine.viewport.set_rootnode (viewport, rootnode)</strong>
+    </dt>
+    <dd>
+    Sets or removes the root node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">rootnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.clear_chain"></a>
+    <strong>ncine.viewport.clear_chain ()</strong>
+    </dt>
+    <dd>
+    Clears the array of viewports to be drawn before the screen
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.push_back_chain"></a>
+    <strong>ncine.viewport.push_back_chain (viewport)</strong>
+    </dt>
+    <dd>
+    Pushes a viewport to the back of the array of viewports to be drawn before the screen
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.push_front_chain"></a>
+    <strong>ncine.viewport.push_front_chain (viewport)</strong>
+    </dt>
+    <dd>
+    Pushes a viewport to the front of the array of viewports to be drawn before the screen
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.get_camera"></a>
+    <strong>ncine.viewport.get_camera (viewport)</strong>
+    </dt>
+    <dd>
+    Returns the camera used for rendering
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.camera.html#cameraObj">ncine.camera.cameraObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_camera"></a>
+    <strong>ncine.viewport.set_camera (viewport, camera)</strong>
+    </dt>
+    <dd>
+    Sets the camera to be used for rendering
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">camera</span>
+            <span class="types"><a class="type" href="../modules/ncine.camera.html#cameraObj">ncine.camera.cameraObj</a> or <span class="type">nil</span></span>
+         Can be <code>nil</code> to use the default one
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport.set_glframebuffer_label"></a>
+    <strong>ncine.viewport.set_glframebuffer_label (viewport, label)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL object label for the viewport framebuffer object
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">viewportObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">label</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "viewportObj"></a>
+    <strong>viewportObj</strong>
+    </dt>
+    <dd>
+    The light user data of a viewport object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.viewport_type"></a>
+    <strong>ncine.viewport_type</strong>
+    </dt>
+    <dd>
+    Viewport types (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">WITH_TEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">NO_TEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">SCREEN</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.clear_mode"></a>
+    <strong>ncine.clear_mode</strong>
+    </dt>
+    <dd>
+    Clear modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">EVERY_DRAW</span>
+
+
+        </li>
+        <li><span class="parameter">EVERY_FRAME</span>
+
+
+        </li>
+        <li><span class="parameter">THIS_FRAME_ONLY</span>
+
+
+        </li>
+        <li><span class="parameter">NEXT_FRAME_ONLY</span>
+
+
+        </li>
+        <li><span class="parameter">NEVER</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.depth_stencil_format"></a>
+    <strong>ncine.depth_stencil_format</strong>
+    </dt>
+    <dd>
+    Depth and stencil formats (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">NONE</span>
+
+
+        </li>
+        <li><span class="parameter">DEPTH16</span>
+
+
+        </li>
+        <li><span class="parameter">DEPTH24</span>
+
+
+        </li>
+        <li><span class="parameter">DEPTH24_STENCIL8</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
