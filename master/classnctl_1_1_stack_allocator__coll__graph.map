@@ -1,0 +1,4 @@
+<map id="nctl::StackAllocator" name="nctl::StackAllocator">
+<area shape="rect" id="node1" title="A stack allocator." alt="" coords="5,99,153,125"/>
+<area shape="rect" id="node2" href="$classnctl_1_1_i_allocator.html" title="The allocator interface." alt="" coords="21,14,137,41"/>
+</map>
