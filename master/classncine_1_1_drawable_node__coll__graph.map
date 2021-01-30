@@ -1,0 +1,13 @@
+<map id="ncine::DrawableNode" name="ncine::DrawableNode">
+<area shape="rect" id="node1" title="A class for objects that can be drawn through the render queue." alt="" coords="787,287,948,313"/>
+<area shape="rect" id="node2" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="411,211,549,237"/>
+<area shape="rect" id="node3" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="47,5,154,32"/>
+<area shape="rect" id="node4" href="$classncine_1_1_matrix4x4.html" title=" " alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node5" href="$classncine_1_1_vector2.html" title=" " alt="" coords="14,107,187,133"/>
+<area shape="rect" id="node6" href="$classncine_1_1_color.html" title="A four channels unsigned char color." alt="" coords="51,299,150,325"/>
+<area shape="rect" id="node7" href="$classnctl_1_1_array.html" title=" " alt="" coords="31,350,170,391"/>
+<area shape="rect" id="node8" href="$classnctl_1_1_bit_set.html" title=" " alt="" coords="17,416,185,443"/>
+<area shape="rect" id="node9" href="$classncine_1_1_rect.html" title=" " alt="" coords="403,261,557,288"/>
+<area shape="rect" id="node10" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="349,312,611,339"/>
+<area shape="rect" id="node11" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="404,431,556,457"/>
+</map>
