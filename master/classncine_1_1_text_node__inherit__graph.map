@@ -1,0 +1,6 @@
+<map id="ncine::TextNode" name="ncine::TextNode">
+<area shape="rect" id="node1" title="A scene node to draw a text label." alt="" coords="23,229,149,256"/>
+<area shape="rect" id="node2" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue." alt="" coords="5,155,167,181"/>
+<area shape="rect" id="node3" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="17,80,155,107"/>
+<area shape="rect" id="node4" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="33,5,139,32"/>
+</map>
