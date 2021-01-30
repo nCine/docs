@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classncine_1_1_i_gfx_capabilities.html" title="The interface class to query runtime OpenGL device capabilities." alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$classncine_1_1_null_gfx_capabilities.html" title="A fake graphics capabilities class that reports no available capabilities." alt="" coords="223,5,413,32"/>
+</map>

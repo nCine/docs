@@ -1,0 +1,5 @@
+<map id="ncine::IInputManager" name="ncine::IInputManager">
+<area shape="rect" id="node1" title="The interface class for parsing and dispatching input events." alt="" coords="115,95,273,121"/>
+<area shape="rect" id="node2" href="$classncine_1_1_i_input_event_handler.html" title="The interface class for handling input events from keyboard, screen touches, mouse,..." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node3" href="$classncine_1_1_drop_event.html" title="Information about a drag&#39;n&#39;drop event." alt="" coords="221,5,354,32"/>
+</map>
