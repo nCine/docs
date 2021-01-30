@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><strong>EFX_Presets</strong></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>EFX_Presets</code></h1>
+<p>EFX Reverb presets</p>
+<p>
+</p>
+
+
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.efx_reverb_presets">ncine.efx_reverb_presets</a></td>
+	<td class="summary">EFX reverb presets (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.efx_reverb_presets"></a>
+    <strong>ncine.efx_reverb_presets</strong>
+    </dt>
+    <dd>
+    EFX reverb presets (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">GENERIC</span>
+        Default Presets (this and below)
+        </li>
+        <li><span class="parameter">PADDED_CELL</span>
+
+
+        </li>
+        <li><span class="parameter">ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">BATHROOM</span>
+
+
+        </li>
+        <li><span class="parameter">LIVING_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">STONE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">AUDITORIUM</span>
+
+
+        </li>
+        <li><span class="parameter">CONCERT_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">CAVE</span>
+
+
+        </li>
+        <li><span class="parameter">ARENA</span>
+
+
+        </li>
+        <li><span class="parameter">HANGAR</span>
+
+
+        </li>
+        <li><span class="parameter">CARPETED_HALLWAY</span>
+
+
+        </li>
+        <li><span class="parameter">HALLWAY</span>
+
+
+        </li>
+        <li><span class="parameter">STONE_CORRIDOR</span>
+
+
+        </li>
+        <li><span class="parameter">ALLEY</span>
+
+
+        </li>
+        <li><span class="parameter">FOREST</span>
+
+
+        </li>
+        <li><span class="parameter">CITY</span>
+
+
+        </li>
+        <li><span class="parameter">MOUNTAINS</span>
+
+
+        </li>
+        <li><span class="parameter">QUARRY</span>
+
+
+        </li>
+        <li><span class="parameter">PLAIN</span>
+
+
+        </li>
+        <li><span class="parameter">PARKING_LOT</span>
+
+
+        </li>
+        <li><span class="parameter">SEWER_PIPE</span>
+
+
+        </li>
+        <li><span class="parameter">UNDERWATER</span>
+
+
+        </li>
+        <li><span class="parameter">DRUGGED</span>
+
+
+        </li>
+        <li><span class="parameter">DIZZY</span>
+
+
+        </li>
+        <li><span class="parameter">PSYCHOTIC</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_SMALL_ROOM</span>
+        Castle Presets (this and below)
+        </li>
+        <li><span class="parameter">CASTLE_SHORT_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_MEDIUM_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_LARGE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_LONG_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_CUPBOARD</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_COURTYARD</span>
+
+
+        </li>
+        <li><span class="parameter">CASTLE_ALCOVE</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_SMALL_ROOM</span>
+        Factory Presets (this and below)
+        </li>
+        <li><span class="parameter">FACTORY_SHORT_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_MEDIUM_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_LARGE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_LONG_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_CUPBOARD</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_COURTYARD</span>
+
+
+        </li>
+        <li><span class="parameter">FACTORY_ALCOVE</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_SMALL_ROOM</span>
+        Ice Palace Presets (this and below)
+        </li>
+        <li><span class="parameter">ICEPALACE_SHORT_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_MEDIUM_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_LARGE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_LONG_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_CUPBOARD</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_COURTYARD</span>
+
+
+        </li>
+        <li><span class="parameter">ICEPALACE_ALCOVE</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_SMALL_ROOM</span>
+        Space Station Presets (this and below)
+        </li>
+        <li><span class="parameter">SPACE_STATION_SHORT_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_MEDIUM_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_LARGE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_LONG_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_CUPBOARD</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE_STATION_ALCOVE</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_SMALL_ROOM</span>
+        Wooden Galleon Presets (this and below)
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_SHORT_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_MEDIUM_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_LARGE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_LONG_PASSAGE</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_HALL</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_CUPBOARD</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_COURTYARD</span>
+
+
+        </li>
+        <li><span class="parameter">WOODEN_GALLEON_ALCOVE</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_EMPTY_STADIUM</span>
+        Sports Presets (this and below)
+        </li>
+        <li><span class="parameter">SPORT_SQUASH_COURT</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_SMALL_SWIMMING_POOL</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_LARGE_SWIMMING_POOL</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_GYMNASIUM</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_FULL_STADIUM</span>
+
+
+        </li>
+        <li><span class="parameter">SPORT_STADIUM_TANNOY</span>
+
+
+        </li>
+        <li><span class="parameter">PREFAB_WORKSHOP</span>
+        Prefab Presets (this and below)
+        </li>
+        <li><span class="parameter">PREFAB_SCHOOL_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">PREFAB_PRACTISE_ROOM</span>
+
+
+        </li>
+        <li><span class="parameter">PREFAB_OUTHOUSE</span>
+
+
+        </li>
+        <li><span class="parameter">PREFAB_CARAVAN</span>
+
+
+        </li>
+        <li><span class="parameter">DOME_TOMB</span>
+        Dome and Pipe Presets (this and below)
+        </li>
+        <li><span class="parameter">PIPE_SMALL</span>
+
+
+        </li>
+        <li><span class="parameter">DOME_SAINT_PAULS</span>
+
+
+        </li>
+        <li><span class="parameter">PIPE_LONGTHIN</span>
+
+
+        </li>
+        <li><span class="parameter">PIPE_LARGE</span>
+
+
+        </li>
+        <li><span class="parameter">PIPE_RESONANT</span>
+
+
+        </li>
+        <li><span class="parameter">OUTDOORS_BACKYARD</span>
+        Outdoors Presets (this and below)
+        </li>
+        <li><span class="parameter">OUTDOORS_ROLLING_PLAINS</span>
+
+
+        </li>
+        <li><span class="parameter">OUTDOORS_DEEP_CANYON</span>
+
+
+        </li>
+        <li><span class="parameter">OUTDOORS_CREEK</span>
+
+
+        </li>
+        <li><span class="parameter">OUTDOORS_VALLEY</span>
+
+
+        </li>
+        <li><span class="parameter">MOOD_HEAVEN</span>
+        Mood Presets (this and below)
+        </li>
+        <li><span class="parameter">MOOD_HELL</span>
+
+
+        </li>
+        <li><span class="parameter">MOOD_MEMORY</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_COMMENTATOR</span>
+        Driving Presets (this and below)
+        </li>
+        <li><span class="parameter">DRIVING_PIT_GARAGE</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_INCAR_RACER</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_INCAR_SPORTS</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_INCAR_LUXURY</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_FULL_GRANDSTAND</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_EMPTY_GRANDSTAND</span>
+
+
+        </li>
+        <li><span class="parameter">DRIVING_TUNNEL</span>
+
+
+        </li>
+        <li><span class="parameter">CITY_STREETS</span>
+        City Presets (this and below)
+        </li>
+        <li><span class="parameter">CITY_SUBWAY</span>
+
+
+        </li>
+        <li><span class="parameter">CITY_MUSEUM</span>
+
+
+        </li>
+        <li><span class="parameter">CITY_LIBRARY</span>
+
+
+        </li>
+        <li><span class="parameter">CITY_UNDERPASS</span>
+
+
+        </li>
+        <li><span class="parameter">CITY_ABANDONED</span>
+
+
+        </li>
+        <li><span class="parameter">DUSTY_ROOM</span>
+        Misc. Presets (this and below)
+        </li>
+        <li><span class="parameter">CHAPEL</span>
+
+
+        </li>
+        <li><span class="parameter">SMALL_WATER_ROOM</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
