@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><strong>ncine.application</strong></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.application</code></h1>
+<p>The table containing application related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_app_configuration">ncine.application.get_app_configuration ()</a></td>
+	<td class="summary">Returns the configuration used to initialize the application</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_rendering_settings">ncine.application.get_rendering_settings ()</a></td>
+	<td class="summary">Returns the run-time rendering settings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.set_rendering_settings">ncine.application.set_rendering_settings (settings)</a></td>
+	<td class="summary">Sets the run-time rendering settings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_gui_settings">ncine.application.get_gui_settings ()</a></td>
+	<td class="summary">Returns the run-time GUI settings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.set_gui_settings">ncine.application.set_gui_settings (settings)</a></td>
+	<td class="summary">Sets the run-time GUI settings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_debugoverlay_settings">ncine.application.get_debugoverlay_settings ()</a></td>
+	<td class="summary">Returns the run-time debug overlay settings, if debug overlay is available</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.set_debugoverlay_settings">ncine.application.set_debugoverlay_settings (settings)</a></td>
+	<td class="summary">Sets the run-time debug overlay settings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_rootnode">ncine.application.get_rootnode ()</a></td>
+	<td class="summary">Returns the root node of the transformation graph</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_screen_viewport">ncine.application.get_screen_viewport ()</a></td>
+	<td class="summary">Returns the screen viewport</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_num_frames">ncine.application.get_num_frames ()</a></td>
+	<td class="summary">Returns the total number of frames already rendered</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_frame_time">ncine.application.get_frame_time ()</a></td>
+	<td class="summary">Returns the time in seconds that last frame took to complete</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_width">ncine.application.get_width ()</a></td>
+	<td class="summary">Returns the drawable screen width</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_height">ncine.application.get_height ()</a></td>
+	<td class="summary">Returns the drawable screen height</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_resolution">ncine.application.get_resolution ()</a></td>
+	<td class="summary">Returns the drawable screen resolution vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.is_suspended">ncine.application.is_suspended ()</a></td>
+	<td class="summary">Returns <code>true</code> if the application is suspended.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.set_suspended">ncine.application.set_suspended (flag)</a></td>
+	<td class="summary">Sets a new value for the suspension flag</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.get_auto_suspension">ncine.application.get_auto_suspension ()</a></td>
+	<td class="summary">Returns <code>true</code> if the application should auto-suspend when it loses focus</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.set_auto_suspension">ncine.application.set_auto_suspension (flag)</a></td>
+	<td class="summary">Sets a new value for the auto-suspension flag</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.application.quit">ncine.application.quit ()</a></td>
+	<td class="summary">Asks the application to quit as soon as possible</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#rendering_settings">rendering_settings</a></td>
+	<td class="summary">The rendering settings table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#debug_overlay_settings">debug_overlay_settings</a></td>
+	<td class="summary">The debug overlay settings table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gui_settings">gui_settings</a></td>
+	<td class="summary">The gui settings table</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.application.get_app_configuration"></a>
+    <strong>ncine.application.get_app_configuration ()</strong>
+    </dt>
+    <dd>
+    Returns the configuration used to initialize the application
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.app_configuration</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_rendering_settings"></a>
+    <strong>ncine.application.get_rendering_settings ()</strong>
+    </dt>
+    <dd>
+    Returns the run-time rendering settings
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">rendering_settings</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.set_rendering_settings"></a>
+    <strong>ncine.application.set_rendering_settings (settings)</strong>
+    </dt>
+    <dd>
+    Sets the run-time rendering settings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">settings</span>
+            <span class="types"><span class="type">rendering_settings</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_gui_settings"></a>
+    <strong>ncine.application.get_gui_settings ()</strong>
+    </dt>
+    <dd>
+    Returns the run-time GUI settings
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">gui_settings</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.set_gui_settings"></a>
+    <strong>ncine.application.set_gui_settings (settings)</strong>
+    </dt>
+    <dd>
+    Sets the run-time GUI settings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">settings</span>
+            <span class="types"><span class="type">gui_settings</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_debugoverlay_settings"></a>
+    <strong>ncine.application.get_debugoverlay_settings ()</strong>
+    </dt>
+    <dd>
+    Returns the run-time debug overlay settings, if debug overlay is available
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.10">debug_overlay_settings</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.set_debugoverlay_settings"></a>
+    <strong>ncine.application.set_debugoverlay_settings (settings)</strong>
+    </dt>
+    <dd>
+    Sets the run-time debug overlay settings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">settings</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.10">debug_overlay_settings</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_rootnode"></a>
+    <strong>ncine.application.get_rootnode ()</strong>
+    </dt>
+    <dd>
+    Returns the root node of the transformation graph
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_screen_viewport"></a>
+    <strong>ncine.application.get_screen_viewport ()</strong>
+    </dt>
+    <dd>
+    Returns the screen viewport
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.viewport.html#viewportObj">ncine.viewport.viewportObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_num_frames"></a>
+    <strong>ncine.application.get_num_frames ()</strong>
+    </dt>
+    <dd>
+    Returns the total number of frames already rendered
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_frame_time"></a>
+    <strong>ncine.application.get_frame_time ()</strong>
+    </dt>
+    <dd>
+    Returns the time in seconds that last frame took to complete Also called delta time.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_width"></a>
+    <strong>ncine.application.get_width ()</strong>
+    </dt>
+    <dd>
+    Returns the drawable screen width
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_height"></a>
+    <strong>ncine.application.get_height ()</strong>
+    </dt>
+    <dd>
+    Returns the drawable screen height
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_resolution"></a>
+    <strong>ncine.application.get_resolution ()</strong>
+    </dt>
+    <dd>
+    Returns the drawable screen resolution vector
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.is_suspended"></a>
+    <strong>ncine.application.is_suspended ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the application is suspended. </p>
+
+<p>A suspended application will not update nor receive events.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.set_suspended"></a>
+    <strong>ncine.application.set_suspended (flag)</strong>
+    </dt>
+    <dd>
+    Sets a new value for the suspension flag
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">flag</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.get_auto_suspension"></a>
+    <strong>ncine.application.get_auto_suspension ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the application should auto-suspend when it loses focus
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.set_auto_suspension"></a>
+    <strong>ncine.application.set_auto_suspension (flag)</strong>
+    </dt>
+    <dd>
+    Sets a new value for the auto-suspension flag
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">flag</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.application.quit"></a>
+    <strong>ncine.application.quit ()</strong>
+    </dt>
+    <dd>
+    Asks the application to quit as soon as possible
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "rendering_settings"></a>
+    <strong>rendering_settings</strong>
+    </dt>
+    <dd>
+    The rendering settings table
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">batching</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if sprite batching is enabled
+        </li>
+        <li><span class="parameter">batching_with_indices</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if using indices for vertex batching
+        </li>
+        <li><span class="parameter">culling</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if node culling is enabled
+        </li>
+        <li><span class="parameter">min_batch_size</span>
+            <span class="types"><span class="type">integer</span></span>
+         Minimum size for a batch to be collected
+        </li>
+        <li><span class="parameter">max_batch_size</span>
+            <span class="types"><span class="type">integer</span></span>
+         Maximum size for a batch before a forced split
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "debug_overlay_settings"></a>
+    <strong>debug_overlay_settings</strong>
+    </dt>
+    <dd>
+    The debug overlay settings table
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">profiler_graphs</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if showing the profiler graphs
+        </li>
+        <li><span class="parameter">info_text</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if showing the information text
+        </li>
+        <li><span class="parameter">interface</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if showing the debug interface
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gui_settings"></a>
+    <strong>gui_settings</strong>
+    </dt>
+    <dd>
+    The gui settings table
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">imgui_viewport</span>
+         (ncine.viewport.viewportObj) ImGui viewport
+        </li>
+        <li><span class="parameter">nuklear_viewport</span>
+         (ncine.viewport.viewportObj) Nuklear viewport
+        </li>
+        <li><span class="parameter">imgui_layer</span>
+            <span class="types"><span class="type">integer</span></span>
+         ImGui drawable node layer
+        </li>
+        <li><span class="parameter">nuklearLayer</span>
+            <span class="types"><span class="type">integer</span></span>
+         Nuklear drawable node layer
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
