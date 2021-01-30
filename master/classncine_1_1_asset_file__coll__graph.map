@@ -1,0 +1,7 @@
+<map id="ncine::AssetFile" name="ncine::AssetFile">
+<area shape="rect" id="Node000001" title="The class dealing with Android asset files." alt="" coords="5,168,129,193"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_i_file.html" title="The interface class dealing with file operations." alt="" coords="21,93,113,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,133,70,168,65,168,65,133"/>
+<area shape="rect" id="Node000003" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="21,5,113,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,45,70,93,65,93,65,45"/>
+</map>
