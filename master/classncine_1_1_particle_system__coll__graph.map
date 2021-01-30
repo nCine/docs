@@ -1,0 +1,25 @@
+<map id="ncine::ParticleSystem" name="ncine::ParticleSystem">
+<area shape="rect" id="Node000001" title="The class representing a particle system." alt="" coords="809,252,972,277"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="621,252,760,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="774,262,809,262,809,267,774,267"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="671,237,677,229,691,225,702,228,709,234,711,244,708,253,703,251,705,243,704,237,700,232,691,231,680,233,676,240"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="319,5,426,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,10,479,11,521,17,562,29,599,51,622,73,641,99,668,156,684,211,691,251,685,252,679,212,663,158,637,102,618,76,596,55,560,34,519,22,478,16,440,15"/>
+<area shape="rect" id="Node000004" href="$classnctl_1_1_array.html" title=" " alt="" coords="303,55,442,95"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="456,66,492,68,529,74,565,85,599,102,618,118,635,137,661,179,679,220,689,251,684,252,674,221,656,181,631,140,614,122,596,107,563,90,528,79,491,74,456,72"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_vector2.html" title=" " alt="" coords="286,120,459,145"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="455,148,469,154,482,165,494,176,577,220,652,249,650,254,574,224,490,180,478,169,467,159,452,152"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="14,120,166,145"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="180,130,286,130,286,135,180,135"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="63,105,71,97,90,93,106,96,116,102,118,112,113,121,109,119,113,111,111,105,104,101,90,99,74,101,67,109"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_color.html" title="A four channels unsigned char color." alt="" coords="323,311,422,336"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="435,309,621,275,622,280,436,314"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="344,296,352,288,373,284,390,286,400,293,403,302,398,312,393,309,397,302,396,296,388,291,373,289,355,292,347,300"/>
+<area shape="rect" id="Node000008" href="$classncine_1_1_matrix4x4.html" title=" " alt="" coords="277,360,468,385"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="481,364,540,353,596,334,642,306,675,276,679,280,645,310,598,339,541,358,482,369"/>
+<area shape="rect" id="Node000009" href="$classncine_1_1_matrix4x4.html" title="A four by four matrix based on templates." alt="" coords="5,360,175,385"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="188,370,277,370,277,375,188,375"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="63,345,71,337,90,333,106,336,116,342,118,352,113,361,109,359,113,351,111,345,104,341,90,339,74,341,67,349"/>
+<area shape="rect" id="Node000010" href="$classnctl_1_1_bit_set.html" title=" " alt="" coords="289,409,457,435"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="470,419,535,407,566,397,596,382,626,358,650,329,681,276,686,279,655,332,630,362,599,387,569,402,536,413,471,424"/>
+</map>

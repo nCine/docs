@@ -1,0 +1,12 @@
+<map id="ncine::AudioBufferPlayer" name="ncine::AudioBufferPlayer">
+<area shape="rect" id="Node000001" title="Audio buffer player class." alt="" coords="19,363,202,388"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_i_audio_player.html" title="Audio player interface class." alt="" coords="37,288,184,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,328,113,362,108,362,108,328"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="5,171,112,196"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,207,108,287,103,289,67,210"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_vector3.html" title=" " alt="" coords="136,171,309,196"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="204,208,124,290,120,286,200,204"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_vector3.html" title="A three component vector based on templates." alt="" coords="147,22,299,47"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="225,61,225,171,220,171,220,61"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="271,17,307,19,320,25,325,35,319,46,302,52,257,50,258,45,301,46,315,42,320,35,317,29,306,24,271,23"/>
+</map>

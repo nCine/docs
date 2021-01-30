@@ -1,0 +1,35 @@
+<map id="ncine::Object" name="ncine::Object">
+<area shape="rect" id="Node000001" title="Static RRTI and identification index." alt="" coords="5,129,112,155"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_audio_buffer.html" title="A class representing an OpenAL buffer." alt="" coords="163,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,117,112,77,159,40,182,28,185,33,161,44,115,81,80,120"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_font.html" title="A class holding the font and glyphs information needed to render text." alt="" coords="187,55,280,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,120,159,89,190,78,191,83,161,94,96,125"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_i_audio_player.html" title="Audio player interface class." alt="" coords="160,104,307,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,130,159,125,160,130,126,135"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="164,153,303,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="126,148,164,154,163,159,125,154"/>
+<area shape="rect" id="Node000016" href="$classncine_1_1_shader.html" title="Shader class." alt="" coords="178,203,289,228"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="98,158,161,188,194,200,192,205,159,192,96,163"/>
+<area shape="rect" id="Node000017" href="$classncine_1_1_texture.html" title="Texture class." alt="" coords="177,252,290,277"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="80,163,115,202,161,238,185,249,182,254,159,243,112,206,76,167"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_audio_buffer_player.html" title="Audio buffer player class." alt="" coords="359,55,541,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="302,98,393,77,394,83,303,104"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_audio_stream_player.html" title="Audio stream player class." alt="" coords="355,104,545,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="320,114,354,114,354,119,320,119"/>
+<area shape="rect" id="Node000008" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue." alt="" coords="369,153,531,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="317,163,369,163,369,169,317,169"/>
+<area shape="rect" id="Node000015" href="$classncine_1_1_particle_system.html" title="The class representing a particle system." alt="" coords="369,203,531,228"/>
+<area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="303,179,394,200,393,205,302,184"/>
+<area shape="rect" id="Node000009" href="$classncine_1_1_base_sprite.html" title="The base class for sprites." alt="" coords="593,129,728,155"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="544,153,593,147,593,152,545,158"/>
+<area shape="rect" id="Node000014" href="$classncine_1_1_text_node.html" title="A scene node to draw a text label." alt="" coords="597,179,724,204"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="545,175,597,181,597,186,544,180"/>
+<area shape="rect" id="Node000010" href="$classncine_1_1_mesh_sprite.html" title="A scene node representing a mesh with vertices and UVs." alt="" coords="776,105,915,131"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="741,129,775,124,776,130,742,134"/>
+<area shape="rect" id="Node000011" href="$classncine_1_1_sprite.html" title="A scene node representing a regular sprite." alt="" coords="794,155,897,180"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="742,150,794,158,793,163,741,156"/>
+<area shape="rect" id="Node000012" href="$classncine_1_1_animated_sprite.html" title="A class for an animated sprite." alt="" coords="963,129,1129,155"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="910,157,962,150,963,155,911,162"/>
+<area shape="rect" id="Node000013" href="$classncine_1_1_particle.html" title="The class holding all the relevant data for a single particle." alt="" coords="989,179,1103,204"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="911,172,989,182,989,187,910,178"/>
+</map>

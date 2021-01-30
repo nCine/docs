@@ -1,0 +1,6 @@
+<map id="nctl::ListNode&lt; T &gt;" name="nctl::ListNode&lt; T &gt;">
+<area shape="rect" id="Node000001" title="A list node based on templates." alt="" coords="5,84,155,109"/>
+<area shape="rect" id="Node000002" href="$classnctl_1_1_base_list_node.html" title="The base list node used as sentinel." alt="" coords="9,7,151,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,46,83,84,77,84,77,46"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="166,12,178,20,170,27,152,29,151,24,168,22,173,20,164,17"/>
+</map>

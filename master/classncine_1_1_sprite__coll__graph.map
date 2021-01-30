@@ -1,0 +1,40 @@
+<map id="ncine::Sprite" name="ncine::Sprite">
+<area shape="rect" id="Node000001" title="A scene node representing a regular sprite." alt="" coords="1529,192,1632,217"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_base_sprite.html" title="The base class for sprites." alt="" coords="1345,192,1480,217"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1494,202,1529,202,1529,207,1494,207"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue." alt="" coords="1075,192,1236,217"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1250,202,1345,202,1345,207,1250,207"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="705,267,844,292"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="854,261,1089,215,1090,220,855,267"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="733,253,745,244,775,240,799,242,813,248,817,258,810,268,805,265,812,258,809,252,797,247,775,245,747,249,736,257"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="319,5,426,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="440,16,545,25,591,35,622,51,636,70,642,90,638,128,633,167,636,187,646,207,664,226,685,242,730,264,728,269,682,247,660,230,642,210,631,188,628,167,633,127,636,90,631,72,618,55,590,40,544,30,440,21"/>
+<area shape="rect" id="Node000015" href="$classncine_1_1_texture.html" title="Texture class." alt="" coords="933,35,1047,60"/>
+<area shape="poly" id="edge21_Node000015_Node000005" title=" " alt="" coords="440,14,620,17,791,27,933,39,933,45,791,32,620,22,440,20"/>
+<area shape="rect" id="Node000006" href="$classnctl_1_1_array.html" title=" " alt="" coords="303,358,442,398"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="456,391,497,392,539,389,581,379,618,360,628,348,630,333,632,318,642,303,672,286,705,278,706,283,674,291,646,307,637,320,635,334,633,350,622,364,583,384,540,395,497,398,456,396"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_vector2.html" title=" " alt="" coords="286,179,459,204"/>
+<area shape="poly" id="edge17_Node000003_Node000007" title=" " alt="" coords="474,190,1075,201,1075,206,473,196"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="399,211,441,243,466,258,493,269,547,281,603,287,705,285,705,291,603,293,546,287,491,274,464,262,438,247,396,215"/>
+<area shape="rect" id="Node000008" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="14,147,166,172"/>
+<area shape="poly" id="edge16_Node000003_Node000008" title=" " alt="" coords="180,145,199,143,253,143,653,149,828,157,1051,181,1101,189,1100,195,1050,186,827,163,653,154,253,149,199,149,180,150"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="140,173,199,187,286,193,286,198,198,193,139,179"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="63,132,71,123,90,120,106,122,116,129,118,138,113,148,109,145,113,138,111,132,104,127,90,125,74,128,67,135"/>
+<area shape="rect" id="Node000009" href="$classncine_1_1_color.html" title="A four channels unsigned char color." alt="" coords="323,613,422,639"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="434,607,481,588,531,563,579,529,600,508,618,486,629,462,633,439,626,393,621,371,620,349,626,326,642,303,671,284,705,275,706,280,673,288,646,307,631,328,626,349,627,370,631,392,638,439,634,463,622,489,604,512,583,533,534,567,483,593,436,612"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="344,599,352,590,373,587,390,589,400,595,403,605,398,615,393,612,397,604,396,599,388,594,373,592,355,595,347,602"/>
+<area shape="rect" id="Node000010" href="$classncine_1_1_matrix4x4.html" title=" " alt="" coords="277,308,468,333"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="482,328,492,329,529,333,558,338,586,339,619,329,626,324,630,317,634,310,643,302,673,289,705,282,706,287,675,294,645,307,639,313,635,320,630,327,621,334,586,344,558,344,528,338,492,334,482,333"/>
+<area shape="rect" id="Node000011" href="$classncine_1_1_matrix4x4.html" title="A four by four matrix based on templates." alt="" coords="5,308,175,333"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="188,318,277,318,277,323,188,323"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="63,293,71,285,90,281,106,284,116,290,118,300,113,309,109,307,113,299,111,293,104,289,90,287,74,289,67,297"/>
+<area shape="rect" id="Node000012" href="$classnctl_1_1_bit_set.html" title=" " alt="" coords="289,423,457,448"/>
+<area shape="poly" id="edge15_Node000004_Node000012" title=" " alt="" coords="446,447,490,450,535,447,580,435,600,425,618,412,628,400,632,388,630,360,628,332,632,317,642,303,671,284,704,276,706,281,673,289,646,307,637,319,633,332,635,360,637,388,633,403,622,416,603,430,582,440,536,452,490,455,446,453"/>
+<area shape="rect" id="Node000013" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="644,316,905,341"/>
+<area shape="poly" id="edge18_Node000003_Node000013" title=" " alt="" coords="861,311,905,302,948,296,982,294,1014,288,1049,268,1057,259,1060,249,1064,238,1073,227,1093,215,1095,220,1076,231,1069,240,1065,250,1062,261,1052,272,1016,293,983,300,948,302,906,307,862,316"/>
+<area shape="rect" id="Node000014" href="$classncine_1_1_rect.html" title=" " alt="" coords="698,365,851,391"/>
+<area shape="poly" id="edge19_Node000003_Node000014" title=" " alt="" coords="864,379,912,375,961,365,1008,347,1049,317,1057,307,1060,297,1060,274,1060,251,1064,239,1073,227,1088,215,1092,220,1077,231,1069,241,1066,252,1066,274,1066,298,1061,310,1053,321,1011,351,963,370,913,381,865,385"/>
+<area shape="poly" id="edge20_Node000002_Node000015" title=" " alt="" coords="1039,62,1378,189,1376,194,1037,67"/>
+<area shape="rect" id="Node000016" href="$classncine_1_1_rect.html" title=" " alt="" coords="1085,241,1226,267"/>
+<area shape="poly" id="edge22_Node000002_Node000016" title=" " alt="" coords="1239,237,1321,222,1355,215,1356,220,1322,227,1240,243"/>
+</map>

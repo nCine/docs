@@ -1,0 +1,5 @@
+<map id="ncine::NullAudioDevice" name="ncine::NullAudioDevice">
+<area shape="rect" id="Node000001" title="A fake audio device which doesn&#39;t play anything." alt="" coords="5,79,179,104"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_i_audio_device.html" title="Audio device interface class." alt="" coords="17,5,167,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,79,89,79,89,44"/>
+</map>
