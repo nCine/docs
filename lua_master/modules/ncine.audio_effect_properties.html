@@ -1,0 +1,3108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#"> </a></li>
+<li><a href="#EAX_Reverb">EAX Reverb </a></li>
+<li><a href="#Chorus">Chorus </a></li>
+<li><a href="#Distortion">Distortion </a></li>
+<li><a href="#Echo">Echo </a></li>
+<li><a href="#Flanger">Flanger </a></li>
+<li><a href="#Frequency_Shifter">Frequency Shifter </a></li>
+<li><a href="#Vocal_Morpher">Vocal Morpher </a></li>
+<li><a href="#Pitch_Shifter">Pitch Shifter </a></li>
+<li><a href="#Ring_Modulator">Ring Modulator </a></li>
+<li><a href="#Auto_Wah">Auto Wah </a></li>
+<li><a href="#Compressor">Compressor </a></li>
+<li><a href="#Equalizer">Equalizer </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><strong>ncine.audio_effect_properties</strong></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.audio_effect_properties</code></h1>
+<p>The table containing audio effect properties related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.new">ncine.audio_effect_properties.new ()</a></td>
+	<td class="summary">Constructs an audio effect properties object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.delete">ncine.audio_effect_properties.delete (audio_effect_properties)</a></td>
+	<td class="summary">Destroys an audio effect properties object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_type">ncine.audio_effect_properties.get_type (audio_effect_properties)</a></td>
+	<td class="summary">Returns the effect properties type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_type">ncine.audio_effect_properties.set_type (audio_effect_properties, audio_effect_type)</a></td>
+	<td class="summary">Sets the effect properties type</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audioeffectpropertiesObj">audioeffectpropertiesObj</a></td>
+	<td class="summary">The light user data of an audio effect properties object</td>
+	</tr>
+</table>
+<h2><a href="#"> </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_reverb_properties">audio_reverb_properties</a></td>
+	<td class="summary">Properties of the reverb effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_reverb_properties">ncine.audio_effect_properties.get_min_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_reverb_properties">ncine.audio_effect_properties.get_max_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_reverb_properties">ncine.audio_effect_properties.get_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_reverb_properties">ncine.audio_effect_properties.set_reverb_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_reverb_properties">ncine.audio_effect_properties.reset_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the reverb effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#EAX_Reverb">EAX Reverb </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_eax_reverb_properties">audio_eax_reverb_properties</a></td>
+	<td class="summary">Properties of the EAX reverb effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_eax_reverb_properties">ncine.audio_effect_properties.get_min_eax_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the EAX reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_eax_reverb_properties">ncine.audio_effect_properties.get_max_eax_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the EAX reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_eax_reverb_properties">ncine.audio_effect_properties.get_eax_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the EAX reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_eax_reverb_properties">ncine.audio_effect_properties.set_eax_reverb_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the EAX reverb effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_eax_reverb_properties">ncine.audio_effect_properties.reset_eax_reverb_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the EAX reverb effect to thir default</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.load_efx_reverb_preset">ncine.audio_effect_properties.load_efx_reverb_preset (audio_effect_properties, preset)</a></td>
+	<td class="summary">Loads and sets the effect properties from an EFX reverb preset</td>
+	</tr>
+</table>
+<h2><a href="#Chorus">Chorus </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_chorus_properties">audio_chorus_properties</a></td>
+	<td class="summary">Properties of the chorus effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_chorus_properties">ncine.audio_effect_properties.get_min_chorus_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the chorus effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_chorus_properties">ncine.audio_effect_properties.get_max_chorus_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the chorus effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_chorus_properties">ncine.audio_effect_properties.get_chorus_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the chorus effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_chorus_properties">ncine.audio_effect_properties.set_chorus_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the chorus effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_chorus_properties">ncine.audio_effect_properties.reset_chorus_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the chorus effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Distortion">Distortion </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_distortion_properties">audio_distortion_properties</a></td>
+	<td class="summary">Properties of the distortion effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_distortion_properties">ncine.audio_effect_properties.get_min_distortion_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the distortion effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_distortion_properties">ncine.audio_effect_properties.get_max_distortion_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the distortion effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_distortion_properties">ncine.audio_effect_properties.get_distortion_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the distortion effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_distortion_properties">ncine.audio_effect_properties.set_distortion_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the distortion effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_distortion_properties">ncine.audio_effect_properties.reset_distortion_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the distortion effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Echo">Echo </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_echo_properties">audio_echo_properties</a></td>
+	<td class="summary">Properties of the echo effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_echo_properties">ncine.audio_effect_properties.get_min_echo_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the echo effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_echo_properties">ncine.audio_effect_properties.get_max_echo_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the echo effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_echo_properties">ncine.audio_effect_properties.get_echo_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the echo effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_echo_properties">ncine.audio_effect_properties.set_echo_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the echo effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_echo_properties">ncine.audio_effect_properties.reset_echo_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the echo effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Flanger">Flanger </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_flanger_properties">audio_flanger_properties</a></td>
+	<td class="summary">Properties of the flanger effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_flanger_properties">ncine.audio_effect_properties.get_min_flanger_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the flanger effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_flanger_properties">ncine.audio_effect_properties.get_max_flanger_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the flanger effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_flanger_properties">ncine.audio_effect_properties.get_flanger_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the flanger effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_flanger_properties">ncine.audio_effect_properties.set_flanger_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the flanger effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_flanger_properties">ncine.audio_effect_properties.reset_flanger_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the flanger effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Frequency_Shifter">Frequency Shifter </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_frequency_shifter_properties">audio_frequency_shifter_properties</a></td>
+	<td class="summary">Properties of the frequency shifter effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_frequency_shifter_properties">ncine.audio_effect_properties.get_min_frequency_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the frequency shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_frequency_shifter_properties">ncine.audio_effect_properties.get_max_frequency_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the frequency shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_frequency_shifter_properties">ncine.audio_effect_properties.get_frequency_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the frequency shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_frequency_shifter_properties">ncine.audio_effect_properties.set_frequency_shifter_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the frequency shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_frequency_shifter_properties">ncine.audio_effect_properties.reset_frequency_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the frequency shifter effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Vocal_Morpher">Vocal Morpher </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_vocal_morpher_properties">audio_vocal_morpher_properties</a></td>
+	<td class="summary">Properties of the vocal morpher effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_vocal_morpher_properties">ncine.audio_effect_properties.get_min_vocal_morpher_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the vocal morpher effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_vocal_morpher_properties">ncine.audio_effect_properties.get_max_vocal_morpher_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the vocal morpher effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_vocal_morpher_properties">ncine.audio_effect_properties.get_vocal_morpher_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the vocal morpher effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_vocal_morpher_properties">ncine.audio_effect_properties.set_vocal_morpher_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the vocal morpher effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_vocal_morpher_properties">ncine.audio_effect_properties.reset_vocal_morpher_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the vocal morpher effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Pitch_Shifter">Pitch Shifter </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_pitch_shifter_properties">audio_pitch_shifter_properties</a></td>
+	<td class="summary">Properties of the pitch shifter effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_pitch_shifter_properties">ncine.audio_effect_properties.get_min_pitch_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the pitch shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_pitch_shifter_properties">ncine.audio_effect_properties.get_max_pitch_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the pitch shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_pitch_shifter_properties">ncine.audio_effect_properties.get_pitch_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the pitch shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_pitch_shifter_properties">ncine.audio_effect_properties.set_pitch_shifter_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the pitch shifter effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_pitch_shifter_properties">ncine.audio_effect_properties.reset_pitch_shifter_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the pitch shifter effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Ring_Modulator">Ring Modulator </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_ring_modulator_properties">audio_ring_modulator_properties</a></td>
+	<td class="summary">Properties of the ring modulator effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_ring_modulator_properties">ncine.audio_effect_properties.get_min_ring_modulator_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the ring modulator effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_ring_modulator_properties">ncine.audio_effect_properties.get_max_ring_modulator_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the ring modulator effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_ring_modulator_properties">ncine.audio_effect_properties.get_ring_modulator_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the ring modulator effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_ring_modulator_properties">ncine.audio_effect_properties.set_ring_modulator_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the ring modulator effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_ring_modulator_properties">ncine.audio_effect_properties.reset_ring_modulator_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the ring modulator effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Auto_Wah">Auto Wah </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_auto_wah_properties">audio_auto_wah_properties</a></td>
+	<td class="summary">Properties of the auto wah effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_auto_wah_properties">ncine.audio_effect_properties.get_min_auto_wah_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the auto wah effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_auto_wah_properties">ncine.audio_effect_properties.get_max_auto_wah_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the auto wah effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_auto_wah_properties">ncine.audio_effect_properties.get_auto_wah_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the auto wah effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_auto_wah_properties">ncine.audio_effect_properties.set_auto_wah_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the auto wah effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_auto_wah_properties">ncine.audio_effect_properties.reset_auto_wah_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the auto wah effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Compressor">Compressor </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_compressor_properties">audio_compressor_properties</a></td>
+	<td class="summary">Properties of the compressor effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_compressor_properties">ncine.audio_effect_properties.get_min_compressor_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the compressor effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_compressor_properties">ncine.audio_effect_properties.get_max_compressor_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the compressor effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_compressor_properties">ncine.audio_effect_properties.get_compressor_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the compressor effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_compressor_properties">ncine.audio_effect_properties.set_compressor_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the compressor effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_compressor_properties">ncine.audio_effect_properties.reset_compressor_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the compressor effect to thir default</td>
+	</tr>
+</table>
+<h2><a href="#Equalizer">Equalizer </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audio_equalizer_properties">audio_equalizer_properties</a></td>
+	<td class="summary">Properties of the equalizer effect</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_min_equalizer_properties">ncine.audio_effect_properties.get_min_equalizer_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the minimum values for the equalizer effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_max_equalizer_properties">ncine.audio_effect_properties.get_max_equalizer_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the maximum values for the equalizer effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.get_equalizer_properties">ncine.audio_effect_properties.get_equalizer_properties (audio_effect_properties)</a></td>
+	<td class="summary">Returns the current values for the equalizer effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.set_equalizer_properties">ncine.audio_effect_properties.set_equalizer_properties (audio_effect_properties, properties)</a></td>
+	<td class="summary">Sets all values for the equalizer effect properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_properties.reset_equalizer_properties">ncine.audio_effect_properties.reset_equalizer_properties (audio_effect_properties)</a></td>
+	<td class="summary">Resets all property values for the equalizer effect to thir default</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.audio_effect_properties.new"></a>
+    <strong>ncine.audio_effect_properties.new ()</strong>
+    </dt>
+    <dd>
+    Constructs an audio effect properties object. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.audio_effect_properties.html#ncine.audio_effect_properties.delete">ncine.audio_effect_properties.delete</a> when you are done with it!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+        A new audio effect properties object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.delete"></a>
+    <strong>ncine.audio_effect_properties.delete (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Destroys an audio effect properties object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+         The audio effect properties object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_type"></a>
+    <strong>ncine.audio_effect_properties.get_type (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the effect properties type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.audio_effect_type</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_type"></a>
+    <strong>ncine.audio_effect_properties.set_type (audio_effect_properties, audio_effect_type)</strong>
+    </dt>
+    <dd>
+    Sets the effect properties type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">audio_effect_type</span>
+            <span class="types"><span class="type">ncine.audio_effect_type</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audioeffectpropertiesObj"></a>
+    <strong>audioeffectpropertiesObj</strong>
+    </dt>
+    <dd>
+    The light user data of an audio effect properties object
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name=""></a> </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_reverb_properties"></a>
+    <strong>audio_reverb_properties</strong>
+    </dt>
+    <dd>
+    Properties of the reverb effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">density</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">diffusion</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">gain_hf</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">decay_time</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">decay_hf_ratio</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">reflections_gain</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">reflections_delay</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">late_reverb_gain</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">late_reverb_delay</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">air_absorption_gain_hf</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">room_rolloff_factor</span>
+            <span class="types"><span class="type">number</span></span>
+         number
+        </li>
+        <li><span class="parameter">decay_hf_limit</span>
+            <span class="types"><span class="type">integer</span></span>
+         integer
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.set_reverb_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_reverb_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the reverb effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="EAX_Reverb"></a>EAX Reverb </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_eax_reverb_properties"></a>
+    <strong>audio_eax_reverb_properties</strong>
+    </dt>
+    <dd>
+    Properties of the EAX reverb effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">reflections_pan</span>
+         (ncine.vec3)
+        </li>
+        <li><span class="parameter">late_reverb_pan</span>
+         (ncine.vec3)
+        </li>
+        <li><span class="parameter">density</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">diffusion</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">gain_hf</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">gain_lf</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">decay_time</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">decay_hf_ratio</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">decay_lf_ratio</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">reflections_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">reflections_delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">late_reverb_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">late_reverb_delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">echo_time</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">echo_depth</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">modulation_time</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">modulation_depth</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">air_absorption_gain_hf</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">hf_reference</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">lf_reference</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">room_rolloff_factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">decay_hf_limit</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_eax_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_eax_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the EAX reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_eax_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_eax_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_eax_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the EAX reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_eax_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_eax_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.get_eax_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the EAX reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_eax_reverb_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_eax_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.set_eax_reverb_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the EAX reverb effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_eax_reverb_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_eax_reverb_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_eax_reverb_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the EAX reverb effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.load_efx_reverb_preset"></a>
+    <strong>ncine.audio_effect_properties.load_efx_reverb_preset (audio_effect_properties, preset)</strong>
+    </dt>
+    <dd>
+    Loads and sets the effect properties from an EFX reverb preset
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">preset</span>
+            <span class="types"><span class="type">ncine.efx_reverb_presets</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/EFX_Presets.html#">EFX_Presets</a>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Chorus"></a>Chorus </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_chorus_properties"></a>
+    <strong>audio_chorus_properties</strong>
+    </dt>
+    <dd>
+    Properties of the chorus effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">waveform</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-0 for sinusoid, 1 for triangle
+        </li>
+        <li><span class="parameter">phase</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">rate</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">depth</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">feedback</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_chorus_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_chorus_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the chorus effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_chorus_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_chorus_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_chorus_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the chorus effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_chorus_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_chorus_properties"></a>
+    <strong>ncine.audio_effect_properties.get_chorus_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the chorus effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_chorus_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_chorus_properties"></a>
+    <strong>ncine.audio_effect_properties.set_chorus_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the chorus effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_chorus_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_chorus_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_chorus_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the chorus effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Distortion"></a>Distortion </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_distortion_properties"></a>
+    <strong>audio_distortion_properties</strong>
+    </dt>
+    <dd>
+    Properties of the distortion effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">edge</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">lowpass_cutoff</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">eq_center</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">eq_bandwidth</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_distortion_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_distortion_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the distortion effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_distortion_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_distortion_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_distortion_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the distortion effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_distortion_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_distortion_properties"></a>
+    <strong>ncine.audio_effect_properties.get_distortion_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the distortion effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_distortion_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_distortion_properties"></a>
+    <strong>ncine.audio_effect_properties.set_distortion_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the distortion effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_distortion_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_distortion_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_distortion_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the distortion effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Echo"></a>Echo </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_echo_properties"></a>
+    <strong>audio_echo_properties</strong>
+    </dt>
+    <dd>
+    Properties of the echo effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">lr_delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">damping</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">feedback</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">spread</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_echo_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_echo_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the echo effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_echo_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_echo_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_echo_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the echo effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_echo_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_echo_properties"></a>
+    <strong>ncine.audio_effect_properties.get_echo_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the echo effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_echo_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_echo_properties"></a>
+    <strong>ncine.audio_effect_properties.set_echo_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the echo effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_echo_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_echo_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_echo_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the echo effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Flanger"></a>Flanger </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_flanger_properties"></a>
+    <strong>audio_flanger_properties</strong>
+    </dt>
+    <dd>
+    Properties of the flanger effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">waveform</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-0 for sinusoid, 1 for triangle
+        </li>
+        <li><span class="parameter">phase</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">rate</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">depth</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">feedback</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">delay</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_flanger_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_flanger_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the flanger effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_flanger_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_flanger_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_flanger_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the flanger effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_flanger_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_flanger_properties"></a>
+    <strong>ncine.audio_effect_properties.get_flanger_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the flanger effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_flanger_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_flanger_properties"></a>
+    <strong>ncine.audio_effect_properties.set_flanger_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the flanger effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_flanger_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_flanger_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_flanger_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the flanger effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Frequency_Shifter"></a>Frequency Shifter </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_frequency_shifter_properties"></a>
+    <strong>audio_frequency_shifter_properties</strong>
+    </dt>
+    <dd>
+    Properties of the frequency shifter effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">frequency</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">left_direction</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From 0 to 2
+        </li>
+        <li><span class="parameter">right_direction</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From 0 to 2
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_frequency_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_frequency_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the frequency shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_frequency_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_frequency_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_frequency_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the frequency shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_frequency_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_frequency_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_frequency_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the frequency shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_frequency_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_frequency_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.set_frequency_shifter_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the frequency shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_frequency_shifter_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_frequency_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_frequency_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the frequency shifter effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Vocal_Morpher"></a>Vocal Morpher </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_vocal_morpher_properties"></a>
+    <strong>audio_vocal_morpher_properties</strong>
+    </dt>
+    <dd>
+    Properties of the vocal morpher effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">phoneme_a</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From 0 to 29 (A to Z)
+        </li>
+        <li><span class="parameter">phoneme_a_coarse_tuning</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From -24 to 24
+        </li>
+        <li><span class="parameter">phoneme_b</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From 0 to 29 (A to Z)
+        </li>
+        <li><span class="parameter">phoneme_b_coarse_tuning</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-From -24 to 24
+        </li>
+        <li><span class="parameter">waveform</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-0 for sinusoid, 1 for triangle, 2 for sawtooth
+        </li>
+        <li><span class="parameter">rate</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_vocal_morpher_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_vocal_morpher_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the vocal morpher effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_vocal_morpher_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_vocal_morpher_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_vocal_morpher_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the vocal morpher effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_vocal_morpher_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_vocal_morpher_properties"></a>
+    <strong>ncine.audio_effect_properties.get_vocal_morpher_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the vocal morpher effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_vocal_morpher_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_vocal_morpher_properties"></a>
+    <strong>ncine.audio_effect_properties.set_vocal_morpher_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the vocal morpher effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_vocal_morpher_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_vocal_morpher_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_vocal_morpher_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the vocal morpher effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Pitch_Shifter"></a>Pitch Shifter </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_pitch_shifter_properties"></a>
+    <strong>audio_pitch_shifter_properties</strong>
+    </dt>
+    <dd>
+    Properties of the pitch shifter effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">coarse_tune</span>
+            <span class="types"><span class="type">integer</span></span>
+         integer &mdash;-From -12 to 12
+        </li>
+        <li><span class="parameter">fineTune</span>
+            <span class="types"><span class="type">integer</span></span>
+         integer &mdash;-From -50 to 50
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_pitch_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_pitch_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the pitch shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_pitch_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_pitch_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_pitch_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the pitch shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_pitch_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_pitch_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.get_pitch_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the pitch shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_pitch_shifter_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_pitch_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.set_pitch_shifter_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the pitch shifter effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_pitch_shifter_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_pitch_shifter_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_pitch_shifter_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the pitch shifter effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Ring_Modulator"></a>Ring Modulator </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_ring_modulator_properties"></a>
+    <strong>audio_ring_modulator_properties</strong>
+    </dt>
+    <dd>
+    Properties of the ring modulator effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">frequency</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">highpass_cutoff</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">waveform</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-0 for sinusoid, 1 for sawtooth, 2 for square
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_ring_modulator_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_ring_modulator_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the ring modulator effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_ring_modulator_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_ring_modulator_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_ring_modulator_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the ring modulator effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_ring_modulator_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_ring_modulator_properties"></a>
+    <strong>ncine.audio_effect_properties.get_ring_modulator_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the ring modulator effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_ring_modulator_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_ring_modulator_properties"></a>
+    <strong>ncine.audio_effect_properties.set_ring_modulator_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the ring modulator effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_ring_modulator_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_ring_modulator_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_ring_modulator_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the ring modulator effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Auto_Wah"></a>Auto Wah </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_auto_wah_properties"></a>
+    <strong>audio_auto_wah_properties</strong>
+    </dt>
+    <dd>
+    Properties of the auto wah effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">attack_time</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">release_time</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">resonance</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">peak_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_auto_wah_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_auto_wah_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the auto wah effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_auto_wah_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_auto_wah_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_auto_wah_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the auto wah effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_auto_wah_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_auto_wah_properties"></a>
+    <strong>ncine.audio_effect_properties.get_auto_wah_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the auto wah effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_auto_wah_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_auto_wah_properties"></a>
+    <strong>ncine.audio_effect_properties.set_auto_wah_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the auto wah effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_auto_wah_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_auto_wah_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_auto_wah_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the auto wah effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Compressor"></a>Compressor </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_compressor_properties"></a>
+    <strong>audio_compressor_properties</strong>
+    </dt>
+    <dd>
+    Properties of the compressor effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">on_off</span>
+            <span class="types"><span class="type">integer</span></span>
+         &mdash;-0 or 1
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_compressor_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_compressor_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the compressor effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_compressor_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_compressor_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_compressor_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the compressor effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_compressor_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_compressor_properties"></a>
+    <strong>ncine.audio_effect_properties.get_compressor_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the compressor effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_compressor_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_compressor_properties"></a>
+    <strong>ncine.audio_effect_properties.set_compressor_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the compressor effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_compressor_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_compressor_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_compressor_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the compressor effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Equalizer"></a>Equalizer </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audio_equalizer_properties"></a>
+    <strong>audio_equalizer_properties</strong>
+    </dt>
+    <dd>
+    Properties of the equalizer effect
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">low_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">low_cutoff</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid1_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid1_center</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid1_width</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid2_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid2_center</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">mid2_width</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">high_gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">high_cutoff</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_min_equalizer_properties"></a>
+    <strong>ncine.audio_effect_properties.get_min_equalizer_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the minimum values for the equalizer effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_equalizer_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_max_equalizer_properties"></a>
+    <strong>ncine.audio_effect_properties.get_max_equalizer_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the maximum values for the equalizer effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_equalizer_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.get_equalizer_properties"></a>
+    <strong>ncine.audio_effect_properties.get_equalizer_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Returns the current values for the equalizer effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">audio_equalizer_properties</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.set_equalizer_properties"></a>
+    <strong>ncine.audio_effect_properties.set_equalizer_properties (audio_effect_properties, properties)</strong>
+    </dt>
+    <dd>
+    Sets all values for the equalizer effect properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audio_equalizer_properties</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_properties.reset_equalizer_properties"></a>
+    <strong>ncine.audio_effect_properties.reset_equalizer_properties (audio_effect_properties)</strong>
+    </dt>
+    <dd>
+    Resets all property values for the equalizer effect to thir default
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect_properties</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect_properties.html#audioeffectpropertiesObj">audioeffectpropertiesObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
