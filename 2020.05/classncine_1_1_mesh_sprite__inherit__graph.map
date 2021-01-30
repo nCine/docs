@@ -1,0 +1,7 @@
+<map id="ncine::MeshSprite" name="ncine::MeshSprite">
+<area shape="rect" id="node1" title="A scene node representing a mesh with vertices and UVs." alt="" coords="15,304,142,331"/>
+<area shape="rect" id="node2" href="$classncine_1_1_base_sprite.html" title="The base class for sprites." alt="" coords="16,229,141,256"/>
+<area shape="rect" id="node3" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue." alt="" coords="5,155,152,181"/>
+<area shape="rect" id="node4" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="14,80,143,107"/>
+<area shape="rect" id="node5" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="29,5,128,32"/>
+</map>
