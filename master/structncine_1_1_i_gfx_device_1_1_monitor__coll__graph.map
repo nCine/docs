@@ -1,0 +1,13 @@
+<map id="ncine::IGfxDevice::Monitor" name="ncine::IGfxDevice::Monitor">
+<area shape="rect" id="Node000001" title="A structure representing a connected monitor." alt="" coords="205,259,351,299"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_vector2.html" title=" " alt="" coords="5,149,167,174"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,179,248,256,245,261,115,183"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="106,15,258,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,53,97,150,92,147,163,50"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="273,16,281,20,285,28,277,37,259,42,258,37,274,33,279,27,277,24,270,20"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_vector2.html" title=" " alt="" coords="191,149,365,174"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="201,50,272,147,267,150,196,53"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="281,188,281,258,275,258,275,188"/>
+<area shape="rect" id="Node000005" href="$structncine_1_1_i_gfx_device_1_1_video_mode.html" title="A structure representing a video mode supported by a monitor." alt="" coords="389,141,535,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="422,191,309,261,307,256,419,186"/>
+</map>

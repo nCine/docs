@@ -1,0 +1,8 @@
+<map id="ncine::PositionAffector::PositionStep" name="ncine::PositionAffector::PositionStep">
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,229,176,269"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_vector2.html" title=" " alt="" coords="5,141,179,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,180,95,229,89,229,89,180"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="16,15,168,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,54,95,141,89,141,89,54"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="183,16,191,20,195,28,187,37,169,42,168,37,184,33,189,27,187,24,180,20"/>
+</map>

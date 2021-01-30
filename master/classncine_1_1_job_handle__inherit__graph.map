@@ -1,0 +1,5 @@
+<map id="ncine::JobHandle" name="ncine::JobHandle">
+<area shape="rect" id="Node000001" title="A wrapper class around the job system JobId" alt="" coords="29,5,160,31"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_scoped_job_handle.html" title="A wrapper class around the job system JobId, that waits the job on destruction." alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="ncine::BaseSprite" name="ncine::BaseSprite">
+<area shape="rect" id="Node000001" title="The base class for sprites." alt="" coords="79,225,214,251"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_mesh_sprite.html" title="A scene node representing a mesh with vertices and UVs." alt="" coords="5,299,144,324"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,263,88,300,84,297,123,259"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_sprite.html" title="A scene node representing a regular sprite." alt="" coords="169,299,271,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="170,258,210,297,206,300,167,262"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue." alt="" coords="66,152,227,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,191,149,225,144,225,144,191"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="77,79,216,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,118,149,152,144,152,144,118"/>
+<area shape="rect" id="Node000004" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="93,5,200,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,44,149,79,144,79,144,44"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_animated_sprite.html" title="A class for an animated sprite." alt="" coords="55,372,222,397"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="198,335,154,374,150,370,195,331"/>
+<area shape="rect" id="Node000008" href="$classncine_1_1_particle.html" title="The class holding all the relevant data for a single particle." alt="" coords="246,372,359,397"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="245,331,291,370,287,374,242,335"/>
+</map>

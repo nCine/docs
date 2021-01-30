@@ -1,0 +1,44 @@
+<map id="ncine::Application" name="ncine::Application">
+<area shape="rect" id="Node000001" title="Main entry point and handler for nCine applications." alt="" coords="1553,419,1692,445"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_app_configuration.html" title="The class storing initialization settings for an nCine application." alt="" coords="1122,226,1299,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1313,227,1366,228,1423,236,1479,251,1531,276,1566,309,1592,349,1610,388,1620,418,1615,420,1605,390,1588,352,1562,312,1528,281,1477,256,1422,241,1366,234,1313,232"/>
+<area shape="rect" id="Node000003" href="$structncine_1_1_app_configuration_1_1_logging.html" title="Logging related configuration." alt="" coords="597,5,775,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="789,44,881,67,977,99,1027,121,1075,148,1192,224,1189,228,1072,153,1025,126,975,104,879,73,787,49"/>
+<area shape="rect" id="Node000004" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="35,57,127,82"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,54,181,47,293,35,406,27,597,22,597,28,406,33,293,40,182,52,141,59"/>
+<area shape="rect" id="Node000005" href="$structncine_1_1_app_configuration_1_1_window.html" title="Window related configuration." alt="" coords="799,183,976,223"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="116,87,218,143,283,171,351,192,410,203,471,211,592,218,705,216,798,210,799,215,705,221,592,223,470,216,409,209,350,197,281,176,215,148,113,92"/>
+<area shape="rect" id="Node000009" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l.html" title="OpenGL related configuration." alt="" coords="373,49,551,89"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="141,67,373,67,373,72,141,72"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="990,211,1122,226,1122,231,990,217"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_vector2.html" title=" " alt="" coords="381,257,543,282"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="557,277,608,279,663,276,720,268,773,252,785,243,797,232,822,220,824,225,800,237,789,247,776,257,721,273,664,282,608,284,557,283"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="5,258,157,283"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="171,268,381,267,381,272,171,273"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="48,243,58,235,81,231,101,234,113,240,116,250,110,259,105,256,111,249,109,243,99,239,81,237,60,240,51,247"/>
+<area shape="rect" id="Node000008" href="$structncine_1_1_app_configuration_1_1_graphics.html" title="Graphics related configuration." alt="" coords="799,113,976,153"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="964,155,1171,223,1170,228,962,160"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="565,80,775,111,799,115,798,120,774,116,564,85"/>
+<area shape="rect" id="Node000010" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l_capabilities.html" title="OpenGL context capabilities (determined at compile time)" alt="" coords="351,113,573,153"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="587,131,798,131,798,136,587,136"/>
+<area shape="rect" id="Node000011" href="$structncine_1_1_app_configuration_1_1_audio.html" title="Audio related configuration." alt="" coords="799,247,976,287"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="989,259,1073,253,1121,248,1122,253,1074,259,990,265"/>
+<area shape="rect" id="Node000012" href="$structncine_1_1_app_configuration_1_1_job_system.html" title="Job system related configuration." alt="" coords="799,311,976,351"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="989,310,1031,297,1072,280,1084,271,1096,262,1131,249,1133,254,1099,266,1087,275,1075,285,1033,302,990,315"/>
+<area shape="rect" id="Node000013" href="$structncine_1_1_app_configuration_1_1_features.html" title="Feature switches." alt="" coords="799,375,976,415"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="988,374,1033,355,1071,328,1081,312,1082,296,1084,279,1095,262,1121,247,1123,251,1099,266,1089,281,1088,296,1086,314,1075,331,1035,360,990,379"/>
+<area shape="rect" id="Node000014" href="$structncine_1_1_i_debug_overlay_1_1_display_settings.html" title=" " alt="" coords="1129,276,1292,316"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="1306,292,1359,296,1417,304,1475,319,1531,340,1557,357,1581,378,1614,417,1610,421,1577,382,1554,362,1528,345,1473,324,1416,309,1358,301,1306,297"/>
+<area shape="rect" id="Node000015" href="$classncine_1_1_time_stamp.html" title="A class representing a point in time or a duration." alt="" coords="1141,341,1281,366"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="1295,355,1407,367,1469,377,1530,391,1597,417,1595,422,1529,396,1468,382,1407,372,1294,360"/>
+<area shape="rect" id="Node000016" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1097,390,1324,415"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="1338,409,1553,424,1553,430,1338,414"/>
+<area shape="rect" id="Node000017" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,440,1295,480"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="1308,456,1415,452,1529,444,1553,441,1553,446,1530,449,1415,458,1309,462"/>
+<area shape="rect" id="Node000018" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,504,1295,544"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="1308,516,1415,502,1473,491,1528,476,1567,460,1600,442,1602,447,1569,465,1530,481,1474,496,1416,508,1308,521"/>
+<area shape="rect" id="Node000019" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,568,1295,608"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="1308,586,1361,581,1418,571,1475,556,1528,532,1556,513,1579,488,1612,443,1616,446,1583,492,1559,517,1531,537,1476,561,1419,577,1362,586,1309,591"/>
+<area shape="rect" id="Node000020" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,632,1295,672"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="1308,657,1362,655,1420,647,1476,630,1528,603,1547,586,1564,566,1590,521,1607,478,1616,444,1621,446,1612,479,1595,524,1568,569,1551,590,1531,608,1478,635,1421,652,1363,660,1308,662"/>
+</map>
