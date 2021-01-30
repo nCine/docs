@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><strong>ncine.audio_device</strong></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.audio_device</code></h1>
+<p>The table containing the audio device related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.name">ncine.audio_device.name ()</a></td>
+	<td class="summary">Returns the name of the audio device</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.has_efx_extension">ncine.audio_device.has_efx_extension ()</a></td>
+	<td class="summary">Returns <code>true</code> if the OpenAL EFX extension is available</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_gain">ncine.audio_device.get_gain ()</a></td>
+	<td class="summary">Returns the listener gain value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.set_gain">ncine.audio_device.set_gain (gain)</a></td>
+	<td class="summary">Sets the listener gain value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_position">ncine.audio_device.get_position ()</a></td>
+	<td class="summary">Returns the listener position vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.set_position">ncine.audio_device.set_position (position)</a></td>
+	<td class="summary">Sets the listener position vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.set_position">ncine.audio_device.set_position (position_x, position_y, position_z)</a></td>
+	<td class="summary">Sets the listener position vector through components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_velocity">ncine.audio_device.get_velocity ()</a></td>
+	<td class="summary">Returns the listener velocity vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.set_velocity">ncine.audio_device.set_velocity (velocity)</a></td>
+	<td class="summary">Sets the listener velocity vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.set_position">ncine.audio_device.set_position (velocity_x, velocity_y, velocity_z)</a></td>
+	<td class="summary">Sets the listener velocity vector through components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_max_num_sources">ncine.audio_device.get_max_num_sources ()</a></td>
+	<td class="summary">Returns the maximum number of audio sources</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_num_available_sources">ncine.audio_device.get_num_available_sources ()</a></td>
+	<td class="summary">Returns the number of available audio sources</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_num_players">ncine.audio_device.get_num_players ()</a></td>
+	<td class="summary">Returns the number of active players</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.get_player">ncine.audio_device.get_player (index)</a></td>
+	<td class="summary">Returns the specified active player object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.pause_players">ncine.audio_device.pause_players ()</a></td>
+	<td class="summary">Pauses every player currently playing.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.stop_players">ncine.audio_device.stop_players ()</a></td>
+	<td class="summary">Stops every player currently playing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.resume_players">ncine.audio_device.resume_players ()</a></td>
+	<td class="summary">Resumes all and only the players that were paused by a <code>pause_players()</code> call</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.pause_device">ncine.audio_device.pause_device ()</a></td>
+	<td class="summary">Pauses all audio device activities using an OpenAL-soft extension (if available).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_device.resume_device">ncine.audio_device.resume_device ()</a></td>
+	<td class="summary">Resumes all audio device activities using an OpenAL-soft extension (if available).</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.audio_device.name"></a>
+    <strong>ncine.audio_device.name ()</strong>
+    </dt>
+    <dd>
+    Returns the name of the audio device
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.has_efx_extension"></a>
+    <strong>ncine.audio_device.has_efx_extension ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the OpenAL EFX extension is available
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_gain"></a>
+    <strong>ncine.audio_device.get_gain ()</strong>
+    </dt>
+    <dd>
+    Returns the listener gain value
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.set_gain"></a>
+    <strong>ncine.audio_device.set_gain (gain)</strong>
+    </dt>
+    <dd>
+    Sets the listener gain value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_position"></a>
+    <strong>ncine.audio_device.get_position ()</strong>
+    </dt>
+    <dd>
+    Returns the listener position vector
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.set_position"></a>
+    <strong>ncine.audio_device.set_position (position)</strong>
+    </dt>
+    <dd>
+    Sets the listener position vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">position</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.set_position"></a>
+    <strong>ncine.audio_device.set_position (position_x, position_y, position_z)</strong>
+    </dt>
+    <dd>
+    Sets the listener position vector through components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">position_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_velocity"></a>
+    <strong>ncine.audio_device.get_velocity ()</strong>
+    </dt>
+    <dd>
+    Returns the listener velocity vector
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.set_velocity"></a>
+    <strong>ncine.audio_device.set_velocity (velocity)</strong>
+    </dt>
+    <dd>
+    Sets the listener velocity vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">velocity</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.set_position"></a>
+    <strong>ncine.audio_device.set_position (velocity_x, velocity_y, velocity_z)</strong>
+    </dt>
+    <dd>
+    Sets the listener velocity vector through components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">velocity_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_max_num_sources"></a>
+    <strong>ncine.audio_device.get_max_num_sources ()</strong>
+    </dt>
+    <dd>
+    Returns the maximum number of audio sources
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_num_available_sources"></a>
+    <strong>ncine.audio_device.get_num_available_sources ()</strong>
+    </dt>
+    <dd>
+    Returns the number of available audio sources
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_num_players"></a>
+    <strong>ncine.audio_device.get_num_players ()</strong>
+    </dt>
+    <dd>
+    Returns the number of active players
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.get_player"></a>
+    <strong>ncine.audio_device.get_player (index)</strong>
+    </dt>
+    <dd>
+    Returns the specified active player object
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.audioplayer.audioplayerObj</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.pause_players"></a>
+    <strong>ncine.audio_device.pause_players ()</strong>
+    </dt>
+    <dd>
+    Pauses every player currently playing. </p>
+
+<p>Paused players can be resumed with <code>resume_players()</code>.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.stop_players"></a>
+    <strong>ncine.audio_device.stop_players ()</strong>
+    </dt>
+    <dd>
+    Stops every player currently playing
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.resume_players"></a>
+    <strong>ncine.audio_device.resume_players ()</strong>
+    </dt>
+    <dd>
+    Resumes all and only the players that were paused by a <code>pause_players()</code> call
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.pause_device"></a>
+    <strong>ncine.audio_device.pause_device ()</strong>
+    </dt>
+    <dd>
+    Pauses all audio device activities using an OpenAL-soft extension (if available). </p>
+
+<p>If the extension is not available, all players are paused.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_device.resume_device"></a>
+    <strong>ncine.audio_device.resume_device ()</strong>
+    </dt>
+    <dd>
+    Resumes all audio device activities using an OpenAL-soft extension (if available). </p>
+
+<p>If the extension is not available, all paused players resume playing.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

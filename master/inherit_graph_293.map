@@ -1,0 +1,35 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structnctl_1_1integral_constant.html" title=" " alt="" coords="5,399,168,439"/>
+<area shape="rect" id="Node000001" href="$structnctl_1_1is_class.html" title=" " alt="" coords="216,5,428,31"/>
+<area shape="poly" id="edge47_Node000000_Node000001" title=" " alt="" coords="87,385,94,313,114,221,130,172,152,124,180,80,214,41,233,29,236,33,218,45,184,83,156,127,135,174,119,222,99,314,92,386"/>
+<area shape="rect" id="Node000002" href="$structnctl_1_1is_destructible.html" title=" " alt="" coords="250,55,394,95"/>
+<area shape="poly" id="edge48_Node000000_Node000002" title=" " alt="" coords="90,385,101,325,124,250,140,211,161,173,185,137,214,105,230,94,249,85,251,90,233,98,218,109,189,140,165,175,145,213,129,252,107,327,95,386"/>
+<area shape="rect" id="Node000003" href="$structnctl_1_1is_integral.html" title=" " alt="" coords="245,120,399,145"/>
+<area shape="poly" id="edge49_Node000000_Node000003" title=" " alt="" coords="92,385,106,334,130,271,165,208,188,179,214,154,244,139,246,144,218,159,192,183,170,211,135,273,111,335,97,387"/>
+<area shape="rect" id="Node000004" href="$structnctl_1_1is_integral_3_01bool_01_4.html" title=" " alt="" coords="235,169,409,195"/>
+<area shape="poly" id="edge50_Node000000_Node000004" title=" " alt="" coords="96,385,113,343,138,294,171,245,214,204,235,193,238,197,218,208,175,249,142,297,117,346,101,387"/>
+<area shape="rect" id="Node000005" href="$structnctl_1_1is_integral_3_01char_01_4.html" title=" " alt="" coords="235,219,409,244"/>
+<area shape="poly" id="edge51_Node000000_Node000005" title=" " alt="" coords="102,386,146,318,178,283,215,253,238,242,240,247,217,258,181,286,151,321,106,389"/>
+<area shape="rect" id="Node000006" href="$structnctl_1_1is_integral_3_01int_01_4.html" title=" " alt="" coords="241,268,403,293"/>
+<area shape="poly" id="edge52_Node000000_Node000006" title=" " alt="" coords="112,387,157,343,185,321,215,302,243,291,245,296,217,307,188,325,160,347,116,391"/>
+<area shape="rect" id="Node000007" href="$structnctl_1_1is_integral_3_01long_01_4.html" title=" " alt="" coords="235,317,409,343"/>
+<area shape="poly" id="edge53_Node000000_Node000007" title=" " alt="" coords="134,390,215,353,257,340,259,345,217,358,136,395"/>
+<area shape="rect" id="Node000008" href="$structnctl_1_1is_integral_3_01long_01long_01_4.html" title=" " alt="" coords="243,367,401,407"/>
+<area shape="poly" id="edge54_Node000000_Node000008" title=" " alt="" coords="181,404,242,395,243,401,182,409"/>
+<area shape="rect" id="Node000009" href="$structnctl_1_1is_integral_3_01short_01int_01_4.html" title=" " alt="" coords="241,431,403,471"/>
+<area shape="poly" id="edge55_Node000000_Node000009" title=" " alt="" coords="182,430,241,438,240,443,181,435"/>
+<area shape="rect" id="Node000010" href="$structnctl_1_1is_integral_3_01unsigned_01char_01_4.html" title=" " alt="" coords="227,495,417,535"/>
+<area shape="poly" id="edge56_Node000000_Node000010" title=" " alt="" coords="137,443,217,481,250,493,248,498,215,486,135,448"/>
+<area shape="rect" id="Node000011" href="$structnctl_1_1is_integral_3_01unsigned_01int_01_4.html" title=" " alt="" coords="227,559,417,599"/>
+<area shape="poly" id="edge57_Node000000_Node000011" title=" " alt="" coords="114,449,159,498,187,523,217,545,241,557,239,562,215,550,183,528,155,502,110,452"/>
+<area shape="rect" id="Node000012" href="$structnctl_1_1is_integral_3_01unsigned_01long_01_4.html" title=" " alt="" coords="227,623,417,663"/>
+<area shape="poly" id="edge58_Node000000_Node000012" title=" " alt="" coords="104,451,122,488,147,531,179,573,218,609,237,621,235,625,214,613,175,577,143,534,117,491,99,453"/>
+<area shape="rect" id="Node000013" href="$structnctl_1_1is_integral_3_01unsigned_01long_01long_01_4.html" title=" " alt="" coords="227,687,417,727"/>
+<area shape="poly" id="edge59_Node000000_Node000013" title=" " alt="" coords="98,452,113,501,137,561,172,622,193,649,218,673,235,685,232,689,214,677,189,653,167,624,132,563,108,503,93,453"/>
+<area shape="rect" id="Node000014" href="$structnctl_1_1is_integral_3_01unsigned_01short_01int_01_4.html" title=" " alt="" coords="227,751,417,791"/>
+<area shape="poly" id="edge60_Node000000_Node000014" title=" " alt="" coords="94,452,106,513,128,590,144,630,164,669,189,705,218,737,234,749,231,753,214,741,184,709,160,672,139,632,123,592,101,515,89,453"/>
+<area shape="rect" id="Node000015" href="$structnctl_1_1is_same.html" title=" " alt="" coords="243,816,401,841"/>
+<area shape="poly" id="edge61_Node000000_Node000015" title=" " alt="" coords="92,453,98,526,118,620,134,670,155,718,183,762,218,801,244,817,241,821,214,805,179,766,151,720,129,671,113,621,93,526,86,453"/>
+<area shape="rect" id="Node000016" href="$structnctl_1_1is_same_3_01_t_00_01_t_01_4.html" title=" " alt="" coords="244,865,400,891"/>
+<area shape="poly" id="edge62_Node000000_Node000016" title=" " alt="" coords="90,453,94,535,100,586,111,642,127,699,150,754,180,806,218,851,245,867,242,872,214,855,175,809,145,757,122,701,106,643,95,587,89,535,85,454"/>
+</map>

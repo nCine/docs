@@ -1,0 +1,1499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><strong>ncine.scenenode</strong></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.scenenode</code></h1>
+<p>The table containing scenenode related functions.</p>
+<p> A scene node is the base class for many other classes that can be organized in a scene graph.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_parent">ncine.scenenode.get_parent (node)</a></td>
+	<td class="summary">Returns the parent node, if there is any</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_parent">ncine.scenenode.set_parent (node, parent)</a></td>
+	<td class="summary">Sets the parent node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.num_children">ncine.scenenode.num_children (node)</a></td>
+	<td class="summary">Returns the number of children</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_child">ncine.scenenode.get_child (node, index)</a></td>
+	<td class="summary">Returns the n-th child</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_children">ncine.scenenode.get_children (node)</a></td>
+	<td class="summary">Returns the array of children</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.add_child">ncine.scenenode.add_child (parent, node)</a></td>
+	<td class="summary">Adds a child node to the specified parent</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.remove_child">ncine.scenenode.remove_child (parent, node)</a></td>
+	<td class="summary">Removes a child node from the specified parent</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.remove_child_at">ncine.scenenode.remove_child_at (parent, index)</a></td>
+	<td class="summary">Removes a child node at the specified index from the specified parent</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.remove_all_children">ncine.scenenode.remove_all_children (parent)</a></td>
+	<td class="summary">Removes all children from the specified parent</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.unlink_child">ncine.scenenode.unlink_child (parent, node)</a></td>
+	<td class="summary">Unlinks a child node from the specified parent.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_child_order_index">ncine.scenenode.get_child_order_index (node)</a></td>
+	<td class="summary">Returns the order index of this node among its siblings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.swap_children">ncine.scenenode.swap_children (parent, firstIndex, secondIndex)</a></td>
+	<td class="summary">Swaps two children at the specified indices</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.swap_node_forward">ncine.scenenode.swap_node_forward (node)</a></td>
+	<td class="summary">Brings this node one node forward in the parent&rsquo;s list of children</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.swap_node_back">ncine.scenenode.swap_node_back (node)</a></td>
+	<td class="summary">Brings this node one node back in the parent&rsquo;s list of children</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_visit_order_state">ncine.scenenode.get_visit_order_state (node)</a></td>
+	<td class="summary">Returns the visit order state for the specified node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_visit_order_state">ncine.scenenode.set_visit_order_state (node, state)</a></td>
+	<td class="summary">Sets the visit order state for the specified node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_visit_order_index">ncine.scenenode.get_visit_order_index (node)</a></td>
+	<td class="summary">Returns the visit drawing order of the node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.is_enabled">ncine.scenenode.is_enabled (node)</a></td>
+	<td class="summary">Returns <code>true</code> if the node is both updating and drawing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_enabled">ncine.scenenode.set_enabled (node, enabled)</a></td>
+	<td class="summary">Enables or disables both node updating and drawing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_position">ncine.scenenode.get_position (node)</a></td>
+	<td class="summary">Returns the node position relative to its parent</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_position">ncine.scenenode.set_position (node, pos)</a></td>
+	<td class="summary">Sets a new position for the node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_position">ncine.scenenode.set_position (node, x, y)</a></td>
+	<td class="summary">Sets a new position for the node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_abs_anchor_point">ncine.scenenode.get_abs_anchor_point (node)</a></td>
+	<td class="summary">Returns the absolute transformation anchor point in pixels</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_abs_anchor_point">ncine.scenenode.set_abs_anchor_point (node, pos)</a></td>
+	<td class="summary">Sets the absolute transformation anchor point in pixels</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_abs_anchor_point">ncine.scenenode.set_abs_anchor_point (node, x, y)</a></td>
+	<td class="summary">Sets the absolute transformation anchor point in pixels</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_scale">ncine.scenenode.get_scale (node)</a></td>
+	<td class="summary">Returns the node scale factors</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_scale_x">ncine.scenenode.set_scale_x (node, factor)</a></td>
+	<td class="summary">Sets the node scale X factor</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_scale_y">ncine.scenenode.set_scale_y (node, factor)</a></td>
+	<td class="summary">Sets the node scale Y factor</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_scale">ncine.scenenode.set_scale (node, factor)</a></td>
+	<td class="summary">Sets both node scale factors to the specified value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_rotation">ncine.scenenode.get_rotation (node)</a></td>
+	<td class="summary">Returns the node rotation in degress</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_rotation">ncine.scenenode.set_rotation (node, rot)</a></td>
+	<td class="summary">Sets the node rotation in degrees</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_color">ncine.scenenode.get_color (node)</a></td>
+	<td class="summary">Returns the node color</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_color">ncine.scenenode.set_color (node, color)</a></td>
+	<td class="summary">Sets the node color</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_color">ncine.scenenode.set_color (node, red, green, blue, alpha)</a></td>
+	<td class="summary">Sets the node color through its components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_alpha">ncine.scenenode.get_alpha (node)</a></td>
+	<td class="summary">Returns the node alpha color component</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_alpha">ncine.scenenode.set_alpha (node, alpha)</a></td>
+	<td class="summary">Sets the node alpha color component</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_layer">ncine.scenenode.get_layer (node)</a></td>
+	<td class="summary">Returns the node rendering layer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.set_layer">ncine.scenenode.set_layer (node, layer)</a></td>
+	<td class="summary">Sets the node rendering layer.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.scenenode.get_last_frame_updated">ncine.scenenode.get_last_frame_updated (node)</a></td>
+	<td class="summary">Returns the last frame in which any of the viewports have updated this node</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#scenenodeObj">scenenodeObj</a></td>
+	<td class="summary">The light user data of a scenenode object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.visit_order_state">ncine.visit_order_state</a></td>
+	<td class="summary">Visit order states (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.scenenode.get_parent"></a>
+    <strong>ncine.scenenode.get_parent (node)</strong>
+    </dt>
+    <dd>
+    Returns the parent node, if there is any
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_parent"></a>
+    <strong>ncine.scenenode.set_parent (node, parent)</strong>
+    </dt>
+    <dd>
+    Sets the parent node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the parent has been set
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.num_children"></a>
+    <strong>ncine.scenenode.num_children (node)</strong>
+    </dt>
+    <dd>
+    Returns the number of children
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_child"></a>
+    <strong>ncine.scenenode.get_child (node, index)</strong>
+    </dt>
+    <dd>
+    Returns the n-th child
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_children"></a>
+    <strong>ncine.scenenode.get_children (node)</strong>
+    </dt>
+    <dd>
+    Returns the array of children
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj[]</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.add_child"></a>
+    <strong>ncine.scenenode.add_child (parent, node)</strong>
+    </dt>
+    <dd>
+    Adds a child node to the specified parent
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been added
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.remove_child"></a>
+    <strong>ncine.scenenode.remove_child (parent, node)</strong>
+    </dt>
+    <dd>
+    Removes a child node from the specified parent
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been removed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.remove_child_at"></a>
+    <strong>ncine.scenenode.remove_child_at (parent, index)</strong>
+    </dt>
+    <dd>
+    Removes a child node at the specified index from the specified parent
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been removed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.remove_all_children"></a>
+    <strong>ncine.scenenode.remove_all_children (parent)</strong>
+    </dt>
+    <dd>
+    Removes all children from the specified parent
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if there were at least one node to remove
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.unlink_child"></a>
+    <strong>ncine.scenenode.unlink_child (parent, node)</strong>
+    </dt>
+    <dd>
+    Unlinks a child node from the specified parent. </p>
+
+<p>The children of the unlinked node will be reparented with the grandparent node.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been unlinked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_child_order_index"></a>
+    <strong>ncine.scenenode.get_child_order_index (node)</strong>
+    </dt>
+    <dd>
+    Returns the order index of this node among its siblings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+        The order index or zero if the node has no parent
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.swap_children"></a>
+    <strong>ncine.scenenode.swap_children (parent, firstIndex, secondIndex)</strong>
+    </dt>
+    <dd>
+    Swaps two children at the specified indices
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">firstIndex</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">secondIndex</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the two nodes have been swapped
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.swap_node_forward"></a>
+    <strong>ncine.scenenode.swap_node_forward (node)</strong>
+    </dt>
+    <dd>
+    Brings this node one node forward in the parent&rsquo;s list of children
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been brought one position forward
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.swap_node_back"></a>
+    <strong>ncine.scenenode.swap_node_back (node)</strong>
+    </dt>
+    <dd>
+    Brings this node one node back in the parent&rsquo;s list of children
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        <code>true</code> if the node has been brought one position back
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_visit_order_state"></a>
+    <strong>ncine.scenenode.get_visit_order_state (node)</strong>
+    </dt>
+    <dd>
+    Returns the visit order state for the specified node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.visit_order_state</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_visit_order_state"></a>
+    <strong>ncine.scenenode.set_visit_order_state (node, state)</strong>
+    </dt>
+    <dd>
+    Sets the visit order state for the specified node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">state</span>
+            <span class="types"><span class="type">ncine.visit_order_state</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_visit_order_index"></a>
+    <strong>ncine.scenenode.get_visit_order_index (node)</strong>
+    </dt>
+    <dd>
+    Returns the visit drawing order of the node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.is_enabled"></a>
+    <strong>ncine.scenenode.is_enabled (node)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the node is both updating and drawing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_enabled"></a>
+    <strong>ncine.scenenode.set_enabled (node, enabled)</strong>
+    </dt>
+    <dd>
+    Enables or disables both node updating and drawing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_position"></a>
+    <strong>ncine.scenenode.get_position (node)</strong>
+    </dt>
+    <dd>
+    Returns the node position relative to its parent
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_position"></a>
+    <strong>ncine.scenenode.set_position (node, pos)</strong>
+    </dt>
+    <dd>
+    Sets a new position for the node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_position"></a>
+    <strong>ncine.scenenode.set_position (node, x, y)</strong>
+    </dt>
+    <dd>
+    Sets a new position for the node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_abs_anchor_point"></a>
+    <strong>ncine.scenenode.get_abs_anchor_point (node)</strong>
+    </dt>
+    <dd>
+    Returns the absolute transformation anchor point in pixels
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_abs_anchor_point"></a>
+    <strong>ncine.scenenode.set_abs_anchor_point (node, pos)</strong>
+    </dt>
+    <dd>
+    Sets the absolute transformation anchor point in pixels
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_abs_anchor_point"></a>
+    <strong>ncine.scenenode.set_abs_anchor_point (node, x, y)</strong>
+    </dt>
+    <dd>
+    Sets the absolute transformation anchor point in pixels
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_scale"></a>
+    <strong>ncine.scenenode.get_scale (node)</strong>
+    </dt>
+    <dd>
+    Returns the node scale factors
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_scale_x"></a>
+    <strong>ncine.scenenode.set_scale_x (node, factor)</strong>
+    </dt>
+    <dd>
+    Sets the node scale X factor
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_scale_y"></a>
+    <strong>ncine.scenenode.set_scale_y (node, factor)</strong>
+    </dt>
+    <dd>
+    Sets the node scale Y factor
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_scale"></a>
+    <strong>ncine.scenenode.set_scale (node, factor)</strong>
+    </dt>
+    <dd>
+    Sets both node scale factors to the specified value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_rotation"></a>
+    <strong>ncine.scenenode.get_rotation (node)</strong>
+    </dt>
+    <dd>
+    Returns the node rotation in degress
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_rotation"></a>
+    <strong>ncine.scenenode.set_rotation (node, rot)</strong>
+    </dt>
+    <dd>
+    Sets the node rotation in degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">rot</span>
+            <span class="types"><span class="type">number</span></span>
+         The amount of degrees
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_color"></a>
+    <strong>ncine.scenenode.get_color (node)</strong>
+    </dt>
+    <dd>
+    Returns the node color
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.color</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_color"></a>
+    <strong>ncine.scenenode.set_color (node, color)</strong>
+    </dt>
+    <dd>
+    Sets the node color
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">color</span>
+            <span class="types"><span class="type">ncine.color</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_color"></a>
+    <strong>ncine.scenenode.set_color (node, red, green, blue, alpha)</strong>
+    </dt>
+    <dd>
+    Sets the node color through its components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">red</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">green</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">blue</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">alpha</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_alpha"></a>
+    <strong>ncine.scenenode.get_alpha (node)</strong>
+    </dt>
+    <dd>
+    Returns the node alpha color component
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_alpha"></a>
+    <strong>ncine.scenenode.set_alpha (node, alpha)</strong>
+    </dt>
+    <dd>
+    Sets the node alpha color component
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">alpha</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_layer"></a>
+    <strong>ncine.scenenode.get_layer (node)</strong>
+    </dt>
+    <dd>
+    Returns the node rendering layer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.set_layer"></a>
+    <strong>ncine.scenenode.set_layer (node, layer)</strong>
+    </dt>
+    <dd>
+    Sets the node rendering layer. </p>
+
+<p>The lowest value (bottom) is 0 and the highest one (top) is 65535.</p>
+
+<p>When the value is 0, the final layer value is inherited from the parent.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">layer</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.scenenode.get_last_frame_updated"></a>
+    <strong>ncine.scenenode.get_last_frame_updated (node)</strong>
+    </dt>
+    <dd>
+    Returns the last frame in which any of the viewports have updated this node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">node</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">scenenodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "scenenodeObj"></a>
+    <strong>scenenodeObj</strong>
+    </dt>
+    <dd>
+    The light user data of a scenenode object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.visit_order_state"></a>
+    <strong>ncine.visit_order_state</strong>
+    </dt>
+    <dd>
+    Visit order states (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">ENABLED</span>
+
+
+        </li>
+        <li><span class="parameter">DISABLED</span>
+
+
+        </li>
+        <li><span class="parameter">SAME_AS_PARENT</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

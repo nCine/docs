@@ -1,0 +1,1914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#"> </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><strong>ncine.audio_player</strong></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.audio_player</code></h1>
+<p>The table containing audio player related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.has_source">ncine.audio_player.has_source (player)</a></td>
+	<td class="summary">Returns <code>true</code> if a valid OpenAL source is currently assigned to the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.source_id">ncine.audio_player.source_id (player)</a></td>
+	<td class="summary">Returns the OpenAL id of the player source</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.buffer_id">ncine.audio_player.buffer_id (player)</a></td>
+	<td class="summary">Returns the OpenAL id of the currently playing buffer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.bytes_per_sample">ncine.audio_player.bytes_per_sample (player)</a></td>
+	<td class="summary">Returns the number of bytes per sample</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.num_channels">ncine.audio_player.num_channels (player)</a></td>
+	<td class="summary">Returns the number of audio channels of the currently playing buffer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.frequency">ncine.audio_player.frequency (player)</a></td>
+	<td class="summary">Returns the samples frequency of the currently playing buffer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.num_samples">ncine.audio_player.num_samples (player)</a></td>
+	<td class="summary">Returns the number of samples</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.duration">ncine.audio_player.duration (player)</a></td>
+	<td class="summary">Returns the duration in seconds</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.buffer_size">ncine.audio_player.buffer_size (player)</a></td>
+	<td class="summary">Returns the size of the currently playing buffer in bytes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_sample_offset">ncine.audio_player.get_sample_offset (player)</a></td>
+	<td class="summary">Returns the size of the currently playing buffer in bytes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_sample_offset">ncine.audio_player.set_sample_offset (player, offset)</a></td>
+	<td class="summary">Returns the size of the currently playing buffer in bytes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.is_source_locked">ncine.audio_player.is_source_locked (player)</a></td>
+	<td class="summary">Returns <code>true</code> if the OpenAL source is locked</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_source_locked">ncine.audio_player.set_source_locked (player, locked)</a></td>
+	<td class="summary">Locks an OpenAL source so it is not released to the pool when the player stops</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.play">ncine.audio_player.play (player)</a></td>
+	<td class="summary">Starts playing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.pause">ncine.audio_player.pause (player)</a></td>
+	<td class="summary">Pauses playing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.stop">ncine.audio_player.stop (player)</a></td>
+	<td class="summary">Stops playing and rewinds</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.is_playing">ncine.audio_player.is_playing (player)</a></td>
+	<td class="summary">Returns <code>true</code> if the player is playing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.is_paused">ncine.audio_player.is_paused (player)</a></td>
+	<td class="summary">Returns <code>true</code> if the player is paused</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.is_stopped">ncine.audio_player.is_stopped (player)</a></td>
+	<td class="summary">Returns <code>true</code> if the player is stopped</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.is_looping">ncine.audio_player.is_looping (player)</a></td>
+	<td class="summary">Returns the looping property of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_looping">ncine.audio_player.set_looping (player, looping)</a></td>
+	<td class="summary">Sets the looping property of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_gain">ncine.audio_player.get_gain (player)</a></td>
+	<td class="summary">Returns the player gain value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_gain">ncine.audio_player.set_gain (player, gain)</a></td>
+	<td class="summary">Sets the player gain value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_pitch">ncine.audio_player.get_pitch (player)</a></td>
+	<td class="summary">Returns the player pitch value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_pitch">ncine.audio_player.set_pitch (player, pitch)</a></td>
+	<td class="summary">Sets the player pitch value</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_position">ncine.audio_player.get_position (player)</a></td>
+	<td class="summary">Returns the player position vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_position">ncine.audio_player.set_position (player, position)</a></td>
+	<td class="summary">Sets the player position vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_position">ncine.audio_player.set_position (player, position_x, position_y, position_z)</a></td>
+	<td class="summary">Sets the player position vector through components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_velocity">ncine.audio_player.get_velocity (player)</a></td>
+	<td class="summary">Returns the player velocity vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_velocity">ncine.audio_player.set_velocity (player, velocity)</a></td>
+	<td class="summary">Sets the player velocity vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_velocity">ncine.audio_player.set_velocity (player, velocity_x, velocity_y, velocity_z)</a></td>
+	<td class="summary">Sets the player velocity vector through components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_direction">ncine.audio_player.get_direction (player)</a></td>
+	<td class="summary">Returns the player direction vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_direction">ncine.audio_player.set_direction (player, direction)</a></td>
+	<td class="summary">Sets the player direction vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_direction">ncine.audio_player.set_direction (player, direction_x, direction_y, direction_z)</a></td>
+	<td class="summary">Sets the player direction vector through components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_cone_inner_angle">ncine.audio_player.get_cone_inner_angle (player)</a></td>
+	<td class="summary">Returns the player inside angle of the sound cone in degrees</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_cone_inner_angle">ncine.audio_player.set_cone_inner_angle (player, angle)</a></td>
+	<td class="summary">Sets the player inside angle of the sound cone in degrees</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_cone_outer_angle">ncine.audio_player.get_cone_outer_angle (player)</a></td>
+	<td class="summary">Returns the player outside angle of the sound cone in degrees</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_cone_outer_angle">ncine.audio_player.set_cone_outer_angle (player, angle)</a></td>
+	<td class="summary">Sets the player outside angle of the sound cone in degrees</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_cone_outer_gain">ncine.audio_player.get_cone_outer_gain (player)</a></td>
+	<td class="summary">Returns the player multiplication factor to determine the gain outside the cone</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_cone_outer_gain">ncine.audio_player.set_cone_outer_gain (player, gain)</a></td>
+	<td class="summary">Sets the player multiplication factor to determine the gain outside the cone</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audioplayerObj">audioplayerObj</a></td>
+	<td class="summary">The light user data of an audio player object</td>
+	</tr>
+</table>
+<h2><a href="#"> </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_air_absorption_factor">ncine.audio_player.get_air_absorption_factor (player)</a></td>
+	<td class="summary">Returns the player air absorption factor (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_air_absorption_factor">ncine.audio_player.set_air_absorption_factor (player, factor)</a></td>
+	<td class="summary">Sets the player air absorption factor (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_room_rolloff_factor">ncine.audio_player.get_room_rolloff_factor (player)</a></td>
+	<td class="summary">Returns the player room rolloff factor (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_room_rolloff_factor">ncine.audio_player.set_room_rolloff_factor (player, factor)</a></td>
+	<td class="summary">Sets the player room rolloff factor (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_cone_outer_gain_hf">ncine.audio_player.get_cone_outer_gain_hf (player)</a></td>
+	<td class="summary">Returns the player cone outer gain HF value (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_cone_outer_gain_hf">ncine.audio_player.set_cone_outer_gain_hf (player, gain)</a></td>
+	<td class="summary">Sets the player cone outer gain HF value (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.has_effect_slot">ncine.audio_player.has_effect_slot (player)</a></td>
+	<td class="summary">Returns <code>true</code> if a valid OpenAL effect slot is currently assigned to the player (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_effect_slot_id">ncine.audio_player.get_effect_slot_id (player)</a></td>
+	<td class="summary">Returns the OpenAL id of the effect slot (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.has_aux_filter">ncine.audio_player.has_aux_filter (player)</a></td>
+	<td class="summary">Returns <code>true</code> if a valid OpenAL auxiliary filter is currently assigned to the player (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_aux_filter_id">ncine.audio_player.get_aux_filter_id (player)</a></td>
+	<td class="summary">Returns the OpenAL id of the auxiliary filter (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.has_direct_filter">ncine.audio_player.has_direct_filter (player)</a></td>
+	<td class="summary">Returns <code>true</code> if a valid OpenAL direct filter is currently assigned to the player (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.get_direct_filter_id">ncine.audio_player.get_direct_filter_id (player)</a></td>
+	<td class="summary">Returns the OpenAL id of the direct filter (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_effect_slot">ncine.audio_player.set_effect_slot (player, audio_effect_slot, audio_filter)</a></td>
+	<td class="summary">Sets or removes an affect slot, with an optional auxiliary filter, to the player (only available with OpenAL EFX)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_player.set_direct_filter">ncine.audio_player.set_direct_filter (player, audio_filter)</a></td>
+	<td class="summary">Sets or removes the filter parameters from a filter object to the direct signal (only available with OpenAL EFX)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.audio_player.has_source"></a>
+    <strong>ncine.audio_player.has_source (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if a valid OpenAL source is currently assigned to the player
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.source_id"></a>
+    <strong>ncine.audio_player.source_id (player)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL id of the player source
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.buffer_id"></a>
+    <strong>ncine.audio_player.buffer_id (player)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL id of the currently playing buffer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.bytes_per_sample"></a>
+    <strong>ncine.audio_player.bytes_per_sample (player)</strong>
+    </dt>
+    <dd>
+    Returns the number of bytes per sample
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.num_channels"></a>
+    <strong>ncine.audio_player.num_channels (player)</strong>
+    </dt>
+    <dd>
+    Returns the number of audio channels of the currently playing buffer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.frequency"></a>
+    <strong>ncine.audio_player.frequency (player)</strong>
+    </dt>
+    <dd>
+    Returns the samples frequency of the currently playing buffer
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.num_samples"></a>
+    <strong>ncine.audio_player.num_samples (player)</strong>
+    </dt>
+    <dd>
+    Returns the number of samples
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.duration"></a>
+    <strong>ncine.audio_player.duration (player)</strong>
+    </dt>
+    <dd>
+    Returns the duration in seconds
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.buffer_size"></a>
+    <strong>ncine.audio_player.buffer_size (player)</strong>
+    </dt>
+    <dd>
+    Returns the size of the currently playing buffer in bytes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_sample_offset"></a>
+    <strong>ncine.audio_player.get_sample_offset (player)</strong>
+    </dt>
+    <dd>
+    Returns the size of the currently playing buffer in bytes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_sample_offset"></a>
+    <strong>ncine.audio_player.set_sample_offset (player, offset)</strong>
+    </dt>
+    <dd>
+    Returns the size of the currently playing buffer in bytes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">offset</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.is_source_locked"></a>
+    <strong>ncine.audio_player.is_source_locked (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the OpenAL source is locked
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_source_locked"></a>
+    <strong>ncine.audio_player.set_source_locked (player, locked)</strong>
+    </dt>
+    <dd>
+    Locks an OpenAL source so it is not released to the pool when the player stops
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">locked</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.play"></a>
+    <strong>ncine.audio_player.play (player)</strong>
+    </dt>
+    <dd>
+    Starts playing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.pause"></a>
+    <strong>ncine.audio_player.pause (player)</strong>
+    </dt>
+    <dd>
+    Pauses playing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.stop"></a>
+    <strong>ncine.audio_player.stop (player)</strong>
+    </dt>
+    <dd>
+    Stops playing and rewinds
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.is_playing"></a>
+    <strong>ncine.audio_player.is_playing (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the player is playing
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.is_paused"></a>
+    <strong>ncine.audio_player.is_paused (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the player is paused
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.is_stopped"></a>
+    <strong>ncine.audio_player.is_stopped (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the player is stopped
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.is_looping"></a>
+    <strong>ncine.audio_player.is_looping (player)</strong>
+    </dt>
+    <dd>
+    Returns the looping property of the player
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_looping"></a>
+    <strong>ncine.audio_player.set_looping (player, looping)</strong>
+    </dt>
+    <dd>
+    Sets the looping property of the player
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">looping</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_gain"></a>
+    <strong>ncine.audio_player.get_gain (player)</strong>
+    </dt>
+    <dd>
+    Returns the player gain value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_gain"></a>
+    <strong>ncine.audio_player.set_gain (player, gain)</strong>
+    </dt>
+    <dd>
+    Sets the player gain value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_pitch"></a>
+    <strong>ncine.audio_player.get_pitch (player)</strong>
+    </dt>
+    <dd>
+    Returns the player pitch value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_pitch"></a>
+    <strong>ncine.audio_player.set_pitch (player, pitch)</strong>
+    </dt>
+    <dd>
+    Sets the player pitch value
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">pitch</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_position"></a>
+    <strong>ncine.audio_player.get_position (player)</strong>
+    </dt>
+    <dd>
+    Returns the player position vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_position"></a>
+    <strong>ncine.audio_player.set_position (player, position)</strong>
+    </dt>
+    <dd>
+    Sets the player position vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_position"></a>
+    <strong>ncine.audio_player.set_position (player, position_x, position_y, position_z)</strong>
+    </dt>
+    <dd>
+    Sets the player position vector through components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">position_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_velocity"></a>
+    <strong>ncine.audio_player.get_velocity (player)</strong>
+    </dt>
+    <dd>
+    Returns the player velocity vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_velocity"></a>
+    <strong>ncine.audio_player.set_velocity (player, velocity)</strong>
+    </dt>
+    <dd>
+    Sets the player velocity vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">velocity</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_velocity"></a>
+    <strong>ncine.audio_player.set_velocity (player, velocity_x, velocity_y, velocity_z)</strong>
+    </dt>
+    <dd>
+    Sets the player velocity vector through components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_direction"></a>
+    <strong>ncine.audio_player.get_direction (player)</strong>
+    </dt>
+    <dd>
+    Returns the player direction vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_direction"></a>
+    <strong>ncine.audio_player.set_direction (player, direction)</strong>
+    </dt>
+    <dd>
+    Sets the player direction vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">direction</span>
+            <span class="types"><span class="type">ncine.vec3</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_direction"></a>
+    <strong>ncine.audio_player.set_direction (player, direction_x, direction_y, direction_z)</strong>
+    </dt>
+    <dd>
+    Sets the player direction vector through components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">direction_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">direction_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">direction_z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_cone_inner_angle"></a>
+    <strong>ncine.audio_player.get_cone_inner_angle (player)</strong>
+    </dt>
+    <dd>
+    Returns the player inside angle of the sound cone in degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_cone_inner_angle"></a>
+    <strong>ncine.audio_player.set_cone_inner_angle (player, angle)</strong>
+    </dt>
+    <dd>
+    Sets the player inside angle of the sound cone in degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">angle</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_cone_outer_angle"></a>
+    <strong>ncine.audio_player.get_cone_outer_angle (player)</strong>
+    </dt>
+    <dd>
+    Returns the player outside angle of the sound cone in degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_cone_outer_angle"></a>
+    <strong>ncine.audio_player.set_cone_outer_angle (player, angle)</strong>
+    </dt>
+    <dd>
+    Sets the player outside angle of the sound cone in degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">angle</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_cone_outer_gain"></a>
+    <strong>ncine.audio_player.get_cone_outer_gain (player)</strong>
+    </dt>
+    <dd>
+    Returns the player multiplication factor to determine the gain outside the cone
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_cone_outer_gain"></a>
+    <strong>ncine.audio_player.set_cone_outer_gain (player, gain)</strong>
+    </dt>
+    <dd>
+    Sets the player multiplication factor to determine the gain outside the cone
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audioplayerObj"></a>
+    <strong>audioplayerObj</strong>
+    </dt>
+    <dd>
+    The light user data of an audio player object
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name=""></a> </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.audio_player.get_air_absorption_factor"></a>
+    <strong>ncine.audio_player.get_air_absorption_factor (player)</strong>
+    </dt>
+    <dd>
+    Returns the player air absorption factor (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_air_absorption_factor"></a>
+    <strong>ncine.audio_player.set_air_absorption_factor (player, factor)</strong>
+    </dt>
+    <dd>
+    Sets the player air absorption factor (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_room_rolloff_factor"></a>
+    <strong>ncine.audio_player.get_room_rolloff_factor (player)</strong>
+    </dt>
+    <dd>
+    Returns the player room rolloff factor (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_room_rolloff_factor"></a>
+    <strong>ncine.audio_player.set_room_rolloff_factor (player, factor)</strong>
+    </dt>
+    <dd>
+    Sets the player room rolloff factor (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_cone_outer_gain_hf"></a>
+    <strong>ncine.audio_player.get_cone_outer_gain_hf (player)</strong>
+    </dt>
+    <dd>
+    Returns the player cone outer gain HF value (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_cone_outer_gain_hf"></a>
+    <strong>ncine.audio_player.set_cone_outer_gain_hf (player, gain)</strong>
+    </dt>
+    <dd>
+    Sets the player cone outer gain HF value (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">gain</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.has_effect_slot"></a>
+    <strong>ncine.audio_player.has_effect_slot (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if a valid OpenAL effect slot is currently assigned to the player (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_effect_slot_id"></a>
+    <strong>ncine.audio_player.get_effect_slot_id (player)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL id of the effect slot (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.has_aux_filter"></a>
+    <strong>ncine.audio_player.has_aux_filter (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if a valid OpenAL auxiliary filter is currently assigned to the player (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_aux_filter_id"></a>
+    <strong>ncine.audio_player.get_aux_filter_id (player)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL id of the auxiliary filter (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.has_direct_filter"></a>
+    <strong>ncine.audio_player.has_direct_filter (player)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if a valid OpenAL direct filter is currently assigned to the player (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.get_direct_filter_id"></a>
+    <strong>ncine.audio_player.get_direct_filter_id (player)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL id of the direct filter (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_effect_slot"></a>
+    <strong>ncine.audio_player.set_effect_slot (player, audio_effect_slot, audio_filter)</strong>
+    </dt>
+    <dd>
+    Sets or removes an affect slot, with an optional auxiliary filter, to the player (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">audio_effect_slot</span>
+            <span class="types"><span class="type">ncine.audio_effect_slot.audioeffectslotObj</span> or <span class="type">nil</span></span>
+
+
+        </li>
+        <li><span class="parameter">audio_filter</span>
+            <span class="types"><span class="type">ncine.audio_filter.audiofilterObj</span> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_player.set_direct_filter"></a>
+    <strong>ncine.audio_player.set_direct_filter (player, audio_filter)</strong>
+    </dt>
+    <dd>
+    Sets or removes the filter parameters from a filter object to the direct signal (only available with OpenAL EFX)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">player</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_player.html#audioplayerObj">audioplayerObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">audio_filter</span>
+            <span class="types"><span class="type">ncine.audio_filter.audiofilterObj</span> or <span class="type">nil</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

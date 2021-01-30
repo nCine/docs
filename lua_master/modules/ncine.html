@@ -1,0 +1,1092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#input_event_handler_Functions">input_event_handler Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>ncine</strong></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine</code></h1>
+<p>The entry point for the Lua API of the nCine.</p>
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.html#start">start</a> if needed.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#on_pre_init">on_pre_init (cfg)</a></td>
+	<td class="summary">A callback that is called once, before the nCine is initialized.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_init">on_init ()</a></td>
+	<td class="summary">A callback that is called once, after the nCine has been initialized.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_frame_start">on_frame_start ()</a></td>
+	<td class="summary">A callback that is called every time a new frame starts</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_post_update">on_post_update ()</a></td>
+	<td class="summary">A callback that is called every time the scenegraph has been traversed and all nodes have been transformed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_draw_viewport">on_draw_viewport (viewport)</a></td>
+	<td class="summary">A callback that is called every time a viewport is going to be drawn</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_frame_end">on_frame_end ()</a></td>
+	<td class="summary">A callback that is called at the end of each frame, just before swapping drawing buffers</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_resize_window">on_resize_window (width, height)</a></td>
+	<td class="summary">A callback that is called every time the window is resized (by the system or the user)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_change_scaling_factor">on_change_scaling_factor (factor)</a></td>
+	<td class="summary">A callback that is called every time the window scaling factor changes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_shutdown">on_shutdown ()</a></td>
+	<td class="summary">A callback that is called once, before the nCine shuts down</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_suspend">on_suspend ()</a></td>
+	<td class="summary">A callback that is called every time the application needs to be suspended</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_resume">on_resume ()</a></td>
+	<td class="summary">A callback that is called every time the application resumes from suspension</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start">start ()</a></td>
+	<td class="summary">Starts the application game loop</p>
+
+<p>This function should be called after defining the required callback functions, and only if launching the script from the stand-alone <code>lua</code> interpreter.</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine">ncine</a></td>
+	<td class="summary">A table of useful run-time constants</td>
+	</tr>
+</table>
+<h2><a href="#input_event_handler_Functions">input_event_handler Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#on_key_pressed">on_key_pressed (event)</a></td>
+	<td class="summary">Callback function called every time a key is pressed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_key_released">on_key_released (event)</a></td>
+	<td class="summary">Callback function called every time a key is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_text_input">on_text_input (event)</a></td>
+	<td class="summary">Callback function called every time a text input is generated</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_touch_down">on_touch_down (event)</a></td>
+	<td class="summary">Callback function called every time the first screen touch is made</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_touch_up">on_touch_up (event)</a></td>
+	<td class="summary">Callback function called every time the last screen touch is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_touch_move">on_touch_move (event)</a></td>
+	<td class="summary">Callback function called every time a screen touch is moved</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_pointer_down">on_pointer_down (event)</a></td>
+	<td class="summary">Callback function called every time a screen touch different than the first one is made</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_pointer_up">on_pointer_up (event)</a></td>
+	<td class="summary">Callback function called every time a screen touch different than the last one is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_acceleration">on_acceleration (event)</a></td>
+	<td class="summary">Callback function called at fixed time with the updated reading from the accelerometer sensor</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_mouse_button_pressed">on_mouse_button_pressed (event)</a></td>
+	<td class="summary">Callback function called every time a mouse button is pressed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_mouse_button_released">on_mouse_button_released (event)</a></td>
+	<td class="summary">Callback function called every time a mouse button is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_mouse_moved">on_mouse_moved (event)</a></td>
+	<td class="summary">Callback function called every time the mouse is moved</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_scroll_input">on_scroll_input (event)</a></td>
+	<td class="summary">Callback function called every time a scroll input occurs (mouse wheel, touchpad gesture, etc.)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_button_pressed">on_joy_button_pressed (event)</a></td>
+	<td class="summary">Callback function called every time a joystick button is pressed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_button_released">on_joy_button_released (event)</a></td>
+	<td class="summary">Callback function called every time a joystick button is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_hat_moved">on_joy_hat_moved (event)</a></td>
+	<td class="summary">Callback function called every time a joystick hat is moved</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_axis_moved">on_joy_axis_moved (event)</a></td>
+	<td class="summary">Callback function called every time a joystick axis is moved</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joymapped_button_pressed">on_joymapped_button_pressed (event)</a></td>
+	<td class="summary">Callback function called every time a button of a joystick with mapping is pressed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joymapped_button_released">on_joymapped_button_released (event)</a></td>
+	<td class="summary">Callback function called every time a button of a joystick with mapping is released</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joymapped_axis_moved">on_joymapped_axis_moved (event)</a></td>
+	<td class="summary">Callback function called every time an axis of a joystick with mapping is moved</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_connected">on_joy_connected (event)</a></td>
+	<td class="summary">Callback function called every time a joystick is connected</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_joy_disconnected">on_joy_disconnected (event)</a></td>
+	<td class="summary">Callback function called every time a joystick is disconnected</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#on_quit_request">on_quit_request ()</a></td>
+	<td class="summary">Callback function called when the system sends a quit event, for example when the user clicks the window close button.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "on_pre_init"></a>
+    <strong>on_pre_init (cfg)</strong>
+    </dt>
+    <dd>
+    A callback that is called once, before the nCine is initialized. </p>
+
+<p>It can be used to change the initialization settings.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cfg</span>
+            <span class="types"><span class="type">ncine.app_configuration</span></span>
+         The configuration table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_init"></a>
+    <strong>on_init ()</strong>
+    </dt>
+    <dd>
+    A callback that is called once, after the nCine has been initialized. </p>
+
+<p>It can be used to construct the object required by the scene.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_frame_start"></a>
+    <strong>on_frame_start ()</strong>
+    </dt>
+    <dd>
+    A callback that is called every time a new frame starts
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_post_update"></a>
+    <strong>on_post_update ()</strong>
+    </dt>
+    <dd>
+    A callback that is called every time the scenegraph has been traversed and all nodes have been transformed
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_draw_viewport"></a>
+    <strong>on_draw_viewport (viewport)</strong>
+    </dt>
+    <dd>
+    A callback that is called every time a viewport is going to be drawn
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">viewport</span>
+            <span class="types"><span class="type">viewportObj</span></span>
+         The viewport currently being drawn
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_frame_end"></a>
+    <strong>on_frame_end ()</strong>
+    </dt>
+    <dd>
+    A callback that is called at the end of each frame, just before swapping drawing buffers
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_resize_window"></a>
+    <strong>on_resize_window (width, height)</strong>
+    </dt>
+    <dd>
+    A callback that is called every time the window is resized (by the system or the user)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">width</span>
+            <span class="types"><span class="type">integer</span></span>
+         The new width of the window
+        </li>
+        <li><span class="parameter">height</span>
+            <span class="types"><span class="type">integer</span></span>
+         The new height of the window
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_change_scaling_factor"></a>
+    <strong>on_change_scaling_factor (factor)</strong>
+    </dt>
+    <dd>
+    A callback that is called every time the window scaling factor changes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">factor</span>
+            <span class="types"><span class="type">number</span></span>
+         The new scaling factor
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_shutdown"></a>
+    <strong>on_shutdown ()</strong>
+    </dt>
+    <dd>
+    A callback that is called once, before the nCine shuts down It can be used to destroy objects constructed in <code>ncine.on_init()</code>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_suspend"></a>
+    <strong>on_suspend ()</strong>
+    </dt>
+    <dd>
+    A callback that is called every time the application needs to be suspended
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_resume"></a>
+    <strong>on_resume ()</strong>
+    </dt>
+    <dd>
+    A callback that is called every time the application resumes from suspension
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "start"></a>
+    <strong>start ()</strong>
+    </dt>
+    <dd>
+    <p>Starts the application game loop</p>
+
+<p>This function should be called after defining the required callback functions, and only if launching the script from the stand-alone <code>lua</code> interpreter. </p>
+
+<p>For example:</p>
+
+<pre><code>if ncine == nil then
+  local names = { "ncine", "ncine_d", "libncine", "libncine_d" }
+  for i, name in ipairs(names) do
+    local ok, mod = pcall(require, name)
+    if ok then
+      break
+    end
+  end
+  needs_start = true
+end
+
+function nc.on_init()
+  [...]
+end
+
+function nc.on_frame_start()
+  [...]
+end
+
+if needs_start then
+  nc.start()
+end
+</code></pre>
+
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine"></a>
+    <strong>ncine</strong>
+    </dt>
+    <dd>
+    A table of useful run-time constants
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">_VERSION</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The version string
+        </li>
+        <li><span class="parameter">_GITREVCOUNT</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The git revision count
+        </li>
+        <li><span class="parameter">_GITSHORTHASH</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The git short hash
+        </li>
+        <li><span class="parameter">_GITLATCOMMITDATE</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The git last commit date
+        </li>
+        <li><span class="parameter">_GITBRANCH</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The git branch
+        </li>
+        <li><span class="parameter">_GITTAG</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The git tag
+        </li>
+        <li><span class="parameter">MINGW</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on MinGW
+        </li>
+        <li><span class="parameter">WINDOWS</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on Windows
+        </li>
+        <li><span class="parameter">MACOS</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on macOS
+        </li>
+        <li><span class="parameter">ANDROID</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on Android
+        </li>
+        <li><span class="parameter">EMSCRIPTEN</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on the web via Emscripten
+        </li>
+        <li><span class="parameter">LINUX</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if running on Linux
+        </li>
+        <li><span class="parameter">DEBUG</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if linked with a debug build of the nCine library
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="input_event_handler_Functions"></a>input_event_handler Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "on_key_pressed"></a>
+    <strong>on_key_pressed (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a key is pressed
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">keyboard_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_key_released"></a>
+    <strong>on_key_released (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a key is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">keyboard_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_text_input"></a>
+    <strong>on_text_input (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a text input is generated
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">text_input_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_touch_down"></a>
+    <strong>on_touch_down (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time the first screen touch is made
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">touch_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_touch_up"></a>
+    <strong>on_touch_up (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time the last screen touch is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">touch_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_touch_move"></a>
+    <strong>on_touch_move (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a screen touch is moved
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">touch_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_pointer_down"></a>
+    <strong>on_pointer_down (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a screen touch different than the first one is made
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">touch_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_pointer_up"></a>
+    <strong>on_pointer_up (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a screen touch different than the last one is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">touch_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_acceleration"></a>
+    <strong>on_acceleration (event)</strong>
+    </dt>
+    <dd>
+    Callback function called at fixed time with the updated reading from the accelerometer sensor
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">accelerometer_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_mouse_button_pressed"></a>
+    <strong>on_mouse_button_pressed (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a mouse button is pressed
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">mouse_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_mouse_button_released"></a>
+    <strong>on_mouse_button_released (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a mouse button is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">mouse_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_mouse_moved"></a>
+    <strong>on_mouse_moved (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time the mouse is moved
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">mouse_state</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_scroll_input"></a>
+    <strong>on_scroll_input (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a scroll input occurs (mouse wheel, touchpad gesture, etc.)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">scroll_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_button_pressed"></a>
+    <strong>on_joy_button_pressed (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick button is pressed
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_button_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_button_released"></a>
+    <strong>on_joy_button_released (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick button is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_button_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_hat_moved"></a>
+    <strong>on_joy_hat_moved (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick hat is moved
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_hat_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_axis_moved"></a>
+    <strong>on_joy_axis_moved (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick axis is moved
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_axis_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joymapped_button_pressed"></a>
+    <strong>on_joymapped_button_pressed (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a button of a joystick with mapping is pressed
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joymapped_button_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joymapped_button_released"></a>
+    <strong>on_joymapped_button_released (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a button of a joystick with mapping is released
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joymapped_button_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joymapped_axis_moved"></a>
+    <strong>on_joymapped_axis_moved (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time an axis of a joystick with mapping is moved
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joymapped_axis_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_connected"></a>
+    <strong>on_joy_connected (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick is connected
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_connection_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_joy_disconnected"></a>
+    <strong>on_joy_disconnected (event)</strong>
+    </dt>
+    <dd>
+    Callback function called every time a joystick is disconnected
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+            <span class="types"><span class="type">joy_connection_event</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "on_quit_request"></a>
+    <strong>on_quit_request ()</strong>
+    </dt>
+    <dd>
+    Callback function called when the system sends a quit event, for example when the user clicks the window close button. </p>
+
+<p>Returns <code>true</code> if the application should quit.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

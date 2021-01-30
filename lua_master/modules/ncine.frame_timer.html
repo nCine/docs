@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><strong>ncine.frame_timer</strong></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.frame_timer</code></h1>
+<p>The table containing frame timer related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.total_number_frames">ncine.frame_timer.total_number_frames ()</a></td>
+	<td class="summary">Returns the total number of frames rendered since the application started</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.last_frame_time">ncine.frame_timer.last_frame_time ()</a></td>
+	<td class="summary">Returns the time in seconds that last frame took to complete</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.current_frame_time">ncine.frame_timer.current_frame_time ()</a></td>
+	<td class="summary">Returns the elapsed time in seconds since current frame started</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.average_fps">ncine.frame_timer.average_fps ()</a></td>
+	<td class="summary">Returns the average FPS during the update interval</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.average_frame_time">ncine.frame_timer.average_frame_time ()</a></td>
+	<td class="summary">Returns the average frame time in seconds during the update interval</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.is_average_enabled">ncine.frame_timer.is_average_enabled ()</a></td>
+	<td class="summary">Returns <code>true</code> if the average FPS calculation is enabled</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.is_logging_enabled">ncine.frame_timer.is_logging_enabled ()</a></td>
+	<td class="summary">Returns <code>true</code> if logging of averages is enabled</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.get_average_interval">ncine.frame_timer.get_average_interval ()</a></td>
+	<td class="summary">Returns the number of seconds between two average FPS calculations</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.set_average_interval">ncine.frame_timer.set_average_interval (interval)</a></td>
+	<td class="summary">Sets the number of seconds between two average FPS calculations</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.get_logging_interval">ncine.frame_timer.get_logging_interval ()</a></td>
+	<td class="summary">Returns the number of seconds between two logging events.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.set_logging_interval">ncine.frame_timer.set_logging_interval (interval)</a></td>
+	<td class="summary">Sets the number of seconds between two logging events</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.get_log_level">ncine.frame_timer.get_log_level ()</a></td>
+	<td class="summary">Returns the level for the logging events</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.frame_timer.set_log_level">ncine.frame_timer.set_log_level (log_level)</a></td>
+	<td class="summary">Sets the level for the logging events</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.frame_timer.total_number_frames"></a>
+    <strong>ncine.frame_timer.total_number_frames ()</strong>
+    </dt>
+    <dd>
+    Returns the total number of frames rendered since the application started
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.last_frame_time"></a>
+    <strong>ncine.frame_timer.last_frame_time ()</strong>
+    </dt>
+    <dd>
+    Returns the time in seconds that last frame took to complete Also called delta time.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.current_frame_time"></a>
+    <strong>ncine.frame_timer.current_frame_time ()</strong>
+    </dt>
+    <dd>
+    Returns the elapsed time in seconds since current frame started
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.average_fps"></a>
+    <strong>ncine.frame_timer.average_fps ()</strong>
+    </dt>
+    <dd>
+    Returns the average FPS during the update interval
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.average_frame_time"></a>
+    <strong>ncine.frame_timer.average_frame_time ()</strong>
+    </dt>
+    <dd>
+    Returns the average frame time in seconds during the update interval
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.is_average_enabled"></a>
+    <strong>ncine.frame_timer.is_average_enabled ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the average FPS calculation is enabled
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.is_logging_enabled"></a>
+    <strong>ncine.frame_timer.is_logging_enabled ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if logging of averages is enabled
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.get_average_interval"></a>
+    <strong>ncine.frame_timer.get_average_interval ()</strong>
+    </dt>
+    <dd>
+    Returns the number of seconds between two average FPS calculations
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.set_average_interval"></a>
+    <strong>ncine.frame_timer.set_average_interval (interval)</strong>
+    </dt>
+    <dd>
+    Sets the number of seconds between two average FPS calculations
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">interval</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.get_logging_interval"></a>
+    <strong>ncine.frame_timer.get_logging_interval ()</strong>
+    </dt>
+    <dd>
+    Returns the number of seconds between two logging events. </p>
+
+<p>A different and independent average is calculated over this time interval.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.set_logging_interval"></a>
+    <strong>ncine.frame_timer.set_logging_interval (interval)</strong>
+    </dt>
+    <dd>
+    Sets the number of seconds between two logging events
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">interval</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.get_log_level"></a>
+    <strong>ncine.frame_timer.get_log_level ()</strong>
+    </dt>
+    <dd>
+    Returns the level for the logging events
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.log_level</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.frame_timer.set_log_level"></a>
+    <strong>ncine.frame_timer.set_log_level (log_level)</strong>
+    </dt>
+    <dd>
+    Sets the level for the logging events
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">log_level</span>
+            <span class="types"><span class="type">ncine.log_level</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

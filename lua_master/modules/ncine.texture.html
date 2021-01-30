@@ -1,0 +1,1135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><strong>ncine.texture</strong></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.texture</code></h1>
+<p>The table containing texture related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.new">ncine.texture.new (filename)</a></td>
+	<td class="summary">Constructs a texture object from an image file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.new_init">ncine.texture.new_init (name, format, mip_count, size)</a></td>
+	<td class="summary">Constructs a blank texture.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.new_init">ncine.texture.new_init (name, format, mip_count, x, y)</a></td>
+	<td class="summary">Constructs a blank texture.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.delete">ncine.texture.delete (texture)</a></td>
+	<td class="summary">Destroys a texture object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.init">ncine.texture.init (texture, name, format, mip_count, size)</a></td>
+	<td class="summary">Initializes a texture object to a blank texture</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.init">ncine.texture.init (texture, name, format, mip_count, x, y)</a></td>
+	<td class="summary">Initializes a texture object to a blank texture</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_width">ncine.texture.get_width (texture)</a></td>
+	<td class="summary">Returns the texture width</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_height">ncine.texture.get_height (texture)</a></td>
+	<td class="summary">Returns the texture height</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.mip_levels">ncine.texture.mip_levels (texture)</a></td>
+	<td class="summary">Returns the number of MIP map levels</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.is_compressed">ncine.texture.is_compressed (texture)</a></td>
+	<td class="summary">Returns <code>true</code> if the texture holds compressed data</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_format">ncine.texture.get_format (texture)</a></td>
+	<td class="summary">Returns the texture format</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.num_channels">ncine.texture.num_channels (texture)</a></td>
+	<td class="summary">Returns the number of color channels</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.datasize">ncine.texture.datasize (texture)</a></td>
+	<td class="summary">Returns the amount of video memory needed to load the texture</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_min_filtering">ncine.texture.get_min_filtering (texture)</a></td>
+	<td class="summary">Returns the filtering mode used for minification</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_mag_filtering">ncine.texture.get_mag_filtering (texture)</a></td>
+	<td class="summary">Returns the filtering mode used for magnification</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_wrap">ncine.texture.get_wrap (texture)</a></td>
+	<td class="summary">Returns the wrap mode used for the <code>s</code> and <code>t</code> directions</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_min_filtering">ncine.texture.set_min_filtering (texture, filtering)</a></td>
+	<td class="summary">Sets the filtering mode used for minification</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_mag_filtering">ncine.texture.set_mag_filtering (texture, filtering)</a></td>
+	<td class="summary">Sets the filtering mode used for magnification</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_wrap">ncine.texture.set_wrap (texture, wrap)</a></td>
+	<td class="summary">Sets the wrap mode used for the <code>s</code> and <code>t</code> directions</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.is_chromakey_enabled">ncine.texture.is_chromakey_enabled (texture)</a></td>
+	<td class="summary">Returns <code>true</code> if chroma key transparency will be used when loading</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.get_chromakey_color">ncine.texture.get_chromakey_color (texture)</a></td>
+	<td class="summary">Returns the color treated as transparent when loading a texture</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_chromakey_enabled">ncine.texture.set_chromakey_enabled (texture, state)</a></td>
+	<td class="summary">Sets the chroma key transparency state to use when loading</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_chromakey_color">ncine.texture.set_chromakey_color (texture, color)</a></td>
+	<td class="summary">Sets the color to be treated as transparent when loading a texture through a <code>ncine.color</code> table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_chromakey_color">ncine.texture.set_chromakey_color (texture, r, g, b, a)</a></td>
+	<td class="summary">Sets the color to be treated as transparent when loading a texture through color components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture.set_gltexture_label">ncine.texture.set_gltexture_label (texture, label)</a></td>
+	<td class="summary">Sets the OpenGL object label for the texture</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#textureObj">textureObj</a></td>
+	<td class="summary">The light user data of a texture object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.tex_format">ncine.tex_format</a></td>
+	<td class="summary">Texture formats (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.tex_filtering">ncine.tex_filtering</a></td>
+	<td class="summary">Texture filtering modes (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.tex_wrap">ncine.tex_wrap</a></td>
+	<td class="summary">Texture wrap modes (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.texture.new"></a>
+    <strong>ncine.texture.new (filename)</strong>
+    </dt>
+    <dd>
+    Constructs a texture object from an image file. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.texture.html#ncine.texture.delete">ncine.texture.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">filename</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The path to an image file
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+        A new texture object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.new_init"></a>
+    <strong>ncine.texture.new_init (name, format, mip_count, size)</strong>
+    </dt>
+    <dd>
+    Constructs a blank texture. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.texture.html#ncine.texture.delete">ncine.texture.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name for the new texture object
+        </li>
+        <li><span class="parameter">format</span>
+            <span class="types"><span class="type">ncine.tex_format</span></span>
+         The texture format
+        </li>
+        <li><span class="parameter">mip_count</span>
+            <span class="types"><span class="type">integer</span></span>
+         The number of MIP map levels
+        </li>
+        <li><span class="parameter">size</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+         The texture size
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+        A new texture object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.new_init"></a>
+    <strong>ncine.texture.new_init (name, format, mip_count, x, y)</strong>
+    </dt>
+    <dd>
+    Constructs a blank texture. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.texture.html#ncine.texture.delete">ncine.texture.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name for the new texture object
+        </li>
+        <li><span class="parameter">format</span>
+            <span class="types"><span class="type">ncine.tex_format</span></span>
+         The texture format
+        </li>
+        <li><span class="parameter">mip_count</span>
+            <span class="types"><span class="type">integer</span></span>
+         The number of MIP map levels
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+         The texture width
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+         The texture height
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+        A new texture object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.delete"></a>
+    <strong>ncine.texture.delete (texture)</strong>
+    </dt>
+    <dd>
+    Destroys a texture object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+         The texture object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.init"></a>
+    <strong>ncine.texture.init (texture, name, format, mip_count, size)</strong>
+    </dt>
+    <dd>
+    Initializes a texture object to a blank texture
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name for the new texture object
+        </li>
+        <li><span class="parameter">format</span>
+            <span class="types"><span class="type">ncine.tex_format</span></span>
+         The texture format
+        </li>
+        <li><span class="parameter">mip_count</span>
+            <span class="types"><span class="type">integer</span></span>
+         The number of MIP map levels
+        </li>
+        <li><span class="parameter">size</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+         The texture size
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.init"></a>
+    <strong>ncine.texture.init (texture, name, format, mip_count, x, y)</strong>
+    </dt>
+    <dd>
+    Initializes a texture object to a blank texture
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name for the new texture object
+        </li>
+        <li><span class="parameter">format</span>
+            <span class="types"><span class="type">ncine.tex_format</span></span>
+         The texture format
+        </li>
+        <li><span class="parameter">mip_count</span>
+            <span class="types"><span class="type">integer</span></span>
+         The number of MIP map levels
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+         The texture width
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+         The texture height
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_width"></a>
+    <strong>ncine.texture.get_width (texture)</strong>
+    </dt>
+    <dd>
+    Returns the texture width
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_height"></a>
+    <strong>ncine.texture.get_height (texture)</strong>
+    </dt>
+    <dd>
+    Returns the texture height
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.mip_levels"></a>
+    <strong>ncine.texture.mip_levels (texture)</strong>
+    </dt>
+    <dd>
+    Returns the number of MIP map levels
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.is_compressed"></a>
+    <strong>ncine.texture.is_compressed (texture)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the texture holds compressed data
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_format"></a>
+    <strong>ncine.texture.get_format (texture)</strong>
+    </dt>
+    <dd>
+    Returns the texture format
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.tex_format</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.num_channels"></a>
+    <strong>ncine.texture.num_channels (texture)</strong>
+    </dt>
+    <dd>
+    Returns the number of color channels
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.datasize"></a>
+    <strong>ncine.texture.datasize (texture)</strong>
+    </dt>
+    <dd>
+    Returns the amount of video memory needed to load the texture
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_min_filtering"></a>
+    <strong>ncine.texture.get_min_filtering (texture)</strong>
+    </dt>
+    <dd>
+    Returns the filtering mode used for minification
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.tex_filtering</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_mag_filtering"></a>
+    <strong>ncine.texture.get_mag_filtering (texture)</strong>
+    </dt>
+    <dd>
+    Returns the filtering mode used for magnification
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.tex_filtering</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_wrap"></a>
+    <strong>ncine.texture.get_wrap (texture)</strong>
+    </dt>
+    <dd>
+    Returns the wrap mode used for the <code>s</code> and <code>t</code> directions
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.tex_wrap</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_min_filtering"></a>
+    <strong>ncine.texture.set_min_filtering (texture, filtering)</strong>
+    </dt>
+    <dd>
+    Sets the filtering mode used for minification
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">filtering</span>
+            <span class="types"><span class="type">ncine.tex_filtering</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_mag_filtering"></a>
+    <strong>ncine.texture.set_mag_filtering (texture, filtering)</strong>
+    </dt>
+    <dd>
+    Sets the filtering mode used for magnification
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">filtering</span>
+            <span class="types"><span class="type">ncine.tex_filtering</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_wrap"></a>
+    <strong>ncine.texture.set_wrap (texture, wrap)</strong>
+    </dt>
+    <dd>
+    Sets the wrap mode used for the <code>s</code> and <code>t</code> directions
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">wrap</span>
+            <span class="types"><span class="type">ncine.tex_wrap</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.is_chromakey_enabled"></a>
+    <strong>ncine.texture.is_chromakey_enabled (texture)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if chroma key transparency will be used when loading
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.get_chromakey_color"></a>
+    <strong>ncine.texture.get_chromakey_color (texture)</strong>
+    </dt>
+    <dd>
+    Returns the color treated as transparent when loading a texture
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.color</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_chromakey_enabled"></a>
+    <strong>ncine.texture.set_chromakey_enabled (texture, state)</strong>
+    </dt>
+    <dd>
+    Sets the chroma key transparency state to use when loading
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">state</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_chromakey_color"></a>
+    <strong>ncine.texture.set_chromakey_color (texture, color)</strong>
+    </dt>
+    <dd>
+    Sets the color to be treated as transparent when loading a texture through a <code>ncine.color</code> table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">color</span>
+            <span class="types"><span class="type">ncine.color</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_chromakey_color"></a>
+    <strong>ncine.texture.set_chromakey_color (texture, r, g, b, a)</strong>
+    </dt>
+    <dd>
+    Sets the color to be treated as transparent when loading a texture through color components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">r</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">g</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">b</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">a</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture.set_gltexture_label"></a>
+    <strong>ncine.texture.set_gltexture_label (texture, label)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL object label for the texture
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">textureObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">label</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "textureObj"></a>
+    <strong>textureObj</strong>
+    </dt>
+    <dd>
+    The light user data of a texture object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.tex_format"></a>
+    <strong>ncine.tex_format</strong>
+    </dt>
+    <dd>
+    Texture formats (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">R8</span>
+
+
+        </li>
+        <li><span class="parameter">RG8</span>
+
+
+        </li>
+        <li><span class="parameter">RGB8</span>
+
+
+        </li>
+        <li><span class="parameter">RGBA8</span>
+
+
+        </li>
+        <li><span class="parameter">UNKNOWN</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.tex_filtering"></a>
+    <strong>ncine.tex_filtering</strong>
+    </dt>
+    <dd>
+    Texture filtering modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">NEAREST</span>
+
+
+        </li>
+        <li><span class="parameter">LINEAR</span>
+
+
+        </li>
+        <li><span class="parameter">NEAREST_MIPMAP_NEAREST</span>
+
+
+        </li>
+        <li><span class="parameter">LINEAR_MIPMAP_NEAREST</span>
+
+
+        </li>
+        <li><span class="parameter">NEAREST_MIPMAP_LINEAR</span>
+
+
+        </li>
+        <li><span class="parameter">LINEAR_MIPMAP_LINEAR</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.tex_wrap"></a>
+    <strong>ncine.tex_wrap</strong>
+    </dt>
+    <dd>
+    Texture wrap modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">CLAMP_TO_EDGE</span>
+
+
+        </li>
+        <li><span class="parameter">MIRRORED_REPEAT</span>
+
+
+        </li>
+        <li><span class="parameter">REPEAT</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

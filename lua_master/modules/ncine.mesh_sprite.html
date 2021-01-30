@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><strong>ncine.mesh_sprite</strong></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.mesh_sprite</code></h1>
+<p>The table containing mesh sprite related functions.</p>
+<p>Inherits from <a href="../modules/ncine.base_sprite.html#">ncine.base_sprite</a>.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.new">ncine.mesh_sprite.new (parent, texture, x, y)</a></td>
+	<td class="summary">Constructs a mesh sprite object with a parent scene node, a texture, and position components.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.new">ncine.mesh_sprite.new (parent, texture, pos)</a></td>
+	<td class="summary">Constructs a mesh sprite object with a parent scene node, a texture, and a position vector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.clone">ncine.mesh_sprite.clone (sprite)</a></td>
+	<td class="summary">Constructs a new mesh sprite object as a clone of the specified one.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.delete">ncine.mesh_sprite.delete (sprite)</a></td>
+	<td class="summary">Destroys a mesh sprite object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.get_bytes_per_vertex">ncine.mesh_sprite.get_bytes_per_vertex (sprite)</a></td>
+	<td class="summary">Returns the number of bytes used by each vertex</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.num_vertices">ncine.mesh_sprite.num_vertices (sprite)</a></td>
+	<td class="summary">Returns the number of vertices of the sprite mesh</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.num_bytes">ncine.mesh_sprite.num_bytes (sprite)</a></td>
+	<td class="summary">Returns the total number of bytes used by all sprite&rsquo;s vertices</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.get_vertices">ncine.mesh_sprite.get_vertices (sprite)</a></td>
+	<td class="summary">Returns the vertices data of the sprite mesh</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.are_unique_vertices">ncine.mesh_sprite.are_unique_vertices (sprite)</a></td>
+	<td class="summary">Returns <code>true</code> if the vertices belong to the sprite and are not stored externally</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.copy_vertices">ncine.mesh_sprite.copy_vertices (sprite, vertices)</a></td>
+	<td class="summary">Copies the vertices data from a table into the sprite</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.copy_vertices">ncine.mesh_sprite.copy_vertices (sprite, vertices)</a></td>
+	<td class="summary">Copies the vertices data from a table into the sprite (no texture version)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.set_vertices">ncine.mesh_sprite.set_vertices (sprite, source_sprite)</a></td>
+	<td class="summary">Sets the vertices data to the data used by another sprite</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.create_vertices_from_texels">ncine.mesh_sprite.create_vertices_from_texels (sprite, texels, texture_cut_mode)</a></td>
+	<td class="summary">Creates an internal set of vertices from an external table of points in texture space, with optional texture cut mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.emplace_vertices">ncine.mesh_sprite.emplace_vertices (sprite, vertices)</a></td>
+	<td class="summary">Emplaces the vertices data from an array of numbers into the sprite</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.num_indices">ncine.mesh_sprite.num_indices (sprite)</a></td>
+	<td class="summary">Returns the number of indices used to draw the sprite mesh</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.get_indices">ncine.mesh_sprite.get_indices (sprite)</a></td>
+	<td class="summary">Returns the indices used to draw the sprite mesh</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.are_unique_indices">ncine.mesh_sprite.are_unique_indices (sprite)</a></td>
+	<td class="summary">Returns <code>true</code> if the indices belong to the sprite and are not stored externally</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.copy_indices">ncine.mesh_sprite.copy_indices (sprite, indices)</a></td>
+	<td class="summary">Copies the indices data from a table into the sprite (no texture version)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.set_indices">ncine.mesh_sprite.set_indices (sprite, source_sprite)</a></td>
+	<td class="summary">Sets the indices data to the data used by another sprite</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mesh_sprite.emplace_indices">ncine.mesh_sprite.emplace_indices (sprite, indices)</a></td>
+	<td class="summary">Emplaces the indices data from an array of integers into the sprite</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#meshspriteObj">meshspriteObj</a></td>
+	<td class="summary">The light user data of a mesh sprite object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.texture_cut_mode">ncine.texture_cut_mode</a></td>
+	<td class="summary">Texture cut modes (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#mesh_sprite_vertex">mesh_sprite_vertex</a></td>
+	<td class="summary">A mesh sprite vertex with UV texture coordinates</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#mesh_sprite_vertex_notexture">mesh_sprite_vertex_notexture</a></td>
+	<td class="summary">A mesh sprite vertex</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.mesh_sprite.new"></a>
+    <strong>ncine.mesh_sprite.new (parent, texture, x, y)</strong>
+    </dt>
+    <dd>
+    Constructs a mesh sprite object with a parent scene node, a texture, and position components. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.mesh_sprite.html#ncine.mesh_sprite.delete">ncine.mesh_sprite.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+         The parent scenenode
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+         The texture object
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+          The X component of the position
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The Y component of the position
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+        A new mesh sprite object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.new"></a>
+    <strong>ncine.mesh_sprite.new (parent, texture, pos)</strong>
+    </dt>
+    <dd>
+    Constructs a mesh sprite object with a parent scene node, a texture, and a position vector. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.mesh_sprite.html#ncine.mesh_sprite.delete">ncine.mesh_sprite.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+         The parent scenenode
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+         The texture object
+        </li>
+        <li><span class="parameter">pos</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+         The position vector
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+        A new mesh sprite object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.clone"></a>
+    <strong>ncine.mesh_sprite.clone (sprite)</strong>
+    </dt>
+    <dd>
+    Constructs a new mesh sprite object as a clone of the specified one. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.mesh_sprite.html#ncine.mesh_sprite.delete">ncine.mesh_sprite.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+         The sprite object to be cloned
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+        The cloned mesh sprite object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.delete"></a>
+    <strong>ncine.mesh_sprite.delete (sprite)</strong>
+    </dt>
+    <dd>
+    Destroys a mesh sprite object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+         The mesh sprite object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.get_bytes_per_vertex"></a>
+    <strong>ncine.mesh_sprite.get_bytes_per_vertex (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the number of bytes used by each vertex
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.num_vertices"></a>
+    <strong>ncine.mesh_sprite.num_vertices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the number of vertices of the sprite mesh
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.num_bytes"></a>
+    <strong>ncine.mesh_sprite.num_bytes (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the total number of bytes used by all sprite&rsquo;s vertices
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.get_vertices"></a>
+    <strong>ncine.mesh_sprite.get_vertices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the vertices data of the sprite mesh
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number[]</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.are_unique_vertices"></a>
+    <strong>ncine.mesh_sprite.are_unique_vertices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the vertices belong to the sprite and are not stored externally
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.copy_vertices"></a>
+    <strong>ncine.mesh_sprite.copy_vertices (sprite, vertices)</strong>
+    </dt>
+    <dd>
+    Copies the vertices data from a table into the sprite
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">vertices</span>
+            <span class="types"><span class="type">mesh_sprite_vertex[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.copy_vertices"></a>
+    <strong>ncine.mesh_sprite.copy_vertices (sprite, vertices)</strong>
+    </dt>
+    <dd>
+    Copies the vertices data from a table into the sprite (no texture version)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">vertices</span>
+            <span class="types"><span class="type">mesh_sprite_vertex_notexture[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.set_vertices"></a>
+    <strong>ncine.mesh_sprite.set_vertices (sprite, source_sprite)</strong>
+    </dt>
+    <dd>
+    Sets the vertices data to the data used by another sprite
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">source_sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.create_vertices_from_texels"></a>
+    <strong>ncine.mesh_sprite.create_vertices_from_texels (sprite, texels, texture_cut_mode)</strong>
+    </dt>
+    <dd>
+    Creates an internal set of vertices from an external table of points in texture space, with optional texture cut mode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">texels</span>
+            <span class="types"><span class="type">ncine.vec2[]</span></span>
+
+
+        </li>
+        <li><span class="parameter">texture_cut_mode</span>
+            <span class="types"><span class="type">ncine.texture_cut_mode</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.emplace_vertices"></a>
+    <strong>ncine.mesh_sprite.emplace_vertices (sprite, vertices)</strong>
+    </dt>
+    <dd>
+    Emplaces the vertices data from an array of numbers into the sprite
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">vertices</span>
+            <span class="types"><span class="type">number[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.num_indices"></a>
+    <strong>ncine.mesh_sprite.num_indices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the number of indices used to draw the sprite mesh
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.get_indices"></a>
+    <strong>ncine.mesh_sprite.get_indices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns the indices used to draw the sprite mesh
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer[]</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.are_unique_indices"></a>
+    <strong>ncine.mesh_sprite.are_unique_indices (sprite)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the indices belong to the sprite and are not stored externally
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.copy_indices"></a>
+    <strong>ncine.mesh_sprite.copy_indices (sprite, indices)</strong>
+    </dt>
+    <dd>
+    Copies the indices data from a table into the sprite (no texture version)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">indices</span>
+            <span class="types"><span class="type">integer[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.set_indices"></a>
+    <strong>ncine.mesh_sprite.set_indices (sprite, source_sprite)</strong>
+    </dt>
+    <dd>
+    Sets the indices data to the data used by another sprite
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">source_sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mesh_sprite.emplace_indices"></a>
+    <strong>ncine.mesh_sprite.emplace_indices (sprite, indices)</strong>
+    </dt>
+    <dd>
+    Emplaces the indices data from an array of integers into the sprite
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sprite</span>
+            <span class="types"><a class="type" href="../modules/ncine.mesh_sprite.html#meshspriteObj">meshspriteObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">indices</span>
+            <span class="types"><span class="type">integer[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "meshspriteObj"></a>
+    <strong>meshspriteObj</strong>
+    </dt>
+    <dd>
+    The light user data of a mesh sprite object. </p>
+
+<p>Inherits from <a href="../modules/ncine.base_sprite.html#basespriteObj">ncine.base_sprite.basespriteObj</a>.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.texture_cut_mode"></a>
+    <strong>ncine.texture_cut_mode</strong>
+    </dt>
+    <dd>
+    Texture cut modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">RESIZE</span>
+
+
+        </li>
+        <li><span class="parameter">CROP</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mesh_sprite_vertex"></a>
+    <strong>mesh_sprite_vertex</strong>
+    </dt>
+    <dd>
+    A mesh sprite vertex with UV texture coordinates
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">u</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">v</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mesh_sprite_vertex_notexture"></a>
+    <strong>mesh_sprite_vertex_notexture</strong>
+    </dt>
+    <dd>
+    A mesh sprite vertex
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

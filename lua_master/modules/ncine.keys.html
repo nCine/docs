@@ -1,0 +1,1134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><strong>ncine.keys</strong></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.keys</code></h1>
+<p>A list of key symbols and modifiers</p>
+<p>
+</p>
+
+
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.keysym">ncine.keysym</a></td>
+	<td class="summary">Keysyms (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.keymod">ncine.keymod</a></td>
+	<td class="summary">Keymods (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.keysym"></a>
+    <strong>ncine.keysym</strong>
+    </dt>
+    <dd>
+    Keysyms (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">UNKNOWN</span>
+        Common keysyms (below this)
+        </li>
+        <li><span class="parameter">BACKSPACE</span>
+
+
+        </li>
+        <li><span class="parameter">TAB</span>
+
+
+        </li>
+        <li><span class="parameter">RETURN</span>
+
+
+        </li>
+        <li><span class="parameter">ESCAPE</span>
+
+
+        </li>
+        <li><span class="parameter">SPACE</span>
+
+
+        </li>
+        <li><span class="parameter">QUOTE</span>
+
+
+        </li>
+        <li><span class="parameter">PLUS</span>
+
+
+        </li>
+        <li><span class="parameter">COMMA</span>
+
+
+        </li>
+        <li><span class="parameter">MINUS</span>
+
+
+        </li>
+        <li><span class="parameter">PERIOD</span>
+
+
+        </li>
+        <li><span class="parameter">SLASH</span>
+
+
+        </li>
+        <li><span class="parameter">N0</span>
+
+
+        </li>
+        <li><span class="parameter">N1</span>
+
+
+        </li>
+        <li><span class="parameter">N2</span>
+
+
+        </li>
+        <li><span class="parameter">N3</span>
+
+
+        </li>
+        <li><span class="parameter">N4</span>
+
+
+        </li>
+        <li><span class="parameter">N5</span>
+
+
+        </li>
+        <li><span class="parameter">N6</span>
+
+
+        </li>
+        <li><span class="parameter">N7</span>
+
+
+        </li>
+        <li><span class="parameter">N8</span>
+
+
+        </li>
+        <li><span class="parameter">N9</span>
+
+
+        </li>
+        <li><span class="parameter">SEMICOLON</span>
+
+
+        </li>
+        <li><span class="parameter">LEFTBRACKET</span>
+
+
+        </li>
+        <li><span class="parameter">BACKSLASH</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHTBRACKET</span>
+
+
+        </li>
+        <li><span class="parameter">BACKQUOTE</span>
+
+
+        </li>
+        <li><span class="parameter">A</span>
+
+
+        </li>
+        <li><span class="parameter">B</span>
+
+
+        </li>
+        <li><span class="parameter">C</span>
+
+
+        </li>
+        <li><span class="parameter">D</span>
+
+
+        </li>
+        <li><span class="parameter">E</span>
+
+
+        </li>
+        <li><span class="parameter">F</span>
+
+
+        </li>
+        <li><span class="parameter">G</span>
+
+
+        </li>
+        <li><span class="parameter">H</span>
+
+
+        </li>
+        <li><span class="parameter">I</span>
+
+
+        </li>
+        <li><span class="parameter">J</span>
+
+
+        </li>
+        <li><span class="parameter">K</span>
+
+
+        </li>
+        <li><span class="parameter">L</span>
+
+
+        </li>
+        <li><span class="parameter">M</span>
+
+
+        </li>
+        <li><span class="parameter">N</span>
+
+
+        </li>
+        <li><span class="parameter">O</span>
+
+
+        </li>
+        <li><span class="parameter">P</span>
+
+
+        </li>
+        <li><span class="parameter">Q</span>
+
+
+        </li>
+        <li><span class="parameter">R</span>
+
+
+        </li>
+        <li><span class="parameter">S</span>
+
+
+        </li>
+        <li><span class="parameter">T</span>
+
+
+        </li>
+        <li><span class="parameter">U</span>
+
+
+        </li>
+        <li><span class="parameter">V</span>
+
+
+        </li>
+        <li><span class="parameter">W</span>
+
+
+        </li>
+        <li><span class="parameter">X</span>
+
+
+        </li>
+        <li><span class="parameter">Y</span>
+
+
+        </li>
+        <li><span class="parameter">Z</span>
+
+
+        </li>
+        <li><span class="parameter">DELETE</span>
+
+
+        </li>
+        <li><span class="parameter">KP0</span>
+
+
+        </li>
+        <li><span class="parameter">KP1</span>
+
+
+        </li>
+        <li><span class="parameter">KP2</span>
+
+
+        </li>
+        <li><span class="parameter">KP3</span>
+
+
+        </li>
+        <li><span class="parameter">KP4</span>
+
+
+        </li>
+        <li><span class="parameter">KP5</span>
+
+
+        </li>
+        <li><span class="parameter">KP6</span>
+
+
+        </li>
+        <li><span class="parameter">KP7</span>
+
+
+        </li>
+        <li><span class="parameter">KP8</span>
+
+
+        </li>
+        <li><span class="parameter">KP9</span>
+
+
+        </li>
+        <li><span class="parameter">KP_PERIOD</span>
+
+
+        </li>
+        <li><span class="parameter">KP_DIVIDE</span>
+
+
+        </li>
+        <li><span class="parameter">KP_MULTIPLY</span>
+
+
+        </li>
+        <li><span class="parameter">KP_MINUS</span>
+
+
+        </li>
+        <li><span class="parameter">KP_PLUS</span>
+
+
+        </li>
+        <li><span class="parameter">KP_ENTER</span>
+
+
+        </li>
+        <li><span class="parameter">KP_EQUALS</span>
+
+
+        </li>
+        <li><span class="parameter">UP</span>
+
+
+        </li>
+        <li><span class="parameter">DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT</span>
+
+
+        </li>
+        <li><span class="parameter">LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">INSERT</span>
+
+
+        </li>
+        <li><span class="parameter">HOME</span>
+
+
+        </li>
+        <li><span class="parameter">END</span>
+
+
+        </li>
+        <li><span class="parameter">PAGEUP</span>
+
+
+        </li>
+        <li><span class="parameter">PAGEDOWN</span>
+
+
+        </li>
+        <li><span class="parameter">F1</span>
+
+
+        </li>
+        <li><span class="parameter">F2</span>
+
+
+        </li>
+        <li><span class="parameter">F3</span>
+
+
+        </li>
+        <li><span class="parameter">F4</span>
+
+
+        </li>
+        <li><span class="parameter">F5</span>
+
+
+        </li>
+        <li><span class="parameter">F6</span>
+
+
+        </li>
+        <li><span class="parameter">F7</span>
+
+
+        </li>
+        <li><span class="parameter">F8</span>
+
+
+        </li>
+        <li><span class="parameter">F9</span>
+
+
+        </li>
+        <li><span class="parameter">F10</span>
+
+
+        </li>
+        <li><span class="parameter">F11</span>
+
+
+        </li>
+        <li><span class="parameter">F12</span>
+
+
+        </li>
+        <li><span class="parameter">F13</span>
+
+
+        </li>
+        <li><span class="parameter">F14</span>
+
+
+        </li>
+        <li><span class="parameter">F15</span>
+
+
+        </li>
+        <li><span class="parameter">NUM_LOCK</span>
+
+
+        </li>
+        <li><span class="parameter">CAPS_LOCK</span>
+
+
+        </li>
+        <li><span class="parameter">SCROLL_LOCK</span>
+
+
+        </li>
+        <li><span class="parameter">RSHIFT</span>
+
+
+        </li>
+        <li><span class="parameter">LSHIFT</span>
+
+
+        </li>
+        <li><span class="parameter">RCTRL</span>
+
+
+        </li>
+        <li><span class="parameter">LCTRL</span>
+
+
+        </li>
+        <li><span class="parameter">RALT</span>
+
+
+        </li>
+        <li><span class="parameter">LALT</span>
+
+
+        </li>
+        <li><span class="parameter">RSUPER</span>
+
+
+        </li>
+        <li><span class="parameter">LSUPER</span>
+
+
+        </li>
+        <li><span class="parameter">PRINTSCREEN</span>
+
+
+        </li>
+        <li><span class="parameter">PAUSE</span>
+
+
+        </li>
+        <li><span class="parameter">MENU</span>
+        SDL only keysyms (below this)
+        </li>
+        <li><span class="parameter">CLEAR</span>
+        Android too
+        </li>
+        <li><span class="parameter">EXCLAIM</span>
+
+
+        </li>
+        <li><span class="parameter">QUOTEDBL</span>
+
+
+        </li>
+        <li><span class="parameter">HASH</span>
+
+
+        </li>
+        <li><span class="parameter">DOLLAR</span>
+
+
+        </li>
+        <li><span class="parameter">AMPERSAND</span>
+
+
+        </li>
+        <li><span class="parameter">LEFTPAREN</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHTPAREN</span>
+
+
+        </li>
+        <li><span class="parameter">ASTERISK</span>
+
+
+        </li>
+        <li><span class="parameter">COLON</span>
+
+
+        </li>
+        <li><span class="parameter">LESS</span>
+
+
+        </li>
+        <li><span class="parameter">EQUALS</span>
+        Android too
+        </li>
+        <li><span class="parameter">GREATER</span>
+
+
+        </li>
+        <li><span class="parameter">QUESTION</span>
+
+
+        </li>
+        <li><span class="parameter">AT</span>
+        Android too
+        </li>
+        <li><span class="parameter">CARET</span>
+
+
+        </li>
+        <li><span class="parameter">UNDERSCORE</span>
+
+
+        </li>
+        <li><span class="parameter">MODE</span>
+
+
+        </li>
+        <li><span class="parameter">APPLICATION</span>
+
+
+        </li>
+        <li><span class="parameter">HELP</span>
+
+
+        </li>
+        <li><span class="parameter">SYSREQ</span>
+        Android too
+        </li>
+        <li><span class="parameter">POWER</span>
+        Android too
+        </li>
+        <li><span class="parameter">UNDO</span>
+        GLFW only keysyms (below this)
+        </li>
+        <li><span class="parameter">WORLD1</span>
+
+
+        </li>
+        <li><span class="parameter">WORLD2</span>
+        Android only keysyms (below this)
+        </li>
+        <li><span class="parameter">SOFT_LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">SOFT_RIGHT</span>
+
+
+        </li>
+        <li><span class="parameter">BACK</span>
+
+
+        </li>
+        <li><span class="parameter">CALL</span>
+
+
+        </li>
+        <li><span class="parameter">ENDCALL</span>
+
+
+        </li>
+        <li><span class="parameter">STAR</span>
+
+
+        </li>
+        <li><span class="parameter">POUND</span>
+
+
+        </li>
+        <li><span class="parameter">DPAD_CENTER</span>
+
+
+        </li>
+        <li><span class="parameter">VOLUME_UP</span>
+
+
+        </li>
+        <li><span class="parameter">VOLUME_DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">CAMERA</span>
+
+
+        </li>
+        <li><span class="parameter">SYM</span>
+
+
+        </li>
+        <li><span class="parameter">EXPLORER</span>
+
+
+        </li>
+        <li><span class="parameter">ENVELOPE</span>
+
+
+        </li>
+        <li><span class="parameter">NUM</span>
+
+
+        </li>
+        <li><span class="parameter">HEADSETHOOK</span>
+
+
+        </li>
+        <li><span class="parameter">FOCUS</span>
+
+
+        </li>
+        <li><span class="parameter">NOTIFICATION</span>
+
+
+        </li>
+        <li><span class="parameter">SEARCH</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_PLAY_PAUSE</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_STOP</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_NEXT</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_PREVIOUS</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_REWIND</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_FAST_FORWARD</span>
+
+
+        </li>
+        <li><span class="parameter">MUTE</span>
+
+
+        </li>
+        <li><span class="parameter">PICTSYMBOLS</span>
+
+
+        </li>
+        <li><span class="parameter">SWITCH_CHARSET</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_A</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_B</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_C</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_X</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_Y</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_Z</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_L1</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_R1</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_L2</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_R2</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_THUMBL</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_THUMBR</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_START</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_SELECT</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_MODE</span>
+        From API level 13 (below this)
+        </li>
+        <li><span class="parameter">FUNCTION_KEY</span>
+
+
+        </li>
+        <li><span class="parameter">MOVE_HOME</span>
+
+
+        </li>
+        <li><span class="parameter">MOVE_END</span>
+
+
+        </li>
+        <li><span class="parameter">FORWARD</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_PLAY</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_PAUSE</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_CLOSE</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_EJECT</span>
+
+
+        </li>
+        <li><span class="parameter">MEDIA_RECORD</span>
+
+
+        </li>
+        <li><span class="parameter">KP_COMMA</span>
+
+
+        </li>
+        <li><span class="parameter">KP_LEFTPAREN</span>
+
+
+        </li>
+        <li><span class="parameter">KP_RIGHTPAREN</span>
+
+
+        </li>
+        <li><span class="parameter">VOLUME_MUTE</span>
+
+
+        </li>
+        <li><span class="parameter">INFO</span>
+
+
+        </li>
+        <li><span class="parameter">CHANNEL_UP</span>
+
+
+        </li>
+        <li><span class="parameter">CHANNEL_DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">ZOOM_IN</span>
+
+
+        </li>
+        <li><span class="parameter">ZOOM_OUT</span>
+
+
+        </li>
+        <li><span class="parameter">TV</span>
+
+
+        </li>
+        <li><span class="parameter">WINDOW</span>
+
+
+        </li>
+        <li><span class="parameter">GUIDE</span>
+
+
+        </li>
+        <li><span class="parameter">DVR</span>
+
+
+        </li>
+        <li><span class="parameter">BOOKMARK</span>
+
+
+        </li>
+        <li><span class="parameter">CAPTIONS</span>
+
+
+        </li>
+        <li><span class="parameter">SETTINGS</span>
+
+
+        </li>
+        <li><span class="parameter">TV_POWER</span>
+
+
+        </li>
+        <li><span class="parameter">TV_INPUT</span>
+
+
+        </li>
+        <li><span class="parameter">STB_POWER</span>
+
+
+        </li>
+        <li><span class="parameter">STB_INPUT</span>
+
+
+        </li>
+        <li><span class="parameter">AVR_POWER</span>
+
+
+        </li>
+        <li><span class="parameter">AVR_INPUT</span>
+
+
+        </li>
+        <li><span class="parameter">PROG_RED</span>
+
+
+        </li>
+        <li><span class="parameter">PROG_GREEN</span>
+
+
+        </li>
+        <li><span class="parameter">PROG_YELLOW</span>
+
+
+        </li>
+        <li><span class="parameter">PROG_BLUE</span>
+
+
+        </li>
+        <li><span class="parameter">APP_SWITCH</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_1</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_2</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_3</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_4</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_5</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_6</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_7</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_8</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_9</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_10</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_11</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_12</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_13</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_14</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_15</span>
+
+
+        </li>
+        <li><span class="parameter">BUTTON_16</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.keymod"></a>
+    <strong>ncine.keymod</strong>
+    </dt>
+    <dd>
+    Keymods (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">NONE</span>
+        Common keymods (below this)
+        </li>
+        <li><span class="parameter">SHIFT</span>
+
+
+        </li>
+        <li><span class="parameter">CTRL</span>
+
+
+        </li>
+        <li><span class="parameter">ALT</span>
+
+
+        </li>
+        <li><span class="parameter">SUPER</span>
+        Android and SDL only keymods (below this)
+        </li>
+        <li><span class="parameter">LSHIFT</span>
+
+
+        </li>
+        <li><span class="parameter">RSHIFT</span>
+
+
+        </li>
+        <li><span class="parameter">LCTRL</span>
+
+
+        </li>
+        <li><span class="parameter">RCTRL</span>
+
+
+        </li>
+        <li><span class="parameter">LALT</span>
+
+
+        </li>
+        <li><span class="parameter">RALT</span>
+
+
+        </li>
+        <li><span class="parameter">LSUPER</span>
+
+
+        </li>
+        <li><span class="parameter">RSUPER</span>
+
+
+        </li>
+        <li><span class="parameter">NUM</span>
+
+
+        </li>
+        <li><span class="parameter">CAPS</span>
+        SDL only keymods (below this)
+        </li>
+        <li><span class="parameter">MODE</span>
+        Android only keymods (below this)
+        </li>
+        <li><span class="parameter">SYM</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

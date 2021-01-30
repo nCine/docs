@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classncine_1_1_i_file.html" title="The interface class dealing with file operations." alt="" coords="5,5,97,31"/>
+<area shape="rect" id="Node000001" href="$classncine_1_1_asset_file.html" title="The class dealing with Android asset files." alt="" coords="145,5,269,31"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="111,15,145,15,145,21,111,21"/>
+</map>

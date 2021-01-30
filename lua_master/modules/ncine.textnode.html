@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><strong>ncine.textnode</strong></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.textnode</code></h1>
+<p>The table containing textnode related functions.</p>
+<p>Inherits from <a href="../modules/ncine.drawable_node.html#">ncine.drawable_node</a>.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.new">ncine.textnode.new (parent, font, max_string_length)</a></td>
+	<td class="summary">Constructs a textnode object with a parent scene node, a font, and a maximum text string length.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.clone">ncine.textnode.clone (textnode)</a></td>
+	<td class="summary">Constructs a new textnode object as a clone of the specified one.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.delete">ncine.textnode.delete (textnode)</a></td>
+	<td class="summary">Destroys a textnode object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_width">ncine.textnode.get_width (textnode)</a></td>
+	<td class="summary">Returns the width of rendered text</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_height">ncine.textnode.get_height (textnode)</a></td>
+	<td class="summary">Returns the height of rendered text</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_abswidth">ncine.textnode.get_abswidth (textnode)</a></td>
+	<td class="summary">Returns the absolute width of rendered text</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_absheight">ncine.textnode.get_absheight (textnode)</a></td>
+	<td class="summary">Returns the absolute height of rendered text</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_font">ncine.textnode.get_font (textnode)</a></td>
+	<td class="summary">Returns the font object used by the textnode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_font">ncine.textnode.set_font (textnode, font)</a></td>
+	<td class="summary">Sets the font object to be used by the textnode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_render_mode">ncine.textnode.get_render_mode (textnode)</a></td>
+	<td class="summary">Returns the render mode used to render this text node</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_render_mode">ncine.textnode.set_render_mode (textnode, font_render_mode)</a></td>
+	<td class="summary">Sets the render mode used to render this text node, overriding the font one</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_kerning">ncine.textnode.get_kerning (textnode)</a></td>
+	<td class="summary">Returns <code>true</code> if kerning is enabled for this node rendering</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_kerning">ncine.textnode.set_kerning (textnode, with_kerning)</a></td>
+	<td class="summary">Sets the kerning flag for this node rendering</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_alignment">ncine.textnode.get_alignment (textnode)</a></td>
+	<td class="summary">Returns the horizontal text alignment of multiple lines</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_alignment">ncine.textnode.set_alignment (textnode, text_alignment)</a></td>
+	<td class="summary">Sets the horizontal text alignment of multiple lines</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_lineheight">ncine.textnode.get_lineheight (textnode)</a></td>
+	<td class="summary">Returns the text node line height</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_abslineheight">ncine.textnode.get_abslineheight (textnode)</a></td>
+	<td class="summary">Returns the text node line height multiplied by the absolute vertical scale factor</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_lineheight">ncine.textnode.set_lineheight (textnode, line_height)</a></td>
+	<td class="summary">Sets the text node line height</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_tabsize">ncine.textnode.get_tabsize (textnode)</a></td>
+	<td class="summary">Gets the size of a &ldquo;tab&rdquo; character in terms of whitespaces</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_tabsize">ncine.textnode.set_tabsize (textnode, tab_size)</a></td>
+	<td class="summary">Sets the size of a &ldquo;tab&rdquo; character in terms of whitespaces</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.get_string">ncine.textnode.get_string (textnode)</a></td>
+	<td class="summary">Returns the string to render</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.set_string">ncine.textnode.set_string (textnode, string)</a></td>
+	<td class="summary">Sets the string to render</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.textnode.calculate_boundaries">ncine.textnode.calculate_boundaries (font, with_kerning, tab_size, string)</a></td>
+	<td class="summary">Calculates the rectangle boundaries needed to render the provided string with the specified font, kerning state, and tab size</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#textnodeObj">textnodeObj</a></td>
+	<td class="summary">The light user data of a textnode object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.text_alignment">ncine.text_alignment</a></td>
+	<td class="summary">Text alignments (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.textnode.new"></a>
+    <strong>ncine.textnode.new (parent, font, max_string_length)</strong>
+    </dt>
+    <dd>
+    Constructs a textnode object with a parent scene node, a font, and a maximum text string length. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.textnode.html#ncine.textnode.delete">ncine.textnode.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+         The parent scenenode
+        </li>
+        <li><span class="parameter">font</span>
+            <span class="types"><a class="type" href="../modules/ncine.font.html#fontObj">ncine.font.fontObj</a> or <span class="type">nil</span></span>
+         The font object
+        </li>
+        <li><span class="parameter">max_string_length</span>
+            <span class="types"><span class="type">integer</span></span>
+         The maximum length for the text
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+        A new textnode object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.clone"></a>
+    <strong>ncine.textnode.clone (textnode)</strong>
+    </dt>
+    <dd>
+    Constructs a new textnode object as a clone of the specified one. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.textnode.html#ncine.textnode.delete">ncine.textnode.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+         The textnode object to be cloned
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+        The cloned textnode object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.delete"></a>
+    <strong>ncine.textnode.delete (textnode)</strong>
+    </dt>
+    <dd>
+    Destroys a textnode object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+         The textnode object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_width"></a>
+    <strong>ncine.textnode.get_width (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the width of rendered text
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_height"></a>
+    <strong>ncine.textnode.get_height (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the height of rendered text
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_abswidth"></a>
+    <strong>ncine.textnode.get_abswidth (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the absolute width of rendered text
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_absheight"></a>
+    <strong>ncine.textnode.get_absheight (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the absolute height of rendered text
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_font"></a>
+    <strong>ncine.textnode.get_font (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the font object used by the textnode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">fontObj</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_font"></a>
+    <strong>ncine.textnode.set_font (textnode, font)</strong>
+    </dt>
+    <dd>
+    Sets the font object to be used by the textnode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">font</span>
+            <span class="types"><span class="type">scene.font.fontObj</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_render_mode"></a>
+    <strong>ncine.textnode.get_render_mode (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the render mode used to render this text node
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.font_render_mode</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_render_mode"></a>
+    <strong>ncine.textnode.set_render_mode (textnode, font_render_mode)</strong>
+    </dt>
+    <dd>
+    Sets the render mode used to render this text node, overriding the font one
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">font_render_mode</span>
+            <span class="types"><span class="type">ncine.font_render_mode</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_kerning"></a>
+    <strong>ncine.textnode.get_kerning (textnode)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if kerning is enabled for this node rendering
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_kerning"></a>
+    <strong>ncine.textnode.set_kerning (textnode, with_kerning)</strong>
+    </dt>
+    <dd>
+    Sets the kerning flag for this node rendering
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">with_kerning</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_alignment"></a>
+    <strong>ncine.textnode.get_alignment (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the horizontal text alignment of multiple lines
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.text_alignment</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_alignment"></a>
+    <strong>ncine.textnode.set_alignment (textnode, text_alignment)</strong>
+    </dt>
+    <dd>
+    Sets the horizontal text alignment of multiple lines
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">text_alignment</span>
+            <span class="types"><span class="type">ncine.text_alignment</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_lineheight"></a>
+    <strong>ncine.textnode.get_lineheight (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the text node line height
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_abslineheight"></a>
+    <strong>ncine.textnode.get_abslineheight (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the text node line height multiplied by the absolute vertical scale factor
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_lineheight"></a>
+    <strong>ncine.textnode.set_lineheight (textnode, line_height)</strong>
+    </dt>
+    <dd>
+    Sets the text node line height
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">line_height</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_tabsize"></a>
+    <strong>ncine.textnode.get_tabsize (textnode)</strong>
+    </dt>
+    <dd>
+    Gets the size of a &ldquo;tab&rdquo; character in terms of whitespaces
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_tabsize"></a>
+    <strong>ncine.textnode.set_tabsize (textnode, tab_size)</strong>
+    </dt>
+    <dd>
+    Sets the size of a &ldquo;tab&rdquo; character in terms of whitespaces
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">tab_size</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.get_string"></a>
+    <strong>ncine.textnode.get_string (textnode)</strong>
+    </dt>
+    <dd>
+    Returns the string to render
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.set_string"></a>
+    <strong>ncine.textnode.set_string (textnode, string)</strong>
+    </dt>
+    <dd>
+    Sets the string to render
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">textnode</span>
+            <span class="types"><a class="type" href="../modules/ncine.textnode.html#textnodeObj">textnodeObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">string</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.textnode.calculate_boundaries"></a>
+    <strong>ncine.textnode.calculate_boundaries (font, with_kerning, tab_size, string)</strong>
+    </dt>
+    <dd>
+    Calculates the rectangle boundaries needed to render the provided string with the specified font, kerning state, and tab size
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">font</span>
+            <span class="types"><a class="type" href="../modules/ncine.font.html#fontObj">ncine.font.fontObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">with_kerning</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+        <li><span class="parameter">tab_size</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">string</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "textnodeObj"></a>
+    <strong>textnodeObj</strong>
+    </dt>
+    <dd>
+    The light user data of a textnode object. </p>
+
+<p>Inherits from <a href="../modules/ncine.drawable_node.html#drawablenodeObj">ncine.drawable_node.drawablenodeObj</a>.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.text_alignment"></a>
+    <strong>ncine.text_alignment</strong>
+    </dt>
+    <dd>
+    Text alignments (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">CENTER</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

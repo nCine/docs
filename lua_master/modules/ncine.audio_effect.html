@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><strong>ncine.audio_effect</strong></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.audio_effect</code></h1>
+<p>The table containing audio effect related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect.new">ncine.audio_effect.new ()</a></td>
+	<td class="summary">Constructs an audio effect object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect.delete">ncine.audio_effect.delete (audio_effect)</a></td>
+	<td class="summary">Destroys an audio effect object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect.get_type">ncine.audio_effect.get_type (audio_effect)</a></td>
+	<td class="summary">Returns the effect type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect.get_effect_id">ncine.audio_effect.get_effect_id (audio_effect)</a></td>
+	<td class="summary">Returns the OpenAL effect id</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect.apply_properties">ncine.audio_effect.apply_properties (audio_effect, properties)</a></td>
+	<td class="summary">Sets an effect type with all of its properties</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#audioeffectObj">audioeffectObj</a></td>
+	<td class="summary">The light user data of an audio effect object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.audio_effect_type">ncine.audio_effect_type</a></td>
+	<td class="summary">Audio effect types (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.audio_effect.new"></a>
+    <strong>ncine.audio_effect.new ()</strong>
+    </dt>
+    <dd>
+    Constructs an audio effect object. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.audio_effect.html#ncine.audio_effect.delete">ncine.audio_effect.delete</a> when you are done with it!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.audio_effect.html#audioeffectObj">audioeffectObj</a></span>
+        A new audio effect object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect.delete"></a>
+    <strong>ncine.audio_effect.delete (audio_effect)</strong>
+    </dt>
+    <dd>
+    Destroys an audio effect object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect.html#audioeffectObj">audioeffectObj</a></span>
+         The audio effect object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect.get_type"></a>
+    <strong>ncine.audio_effect.get_type (audio_effect)</strong>
+    </dt>
+    <dd>
+    Returns the effect type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect.html#audioeffectObj">audioeffectObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.audio_effect_type</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect.get_effect_id"></a>
+    <strong>ncine.audio_effect.get_effect_id (audio_effect)</strong>
+    </dt>
+    <dd>
+    Returns the OpenAL effect id
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect.html#audioeffectObj">audioeffectObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect.apply_properties"></a>
+    <strong>ncine.audio_effect.apply_properties (audio_effect, properties)</strong>
+    </dt>
+    <dd>
+    Sets an effect type with all of its properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">audio_effect</span>
+            <span class="types"><a class="type" href="../modules/ncine.audio_effect.html#audioeffectObj">audioeffectObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><span class="type">audioeffectpropertiesObj</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "audioeffectObj"></a>
+    <strong>audioeffectObj</strong>
+    </dt>
+    <dd>
+    The light user data of an audio effect object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.audio_effect_type"></a>
+    <strong>ncine.audio_effect_type</strong>
+    </dt>
+    <dd>
+    Audio effect types (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">NULL_EFFECT</span>
+
+
+        </li>
+        <li><span class="parameter">REVERB</span>
+
+
+        </li>
+        <li><span class="parameter">EAXREVERB</span>
+
+
+        </li>
+        <li><span class="parameter">CHORUS</span>
+
+
+        </li>
+        <li><span class="parameter">DISTORTION</span>
+
+
+        </li>
+        <li><span class="parameter">ECHO</span>
+
+
+        </li>
+        <li><span class="parameter">FLANGER</span>
+
+
+        </li>
+        <li><span class="parameter">FREQUENCY_SHIFTER</span>
+
+
+        </li>
+        <li><span class="parameter">VOCAL_MORPHER</span>
+
+
+        </li>
+        <li><span class="parameter">PITCH_SHIFTER</span>
+
+
+        </li>
+        <li><span class="parameter">RING_MODULATOR</span>
+
+
+        </li>
+        <li><span class="parameter">AUTOWAH</span>
+
+
+        </li>
+        <li><span class="parameter">COMPRESSOR</span>
+
+
+        </li>
+        <li><span class="parameter">EQUALIZER</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

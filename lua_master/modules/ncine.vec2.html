@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><strong>ncine.vec2</strong></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.vec2</code></h1>
+<p>The table containing 2-components vector related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.create">ncine.vec2.create (x, y)</a></td>
+	<td class="summary">Creates a vec2 table from its components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.add">ncine.vec2.add (vec0, vec1)</a></td>
+	<td class="summary">Adds two vectors together, component-wise</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.add">ncine.vec2.add (vec0, scalar)</a></td>
+	<td class="summary">Adds a scalar to the vector components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.sub">ncine.vec2.sub (vec0, vec1)</a></td>
+	<td class="summary">Subtracts the second vector from the first one, component-wise</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.sub">ncine.vec2.sub (vec, scalar)</a></td>
+	<td class="summary">Subtracts the scalar from the vector components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.mul">ncine.vec2.mul (vec0, vec1)</a></td>
+	<td class="summary">Multiplies two vectors together, component-wise</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.mul">ncine.vec2.mul (vec, scalar)</a></td>
+	<td class="summary">Multiplies the vector components by the scalar</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.div">ncine.vec2.div (vec0, vec1)</a></td>
+	<td class="summary">Divides the first vector by the second one, component-wise</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.div">ncine.vec2.div (vec, scalar)</a></td>
+	<td class="summary">Divides the vector components by the scalar</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.length">ncine.vec2.length (vec)</a></td>
+	<td class="summary">Returns the length of the vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.sqrlength">ncine.vec2.sqrlength (vec)</a></td>
+	<td class="summary">Returns the squared length of the vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.normalized">ncine.vec2.normalized (vec)</a></td>
+	<td class="summary">Returns a normalized version of the vector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2.dot">ncine.vec2.dot (vec0, vec1)</a></td>
+	<td class="summary">Returns the dot product between the two vectors</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.vec2">ncine.vec2</a></td>
+	<td class="summary">A two component vector</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.vec2.create"></a>
+    <strong>ncine.vec2.create (x, y)</strong>
+    </dt>
+    <dd>
+    Creates a vec2 table from its components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         The X component
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The Y component
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.add"></a>
+    <strong>ncine.vec2.add (vec0, vec1)</strong>
+    </dt>
+    <dd>
+    Adds two vectors together, component-wise
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">vec1</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.add"></a>
+    <strong>ncine.vec2.add (vec0, scalar)</strong>
+    </dt>
+    <dd>
+    Adds a scalar to the vector components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">scalar</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.sub"></a>
+    <strong>ncine.vec2.sub (vec0, vec1)</strong>
+    </dt>
+    <dd>
+    Subtracts the second vector from the first one, component-wise
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">vec1</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.sub"></a>
+    <strong>ncine.vec2.sub (vec, scalar)</strong>
+    </dt>
+    <dd>
+    Subtracts the scalar from the vector components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">scalar</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.mul"></a>
+    <strong>ncine.vec2.mul (vec0, vec1)</strong>
+    </dt>
+    <dd>
+    Multiplies two vectors together, component-wise
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">vec1</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.mul"></a>
+    <strong>ncine.vec2.mul (vec, scalar)</strong>
+    </dt>
+    <dd>
+    Multiplies the vector components by the scalar
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">scalar</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.div"></a>
+    <strong>ncine.vec2.div (vec0, vec1)</strong>
+    </dt>
+    <dd>
+    Divides the first vector by the second one, component-wise
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">vec1</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.div"></a>
+    <strong>ncine.vec2.div (vec, scalar)</strong>
+    </dt>
+    <dd>
+    Divides the vector components by the scalar
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">scalar</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.length"></a>
+    <strong>ncine.vec2.length (vec)</strong>
+    </dt>
+    <dd>
+    Returns the length of the vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.sqrlength"></a>
+    <strong>ncine.vec2.sqrlength (vec)</strong>
+    </dt>
+    <dd>
+    Returns the squared length of the vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.normalized"></a>
+    <strong>ncine.vec2.normalized (vec)</strong>
+    </dt>
+    <dd>
+    Returns a normalized version of the vector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.vec2.dot"></a>
+    <strong>ncine.vec2.dot (vec0, vec1)</strong>
+    </dt>
+    <dd>
+    Returns the dot product between the two vectors
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">vec0</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+        <li><span class="parameter">vec1</span>
+            <span class="types"><a class="type" href="../modules/ncine.vec2.html#ncine.vec2">ncine.vec2</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.vec2"></a>
+    <strong>ncine.vec2</strong>
+    </dt>
+    <dd>
+    A two component vector
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+         The X component
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+         The Y component
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

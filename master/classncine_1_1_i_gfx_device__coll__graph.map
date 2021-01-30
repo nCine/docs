@@ -1,0 +1,20 @@
+<map id="ncine::IGfxDevice" name="ncine::IGfxDevice">
+<area shape="rect" id="Node000001" title="It represents the interface to the graphics device where everything is rendered." alt="" coords="851,94,988,119"/>
+<area shape="rect" id="Node000002" href="$structncine_1_1_i_gfx_device_1_1_g_l_context_info.html" title="Contains the attributes to create an OpenGL context." alt="" coords="555,5,700,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,40,827,69,888,91,887,96,826,75,713,45"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_display_mode.html" title="Display properties." alt="" coords="552,70,703,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="717,87,851,98,850,104,716,93"/>
+<area shape="rect" id="Node000004" href="$structncine_1_1_i_gfx_device_1_1_monitor.html" title="A structure representing a connected monitor." alt="" coords="555,120,700,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="714,130,826,117,850,114,851,120,827,123,714,135"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_vector2.html" title=" " alt="" coords="253,58,414,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,83,529,109,559,117,557,123,527,115,412,89"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="5,86,157,111"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="170,86,252,77,253,82,171,91"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="57,71,65,63,81,59,96,62,104,68,106,78,102,87,97,85,101,77,100,71,93,67,81,65,67,67,61,75"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_vector2.html" title=" " alt="" coords="247,114,420,139"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="121,115,150,126,182,135,220,138,259,137,259,142,220,144,181,140,149,131,119,119"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="434,129,554,134,554,139,434,134"/>
+<area shape="rect" id="Node000008" href="$structncine_1_1_i_gfx_device_1_1_video_mode.html" title="A structure representing a video mode supported by a monitor." alt="" coords="261,177,406,217"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="420,200,554,200,628,195,702,184,756,170,808,152,891,117,893,122,810,157,758,176,703,189,629,200,554,205,420,205"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="419,178,554,151,555,157,420,183"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ncine::ColorAffector::ColorStep" name="ncine::ColorAffector::ColorStep">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,185,156,225"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_colorf.html" title="A four channels normalized float color." alt="" coords="29,51,133,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,90,83,185,78,185,78,90"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="118,46,146,48,156,54,159,64,154,76,140,82,123,83,104,79,105,74,123,78,139,77,150,72,154,64,151,57,144,53,118,51"/>
+</map>

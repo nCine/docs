@@ -1,0 +1,1145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><strong>ncine.particle_affector</strong></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.particle_affector</code></h1>
+<p>The table containing particle affectors related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_type">ncine.particle_affector.get_type (affector)</a></td>
+	<td class="summary">Returns the affector type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.is_enabled">ncine.particle_affector.is_enabled (affector)</a></td>
+	<td class="summary">Returns <code>true</code> if the affector is enabled</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.set_enabled">ncine.particle_affector.set_enabled (affector, enabled)</a></td>
+	<td class="summary">Enables or disables the affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.num_steps">ncine.particle_affector.num_steps (affector)</a></td>
+	<td class="summary">Returns the number of steps</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.remove_steps">ncine.particle_affector.remove_steps (affector, index)</a></td>
+	<td class="summary">Removes the step at the specified position index</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.clear_steps">ncine.particle_affector.clear_steps (affector)</a></td>
+	<td class="summary">Removes all steps</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_color_steps">ncine.particle_affector.get_color_steps (affector)</a></td>
+	<td class="summary">Returns the color steps as a table (or <code>nil</code> if the affector type is not <code>COLOR</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_size_steps">ncine.particle_affector.get_size_steps (affector)</a></td>
+	<td class="summary">Returns the size steps as a table (or <code>nil</code> if the affector type is not <code>SIZE</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_rotation_steps">ncine.particle_affector.get_rotation_steps (affector)</a></td>
+	<td class="summary">Returns the rotation steps as a table (or <code>nil</code> if the affector type is not <code>ROTATION</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_position_steps">ncine.particle_affector.get_position_steps (affector)</a></td>
+	<td class="summary">Returns the position steps as a table (or <code>nil</code> if the affector type is not <code>POSITION</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_velocity_steps">ncine.particle_affector.get_velocity_steps (affector)</a></td>
+	<td class="summary">Returns the velocity steps as a table (or <code>nil</code> if the affector type is not <code>VELOCITY</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_color_step">ncine.particle_affector.add_color_step (affector, age, color)</a></td>
+	<td class="summary">Adds a color step (if the affector type is <code>COLOR</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_color_step">ncine.particle_affector.add_color_step (affector, age, red, green, blue, alpha)</a></td>
+	<td class="summary">Adds a color step (if the affector type is <code>COLOR</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.get_base_scale">ncine.particle_affector.get_base_scale (affector)</a></td>
+	<td class="summary">Returns a base scale factor that will be multiplied by all size steps.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.set_base_scale">ncine.particle_affector.set_base_scale (affector, base_scale)</a></td>
+	<td class="summary">Sets a base scale factor that will be multiplied by all size steps.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_size_step">ncine.particle_affector.add_size_step (affector, age, scale)</a></td>
+	<td class="summary">Adds a size step (if the affector type is <code>SIZE</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_size_step">ncine.particle_affector.add_size_step (affector, age, scale_x, scale_y)</a></td>
+	<td class="summary">Adds a size step (if the affector type is <code>SIZE</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_rotation_step">ncine.particle_affector.add_rotation_step (affector, age, angle)</a></td>
+	<td class="summary">Adds a rotation step (if the affector type is <code>ROTATION</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_position_step">ncine.particle_affector.add_position_step (affector, age, position)</a></td>
+	<td class="summary">Adds a position step (if the affector type is <code>POSITION</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_position_step">ncine.particle_affector.add_position_step (affector, age, position_x, position_y)</a></td>
+	<td class="summary">Adds a position step (if the affector type is <code>POSITION</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_velocity_step">ncine.particle_affector.add_velocity_step (affector, age, velocity)</a></td>
+	<td class="summary">Adds a velocity step (if the affector type is <code>VELOCITY</code>)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_affector.add_velocity_step">ncine.particle_affector.add_velocity_step (affector, age, velocity_x, velocity_y)</a></td>
+	<td class="summary">Adds a velocity step (if the affector type is <code>VELOCITY</code>)</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#affectorObj">affectorObj</a></td>
+	<td class="summary">The light user data of a particle affector object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.affector_type">ncine.affector_type</a></td>
+	<td class="summary">Particle affector types (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_color_step">affector_color_step</a></td>
+	<td class="summary">A step of a <code>COLOR</code> particle affector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_size_step_factor">affector_size_step_factor</a></td>
+	<td class="summary">A step of a <code>SIZE</code> particle affector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_size_step_vector">affector_size_step_vector</a></td>
+	<td class="summary">A step of a <code>SIZE</code> particle affector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_rotation_step">affector_rotation_step</a></td>
+	<td class="summary">A step of a <code>ROTATION</code> particle affector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_position_step">affector_position_step</a></td>
+	<td class="summary">A step of a <code>POSITION</code> particle affector.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#affector_velocity_step">affector_velocity_step</a></td>
+	<td class="summary">A step of a <code>VELOCITY</code> particle affector.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.particle_affector.get_type"></a>
+    <strong>ncine.particle_affector.get_type (affector)</strong>
+    </dt>
+    <dd>
+    Returns the affector type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.affector_type</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.is_enabled"></a>
+    <strong>ncine.particle_affector.is_enabled (affector)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the affector is enabled
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.set_enabled"></a>
+    <strong>ncine.particle_affector.set_enabled (affector, enabled)</strong>
+    </dt>
+    <dd>
+    Enables or disables the affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.num_steps"></a>
+    <strong>ncine.particle_affector.num_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the number of steps
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.remove_steps"></a>
+    <strong>ncine.particle_affector.remove_steps (affector, index)</strong>
+    </dt>
+    <dd>
+    Removes the step at the specified position index
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.clear_steps"></a>
+    <strong>ncine.particle_affector.clear_steps (affector)</strong>
+    </dt>
+    <dd>
+    Removes all steps
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_color_steps"></a>
+    <strong>ncine.particle_affector.get_color_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the color steps as a table (or <code>nil</code> if the affector type is not <code>COLOR</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">affector_color_step[]</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_size_steps"></a>
+    <strong>ncine.particle_affector.get_size_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the size steps as a table (or <code>nil</code> if the affector type is not <code>SIZE</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">affector_size_step_vector[]</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_rotation_steps"></a>
+    <strong>ncine.particle_affector.get_rotation_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the rotation steps as a table (or <code>nil</code> if the affector type is not <code>ROTATION</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">affector_rotation_step[]</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_position_steps"></a>
+    <strong>ncine.particle_affector.get_position_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the position steps as a table (or <code>nil</code> if the affector type is not <code>POSITION</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">affector_position_step[]</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_velocity_steps"></a>
+    <strong>ncine.particle_affector.get_velocity_steps (affector)</strong>
+    </dt>
+    <dd>
+    Returns the velocity steps as a table (or <code>nil</code> if the affector type is not <code>VELOCITY</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">affector_velocity_step[]</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_color_step"></a>
+    <strong>ncine.particle_affector.add_color_step (affector, age, color)</strong>
+    </dt>
+    <dd>
+    Adds a color step (if the affector type is <code>COLOR</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">color</span>
+            <span class="types"><span class="type">ncine.color</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_color_step"></a>
+    <strong>ncine.particle_affector.add_color_step (affector, age, red, green, blue, alpha)</strong>
+    </dt>
+    <dd>
+    Adds a color step (if the affector type is <code>COLOR</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">red</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">green</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">blue</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">alpha</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.get_base_scale"></a>
+    <strong>ncine.particle_affector.get_base_scale (affector)</strong>
+    </dt>
+    <dd>
+    Returns a base scale factor that will be multiplied by all size steps. </p>
+
+<p>The affector type should be <code>SIZE</code> or the function will return <code>nil</code>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.vec2</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.set_base_scale"></a>
+    <strong>ncine.particle_affector.set_base_scale (affector, base_scale)</strong>
+    </dt>
+    <dd>
+    Sets a base scale factor that will be multiplied by all size steps. </p>
+
+<p>The affector type should be <code>SIZE</code> or the function will do nothing.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">base_scale</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_size_step"></a>
+    <strong>ncine.particle_affector.add_size_step (affector, age, scale)</strong>
+    </dt>
+    <dd>
+    Adds a size step (if the affector type is <code>SIZE</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_size_step"></a>
+    <strong>ncine.particle_affector.add_size_step (affector, age, scale_x, scale_y)</strong>
+    </dt>
+    <dd>
+    Adds a size step (if the affector type is <code>SIZE</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">scale_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">scale_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_rotation_step"></a>
+    <strong>ncine.particle_affector.add_rotation_step (affector, age, angle)</strong>
+    </dt>
+    <dd>
+    Adds a rotation step (if the affector type is <code>ROTATION</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">angle</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_position_step"></a>
+    <strong>ncine.particle_affector.add_position_step (affector, age, position)</strong>
+    </dt>
+    <dd>
+    Adds a position step (if the affector type is <code>POSITION</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_position_step"></a>
+    <strong>ncine.particle_affector.add_position_step (affector, age, position_x, position_y)</strong>
+    </dt>
+    <dd>
+    Adds a position step (if the affector type is <code>POSITION</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">position_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_velocity_step"></a>
+    <strong>ncine.particle_affector.add_velocity_step (affector, age, velocity)</strong>
+    </dt>
+    <dd>
+    Adds a velocity step (if the affector type is <code>VELOCITY</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_affector.add_velocity_step"></a>
+    <strong>ncine.particle_affector.add_velocity_step (affector, age, velocity_x, velocity_y)</strong>
+    </dt>
+    <dd>
+    Adds a velocity step (if the affector type is <code>VELOCITY</code>)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">affector</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_affector.html#affectorObj">affectorObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "affectorObj"></a>
+    <strong>affectorObj</strong>
+    </dt>
+    <dd>
+    The light user data of a particle affector object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.affector_type"></a>
+    <strong>ncine.affector_type</strong>
+    </dt>
+    <dd>
+    Particle affector types (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">COLOR</span>
+
+
+        </li>
+        <li><span class="parameter">SIZE</span>
+
+
+        </li>
+        <li><span class="parameter">ROTATION</span>
+
+
+        </li>
+        <li><span class="parameter">POSITION</span>
+
+
+        </li>
+        <li><span class="parameter">VELOCITY</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_color_step"></a>
+    <strong>affector_color_step</strong>
+    </dt>
+    <dd>
+    A step of a <code>COLOR</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and a color.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">color</span>
+         (ncine.color) Element at position [2]
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_size_step_factor"></a>
+    <strong>affector_size_step_factor</strong>
+    </dt>
+    <dd>
+    A step of a <code>SIZE</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and a uniform scale factor.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [2]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_size_step_vector"></a>
+    <strong>affector_size_step_vector</strong>
+    </dt>
+    <dd>
+    A step of a <code>SIZE</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and a scale vector for the two dimensions.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">scale</span>
+         (ncine.vec2) Element at position [2]
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_rotation_step"></a>
+    <strong>affector_rotation_step</strong>
+    </dt>
+    <dd>
+    A step of a <code>ROTATION</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and an angle in degrees.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+        <li><span class="parameter">angle</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [2]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_position_step"></a>
+    <strong>affector_position_step</strong>
+    </dt>
+    <dd>
+    A step of a <code>POSITION</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and a position vector.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">position</span>
+         (ncine.vec2) Element at position [2]
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "affector_velocity_step"></a>
+    <strong>affector_velocity_step</strong>
+    </dt>
+    <dd>
+    A step of a <code>VELOCITY</code> particle affector. </p>
+
+<p>It is an array of two elements, an age value and a velocity vector.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">velocity</span>
+         (ncine.vec2) Element at position [2]
+        </li>
+        <li><span class="parameter">age</span>
+            <span class="types"><span class="type">number</span></span>
+         Element at position [1]
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
