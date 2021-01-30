@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['uniqueptr_0',['UniquePtr',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20char_5b_5d_3e_1',['UniquePtr&lt; char[]&gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20crashpad_3a_3acrashpadclient_20_3e_2',['UniquePtr&lt; crashpad::CrashpadClient &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20fontglyph_5b_5d_3e_3',['UniquePtr&lt; FontGlyph[]&gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20frametimer_20_3e_4',['UniquePtr&lt; FrameTimer &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20glframebufferobject_20_3e_5',['UniquePtr&lt; GLFramebufferObject &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20glshaderprogram_20_3e_6',['UniquePtr&lt; GLShaderProgram &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20gltexture_20_3e_7',['UniquePtr&lt; GLTexture &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20iaudioreader_20_3e_8',['UniquePtr&lt; IAudioReader &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aiappeventhandler_20_3e_9',['UniquePtr&lt; ncine::IAppEventHandler &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aiaudiodevice_20_3e_10',['UniquePtr&lt; ncine::IAudioDevice &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aidebugoverlay_20_3e_11',['UniquePtr&lt; ncine::IDebugOverlay &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aigfxcapabilities_20_3e_12',['UniquePtr&lt; ncine::IGfxCapabilities &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aigfxdevice_20_3e_13',['UniquePtr&lt; ncine::IGfxDevice &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aiindexer_20_3e_14',['UniquePtr&lt; ncine::IIndexer &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aiinputmanager_20_3e_15',['UniquePtr&lt; ncine::IInputManager &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aijobsystem_20_3e_16',['UniquePtr&lt; ncine::IJobSystem &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3ailogger_20_3e_17',['UniquePtr&lt; ncine::ILogger &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aparticle_20_3e_18',['UniquePtr&lt; ncine::Particle &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3aparticleaffector_20_3e_19',['UniquePtr&lt; ncine::ParticleAffector &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20ncine_3a_3atexture_20_3e_20',['UniquePtr&lt; ncine::Texture &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20rendercommand_20_3e_21',['UniquePtr&lt; RenderCommand &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20renderqueue_20_3e_22',['UniquePtr&lt; RenderQueue &gt;',['../classnctl_1_1_unique_ptr.html',1,'nctl']]],
+  ['uniqueptr_3c_20t_5b_5d_2c_20deleter_20_3e_23',['UniquePtr&lt; T[], Deleter &gt;',['../classnctl_1_1_unique_ptr_3_01_t_0f_0e_00_01_deleter_01_4.html',1,'nctl']]]
+];

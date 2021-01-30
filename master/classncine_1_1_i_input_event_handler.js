@@ -1,0 +1,26 @@
+var classncine_1_1_i_input_event_handler =
+[
+    [ "onFilesDropped", "classncine_1_1_i_input_event_handler.html#a2461f85feb7d17b4f107921f4d3b5665", null ],
+    [ "onJoyAxisMoved", "classncine_1_1_i_input_event_handler.html#a7753cc54864f9204eb8cb2c99b7f633c", null ],
+    [ "onJoyButtonPressed", "classncine_1_1_i_input_event_handler.html#a65745cd39ad707fb5cb3a50e94a3f327", null ],
+    [ "onJoyButtonReleased", "classncine_1_1_i_input_event_handler.html#a15b522de7bee581b56d1b5e12a9127ec", null ],
+    [ "onJoyConnected", "classncine_1_1_i_input_event_handler.html#a29cbdfbf0e5545b4e56ad4b1835aa1e7", null ],
+    [ "onJoyDisconnected", "classncine_1_1_i_input_event_handler.html#a0d0821dd34348eeed7d26684e36f822a", null ],
+    [ "onJoyHatMoved", "classncine_1_1_i_input_event_handler.html#a9676fbaec7ea4663fec3dab936113394", null ],
+    [ "onJoyMappedAxisMoved", "classncine_1_1_i_input_event_handler.html#ab07069e44f3f1b5e90dadcc8a64624f7", null ],
+    [ "onJoyMappedButtonPressed", "classncine_1_1_i_input_event_handler.html#a1b7c9f1ea594e962759f6a938df9c97b", null ],
+    [ "onJoyMappedButtonReleased", "classncine_1_1_i_input_event_handler.html#a38a3860da958305fc9d7be52728ba093", null ],
+    [ "onKeyPressed", "classncine_1_1_i_input_event_handler.html#acd56ad9e1245a0de861236205f1a813a", null ],
+    [ "onKeyReleased", "classncine_1_1_i_input_event_handler.html#a580b162e418251ce6b56e08ec6e32815", null ],
+    [ "onMouseButtonPressed", "classncine_1_1_i_input_event_handler.html#a42535586f369813ef7da0126b1416448", null ],
+    [ "onMouseButtonReleased", "classncine_1_1_i_input_event_handler.html#a107b9c8b313f81a0d9a9664dfef24512", null ],
+    [ "onMouseMoved", "classncine_1_1_i_input_event_handler.html#adf782a9b03207a4bc988d464606fe103", null ],
+    [ "onPointerDown", "classncine_1_1_i_input_event_handler.html#a5424ef98deadc1ca33836ed44406a488", null ],
+    [ "onPointerUp", "classncine_1_1_i_input_event_handler.html#a07ef20e2cdc157718316475407bca22d", null ],
+    [ "onQuitRequest", "classncine_1_1_i_input_event_handler.html#ac9739237ded6cca133a23a6509dedd1e", null ],
+    [ "onScrollInput", "classncine_1_1_i_input_event_handler.html#a6c12028386d612e67716a76948a88fbc", null ],
+    [ "onTextInput", "classncine_1_1_i_input_event_handler.html#ad913bc32a7446ee5f8b3a95133078555", null ],
+    [ "onTouchDown", "classncine_1_1_i_input_event_handler.html#a74602f87bbcacf77e0ee6a98abcbb627", null ],
+    [ "onTouchMove", "classncine_1_1_i_input_event_handler.html#a5e1cf6463f495f245e9ca70b831a83fa", null ],
+    [ "onTouchUp", "classncine_1_1_i_input_event_handler.html#aeecf79cf672655505d4b960eff79a5a8", null ]
+];

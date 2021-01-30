@@ -1,0 +1,9 @@
+<map id="ncine::AppConfiguration::Graphics" name="ncine::AppConfiguration::Graphics">
+<area shape="rect" id="Node000001" title="Graphics related configuration." alt="" coords="643,47,820,87"/>
+<area shape="rect" id="Node000002" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l.html" title="OpenGL related configuration." alt="" coords="313,5,491,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,35,643,53,642,58,504,41"/>
+<area shape="rect" id="Node000003" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="5,13,97,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,23,313,23,313,28,111,28"/>
+<area shape="rect" id="Node000004" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l_capabilities.html" title="OpenGL context capabilities (determined at compile time)" alt="" coords="291,69,513,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="527,82,618,76,642,74,643,79,619,81,527,87"/>
+</map>

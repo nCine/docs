@@ -1,0 +1,28 @@
+var classncine_1_1_null_audio_device =
+[
+    [ "attributes", "classncine_1_1_null_audio_device.html#a55837de9194d09890d803f6912d2a5f3", null ],
+    [ "gain", "classncine_1_1_null_audio_device.html#af08123ea050f9af3839d9838221c96f7", null ],
+    [ "maxNumSources", "classncine_1_1_null_audio_device.html#a43b18bc5a088af40fe42fb63f05d131d", null ],
+    [ "name", "classncine_1_1_null_audio_device.html#abab50300c5889e862c3a3a995abd0622", null ],
+    [ "numAvailableSources", "classncine_1_1_null_audio_device.html#a8862cfb1097743f8111b319dc7686157", null ],
+    [ "numPlayers", "classncine_1_1_null_audio_device.html#a4c9942d76f797f1fce77dc3f5e58b46b", null ],
+    [ "pauseDevice", "classncine_1_1_null_audio_device.html#a39185068a86bf3e1a8bd417f8e9e3cec", null ],
+    [ "pausePlayers", "classncine_1_1_null_audio_device.html#afa6f87999f50db9d1aef025b932471ac", null ],
+    [ "pausePlayers", "classncine_1_1_null_audio_device.html#a5cbf4c3f92b0d1aa92b8fb1daacde72d", null ],
+    [ "player", "classncine_1_1_null_audio_device.html#ac7fd210f8cd39a89034e60f58540059a", null ],
+    [ "player", "classncine_1_1_null_audio_device.html#a354710832d22656bbefd107662db87b2", null ],
+    [ "position", "classncine_1_1_null_audio_device.html#a1aad2888c6b217d0c943a523e93ededa", null ],
+    [ "registerPlayer", "classncine_1_1_null_audio_device.html#ab11b7ea8d1bb9b82af92dd1f7bc113e2", null ],
+    [ "resumeDevice", "classncine_1_1_null_audio_device.html#a154a277f2f893699be99a216fdf2b428", null ],
+    [ "resumePlayers", "classncine_1_1_null_audio_device.html#a3c737def21864c3ca8f25b16aa39e3b2", null ],
+    [ "setGain", "classncine_1_1_null_audio_device.html#a6de5dcfdc583e8e9f55fa01d4ded5f57", null ],
+    [ "setPosition", "classncine_1_1_null_audio_device.html#af20b88acdce33a0ce60214b49b0fc695", null ],
+    [ "setPosition", "classncine_1_1_null_audio_device.html#aa9ba4bab929a987e32a697fc90ea4376", null ],
+    [ "setVelocity", "classncine_1_1_null_audio_device.html#aa3fe9a9a910fcc9b36e92af965c2e163", null ],
+    [ "setVelocity", "classncine_1_1_null_audio_device.html#a9364284fc7dd59453a7d44a752c36c8e", null ],
+    [ "stopPlayers", "classncine_1_1_null_audio_device.html#ad2f8ec426a9cab5fbf62f01440ea49da", null ],
+    [ "stopPlayers", "classncine_1_1_null_audio_device.html#a15278691420e85b312c22f72f6d26136", null ],
+    [ "unregisterPlayer", "classncine_1_1_null_audio_device.html#a4ef5a91a1a9e4f725655a2a65b381c37", null ],
+    [ "updatePlayers", "classncine_1_1_null_audio_device.html#a133e9ded9fc208fc79bb5e2245ad00b2", null ],
+    [ "velocity", "classncine_1_1_null_audio_device.html#a1c7fb978511e3411182f4dd688a63438", null ]
+];

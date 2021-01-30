@@ -1,0 +1,5 @@
+<map id="ncine::NullGfxCapabilities" name="ncine::NullGfxCapabilities">
+<area shape="rect" id="Node000001" title="A fake graphics capabilities class that reports no available capabilities." alt="" coords="5,79,196,104"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_i_gfx_capabilities.html" title="The interface class to query runtime OpenGL device capabilities." alt="" coords="16,5,185,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,44,103,79,98,79,98,44"/>
+</map>

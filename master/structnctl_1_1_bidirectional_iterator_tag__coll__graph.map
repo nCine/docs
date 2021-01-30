@@ -1,0 +1,5 @@
+<map id="nctl::BidirectionalIteratorTag" name="nctl::BidirectionalIteratorTag">
+<area shape="rect" id="Node000001" title="Dispatching tag for iterators that can move both ways, one element at a time." alt="" coords="5,79,212,104"/>
+<area shape="rect" id="Node000002" href="$structnctl_1_1_forward_iterator_tag.html" title="Dispatching tag for iterators that can only move forward, one element at a time." alt="" coords="21,5,197,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,44,111,79,106,79,106,44"/>
+</map>

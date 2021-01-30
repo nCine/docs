@@ -1,0 +1,7 @@
+<map id="ncine::Application" name="ncine::Application">
+<area shape="rect" id="Node000001" title="Main entry point and handler for nCine applications." alt="" coords="127,5,266,31"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_android_application.html" title="Main entry point and handler for nCine Android applications." alt="" coords="5,79,193,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,41,117,81,114,76,168,37"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_p_c_application.html" title="Handler class for nCine applications on PC." alt="" coords="218,79,373,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,36,281,76,278,81,222,41"/>
+</map>
