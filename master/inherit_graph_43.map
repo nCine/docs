@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classncine_1_1_i_audio_device.html" title="Audio device interface class." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000001" href="$classncine_1_1_null_audio_device.html" title="A fake audio device which doesn&#39;t play anything." alt="" coords="204,5,377,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="170,15,204,15,204,21,170,21"/>
+</map>
