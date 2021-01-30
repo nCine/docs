@@ -1,0 +1,4 @@
+<map id="nctl::FreeListAllocator" name="nctl::FreeListAllocator">
+<area shape="rect" id="node1" title="A free list allocator." alt="" coords="5,99,168,125"/>
+<area shape="rect" id="node2" href="$classnctl_1_1_i_allocator.html" title="The allocator interface." alt="" coords="29,14,145,41"/>
+</map>

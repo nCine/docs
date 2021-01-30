@@ -1,0 +1,4 @@
+<map id="nctl::LinearAllocator" name="nctl::LinearAllocator">
+<area shape="rect" id="node1" title="A linear allocator." alt="" coords="5,80,157,107"/>
+<area shape="rect" id="node2" href="$classnctl_1_1_i_allocator.html" title="The allocator interface." alt="" coords="23,5,139,32"/>
+</map>
