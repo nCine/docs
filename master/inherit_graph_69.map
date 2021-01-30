@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classncine_1_1_i_texture_saver.html" title="Texture saver interface class." alt="" coords="5,31,160,56"/>
+<area shape="rect" id="Node000001" href="$classncine_1_1_texture_saver_png.html" title="PNG texture saver." alt="" coords="214,5,389,31"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="173,30,214,25,214,31,174,35"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_texture_saver_web_p.html" title="WebP texture saver." alt="" coords="208,55,395,80"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="174,51,208,54,208,60,173,56"/>
+</map>

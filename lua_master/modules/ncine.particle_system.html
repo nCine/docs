@@ -1,0 +1,1220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><strong>ncine.particle_system</strong></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.particle_system</code></h1>
+<p>The table containing particle system related functions.</p>
+<p>Inherits from <a href="../modules/ncine.scenenode.html#">ncine.scenenode</a>.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.new">ncine.particle_system.new (parent, count, texture, tex_rect)</a></td>
+	<td class="summary">Constructs a particle system.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.clone">ncine.particle_system.clone (particle_system)</a></td>
+	<td class="summary">Constructs a new particle system object as a clone of the specified one.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.delete">ncine.particle_system.delete (particle_system)</a></td>
+	<td class="summary">Destroys a particle system object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_color_affector">ncine.particle_system.add_color_affector (particle_system, color_steps)</a></td>
+	<td class="summary">Adds a color particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_size_affector">ncine.particle_system.add_size_affector (particle_system, base_scale, size_steps)</a></td>
+	<td class="summary">Adds a size particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_size_affector">ncine.particle_system.add_size_affector (particle_system, base_scale, size_steps)</a></td>
+	<td class="summary">Adds a size particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_rotation_affector">ncine.particle_system.add_rotation_affector (particle_system, rotation_steps)</a></td>
+	<td class="summary">Adds a rotation particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_position_affector">ncine.particle_system.add_position_affector (particle_system, position_steps)</a></td>
+	<td class="summary">Adds a position particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.add_velocity_affector">ncine.particle_system.add_velocity_affector (particle_system, velocity_steps)</a></td>
+	<td class="summary">Adds a velocity particle affector</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.num_affectors">ncine.particle_system.num_affectors (particle_system)</a></td>
+	<td class="summary">Returns the number of affectors</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.get_affector">ncine.particle_system.get_affector (particle_system, index)</a></td>
+	<td class="summary">Returns the affector at the specified index</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.remove_affector">ncine.particle_system.remove_affector (particle_system, index)</a></td>
+	<td class="summary">Removes the affector at the specified index</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.clear_affectors">ncine.particle_system.clear_affectors (particle_system)</a></td>
+	<td class="summary">Deletes all particle affectors</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.emit_particles">ncine.particle_system.emit_particles (particle_system, initializer)</a></td>
+	<td class="summary">Emits particles with the specified initialization parameters</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.kill_particles">ncine.particle_system.kill_particles (particle_system)</a></td>
+	<td class="summary">Kills all alive particles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.get_in_local_space">ncine.particle_system.get_in_local_space (particle_system)</a></td>
+	<td class="summary">Returns <code>true</code> if particles are positioned using the particle system as their origin</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_in_local_space">ncine.particle_system.set_in_local_space (particle_system, local_space)</a></td>
+	<td class="summary">Sets or clears the local space flag, to move particles around the particle system or freely</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.get_particles_update_enabled">ncine.particle_system.get_particles_update_enabled (particle_system)</a></td>
+	<td class="summary">Returns <code>true</code> if particles are updating</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_particles_update_enabled">ncine.particle_system.set_particles_update_enabled (particle_system, enabled)</a></td>
+	<td class="summary">Enables or disables particles updating</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.get_affectors_enabled">ncine.particle_system.get_affectors_enabled (particle_system)</a></td>
+	<td class="summary">Returns <code>true</code> if affectors are modifying particles properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_affectors_enabled">ncine.particle_system.set_affectors_enabled (particle_system, enabled)</a></td>
+	<td class="summary">Enables or disables affectors modifying particles properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.num_particles">ncine.particle_system.num_particles (particle_system)</a></td>
+	<td class="summary">Returns the total number of particles in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.num_alive_particles">ncine.particle_system.num_alive_particles (particle_system)</a></td>
+	<td class="summary">Returns the number of particles currently alive</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_texture">ncine.particle_system.set_texture (particle_system, texture)</a></td>
+	<td class="summary">Sets the texture object for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_texture_rect">ncine.particle_system.set_texture_rect (particle_system, tex_rect)</a></td>
+	<td class="summary">Sets the texture source rectangle for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_anchor_point">ncine.particle_system.set_anchor_point (particle_system, point)</a></td>
+	<td class="summary">Sets the transformation anchor point for every particle in the system with a <code>ncine.vec2</code></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_anchor_point">ncine.particle_system.set_anchor_point (particle_system, point_x, point_y)</a></td>
+	<td class="summary">Sets the transformation anchor point for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_flipped_x">ncine.particle_system.set_flipped_x (particle_system, flipped_x)</a></td>
+	<td class="summary">Flips the texture rect horizontally for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_flipped_y">ncine.particle_system.set_flipped_y (particle_system, flipped_y)</a></td>
+	<td class="summary">Flips the texture rect vertically for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_blending_preset">ncine.particle_system.set_blending_preset (particle_system, blending_preset)</a></td>
+	<td class="summary">Sets the blending factors preset for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_blending_factors">ncine.particle_system.set_blending_factors (particle_system, src_factor, dest_factor)</a></td>
+	<td class="summary">Sets the source and destination blending factors for every particle in the system</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.particle_system.set_layer">ncine.particle_system.set_layer (particle_system, layer)</a></td>
+	<td class="summary">Sets the rendering layer for every particle in the system</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#particlesystemObj">particlesystemObj</a></td>
+	<td class="summary">The light user data of a particle system object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#particle_initializer">particle_initializer</a></td>
+	<td class="summary">An initializer table with random ranges used to emit particles.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.particle_system.new"></a>
+    <strong>ncine.particle_system.new (parent, count, texture, tex_rect)</strong>
+    </dt>
+    <dd>
+    Constructs a particle system. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.particle_system.html#ncine.particle_system.delete">ncine.particle_system.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">parent</span>
+            <span class="types"><a class="type" href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a> or <span class="type">nil</span></span>
+         The parent scenenode
+        </li>
+        <li><span class="parameter">count</span>
+            <span class="types"><span class="type">integer</span></span>
+         Maximum amount of particles
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a> or <span class="type">nil</span></span>
+
+
+        </li>
+        <li><span class="parameter">tex_rect</span>
+            <span class="types"><span class="type">ncine.rect</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+        A new particle system object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.clone"></a>
+    <strong>ncine.particle_system.clone (particle_system)</strong>
+    </dt>
+    <dd>
+    Constructs a new particle system object as a clone of the specified one. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.particle_system.html#ncine.particle_system.delete">ncine.particle_system.delete</a> when you are done with it!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+         The particle system object to be cloned
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+        The cloned particle system object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.delete"></a>
+    <strong>ncine.particle_system.delete (particle_system)</strong>
+    </dt>
+    <dd>
+    Destroys a particle system object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+         The particle system object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_color_affector"></a>
+    <strong>ncine.particle_system.add_color_affector (particle_system, color_steps)</strong>
+    </dt>
+    <dd>
+    Adds a color particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">color_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_color_step[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_size_affector"></a>
+    <strong>ncine.particle_system.add_size_affector (particle_system, base_scale, size_steps)</strong>
+    </dt>
+    <dd>
+    Adds a size particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">base_scale</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">size_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_size_step_factor[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_size_affector"></a>
+    <strong>ncine.particle_system.add_size_affector (particle_system, base_scale, size_steps)</strong>
+    </dt>
+    <dd>
+    Adds a size particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">base_scale</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">size_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_size_step_vector[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_rotation_affector"></a>
+    <strong>ncine.particle_system.add_rotation_affector (particle_system, rotation_steps)</strong>
+    </dt>
+    <dd>
+    Adds a rotation particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">rotation_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_rotation_step[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_position_affector"></a>
+    <strong>ncine.particle_system.add_position_affector (particle_system, position_steps)</strong>
+    </dt>
+    <dd>
+    Adds a position particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">position_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_position_step[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.add_velocity_affector"></a>
+    <strong>ncine.particle_system.add_velocity_affector (particle_system, velocity_steps)</strong>
+    </dt>
+    <dd>
+    Adds a velocity particle affector
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">velocity_steps</span>
+            <span class="types"><span class="type">ncine.particle_affector.affector_velocity_step[]</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.num_affectors"></a>
+    <strong>ncine.particle_system.num_affectors (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns the number of affectors
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.get_affector"></a>
+    <strong>ncine.particle_system.get_affector (particle_system, index)</strong>
+    </dt>
+    <dd>
+    Returns the affector at the specified index
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.particle_affector.affectorObj</span> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.remove_affector"></a>
+    <strong>ncine.particle_system.remove_affector (particle_system, index)</strong>
+    </dt>
+    <dd>
+    Removes the affector at the specified index
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.clear_affectors"></a>
+    <strong>ncine.particle_system.clear_affectors (particle_system)</strong>
+    </dt>
+    <dd>
+    Deletes all particle affectors
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.emit_particles"></a>
+    <strong>ncine.particle_system.emit_particles (particle_system, initializer)</strong>
+    </dt>
+    <dd>
+    Emits particles with the specified initialization parameters
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">initializer</span>
+            <span class="types"><span class="type">particle_initializer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.kill_particles"></a>
+    <strong>ncine.particle_system.kill_particles (particle_system)</strong>
+    </dt>
+    <dd>
+    Kills all alive particles
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.get_in_local_space"></a>
+    <strong>ncine.particle_system.get_in_local_space (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if particles are positioned using the particle system as their origin
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_in_local_space"></a>
+    <strong>ncine.particle_system.set_in_local_space (particle_system, local_space)</strong>
+    </dt>
+    <dd>
+    Sets or clears the local space flag, to move particles around the particle system or freely
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">local_space</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.get_particles_update_enabled"></a>
+    <strong>ncine.particle_system.get_particles_update_enabled (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if particles are updating
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_particles_update_enabled"></a>
+    <strong>ncine.particle_system.set_particles_update_enabled (particle_system, enabled)</strong>
+    </dt>
+    <dd>
+    Enables or disables particles updating
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.get_affectors_enabled"></a>
+    <strong>ncine.particle_system.get_affectors_enabled (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if affectors are modifying particles properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_affectors_enabled"></a>
+    <strong>ncine.particle_system.set_affectors_enabled (particle_system, enabled)</strong>
+    </dt>
+    <dd>
+    Enables or disables affectors modifying particles properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.num_particles"></a>
+    <strong>ncine.particle_system.num_particles (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns the total number of particles in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.num_alive_particles"></a>
+    <strong>ncine.particle_system.num_alive_particles (particle_system)</strong>
+    </dt>
+    <dd>
+    Returns the number of particles currently alive
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_texture"></a>
+    <strong>ncine.particle_system.set_texture (particle_system, texture)</strong>
+    </dt>
+    <dd>
+    Sets the texture object for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">texture</span>
+            <span class="types"><a class="type" href="../modules/ncine.texture.html#textureObj">ncine.texture.textureObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_texture_rect"></a>
+    <strong>ncine.particle_system.set_texture_rect (particle_system, tex_rect)</strong>
+    </dt>
+    <dd>
+    Sets the texture source rectangle for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">tex_rect</span>
+            <span class="types"><span class="type">ncine.rect</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_anchor_point"></a>
+    <strong>ncine.particle_system.set_anchor_point (particle_system, point)</strong>
+    </dt>
+    <dd>
+    Sets the transformation anchor point for every particle in the system with a <code>ncine.vec2</code>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">point</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_anchor_point"></a>
+    <strong>ncine.particle_system.set_anchor_point (particle_system, point_x, point_y)</strong>
+    </dt>
+    <dd>
+    Sets the transformation anchor point for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">point_x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">point_y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_flipped_x"></a>
+    <strong>ncine.particle_system.set_flipped_x (particle_system, flipped_x)</strong>
+    </dt>
+    <dd>
+    Flips the texture rect horizontally for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">flipped_x</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_flipped_y"></a>
+    <strong>ncine.particle_system.set_flipped_y (particle_system, flipped_y)</strong>
+    </dt>
+    <dd>
+    Flips the texture rect vertically for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">flipped_y</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_blending_preset"></a>
+    <strong>ncine.particle_system.set_blending_preset (particle_system, blending_preset)</strong>
+    </dt>
+    <dd>
+    Sets the blending factors preset for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">blending_preset</span>
+            <span class="types"><span class="type">ncine.blending_preset</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_blending_factors"></a>
+    <strong>ncine.particle_system.set_blending_factors (particle_system, src_factor, dest_factor)</strong>
+    </dt>
+    <dd>
+    Sets the source and destination blending factors for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">src_factor</span>
+            <span class="types"><span class="type">ncine.blending_factor</span></span>
+
+
+        </li>
+        <li><span class="parameter">dest_factor</span>
+            <span class="types"><span class="type">ncine.blending_factor</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.particle_system.set_layer"></a>
+    <strong>ncine.particle_system.set_layer (particle_system, layer)</strong>
+    </dt>
+    <dd>
+    Sets the rendering layer for every particle in the system
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">particle_system</span>
+            <span class="types"><a class="type" href="../modules/ncine.particle_system.html#particlesystemObj">particlesystemObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">layer</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "particlesystemObj"></a>
+    <strong>particlesystemObj</strong>
+    </dt>
+    <dd>
+    The light user data of a particle system object. </p>
+
+<p>Inherits from <a href="../modules/ncine.scenenode.html#scenenodeObj">ncine.scenenode.scenenodeObj</a>.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "particle_initializer"></a>
+    <strong>particle_initializer</strong>
+    </dt>
+    <dd>
+    An initializer table with random ranges used to emit particles. </p>
+
+<p>Each field can be the precise value, or an array of two elements, to define a minimum and a maximum.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">amount</span>
+         (number|number[2])
+        </li>
+        <li><span class="parameter">life</span>
+         (number|number[2])
+        </li>
+        <li><span class="parameter">position</span>
+         (ncine.vec2|ncine.vec2[2])
+        </li>
+        <li><span class="parameter">velocity</span>
+         (ncine.vec2|ncine.vec2[2])
+        </li>
+        <li><span class="parameter">rotation</span>
+         (number|number[2])
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
