@@ -1,0 +1,5 @@
+<map id="ncine::ParticleSystem" name="ncine::ParticleSystem">
+<area shape="rect" id="node1" title="The class representing a particle system." alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node2" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="17,80,156,107"/>
+<area shape="rect" id="node3" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="33,5,140,32"/>
+</map>
