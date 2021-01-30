@@ -1,0 +1,28 @@
+<map id="ncine::AppConfiguration" name="ncine::AppConfiguration">
+<area shape="rect" id="Node000001" title="The class storing initialization settings for an nCine application." alt="" coords="1097,222,1275,247"/>
+<area shape="rect" id="Node000002" href="$structncine_1_1_app_configuration_1_1_logging.html" title="Logging related configuration." alt="" coords="597,5,775,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="789,43,881,67,977,99,1027,121,1075,150,1128,187,1171,220,1167,224,1125,191,1072,154,1025,126,975,104,880,72,787,49"/>
+<area shape="rect" id="Node000003" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="35,57,127,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,54,181,47,293,35,406,27,597,22,597,28,406,33,293,40,182,52,141,59"/>
+<area shape="rect" id="Node000004" href="$structncine_1_1_app_configuration_1_1_window.html" title="Window related configuration." alt="" coords="799,183,976,223"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="116,87,218,143,283,171,351,192,410,203,471,211,592,218,705,216,798,210,799,215,705,221,592,223,470,216,409,209,350,197,281,176,215,148,113,92"/>
+<area shape="rect" id="Node000008" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l.html" title="OpenGL related configuration." alt="" coords="373,49,551,89"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="141,67,373,67,373,72,141,72"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="990,211,1098,223,1097,228,990,216"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_vector2.html" title=" " alt="" coords="381,257,543,282"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="557,277,608,279,663,276,720,268,773,252,785,243,797,232,822,220,824,225,800,237,789,247,776,257,721,273,664,282,608,284,557,283"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="5,258,157,283"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="171,268,381,267,381,272,171,273"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="48,243,58,235,81,231,101,234,113,240,116,250,110,259,105,256,111,249,109,243,99,239,81,237,60,240,51,247"/>
+<area shape="rect" id="Node000007" href="$structncine_1_1_app_configuration_1_1_graphics.html" title="Graphics related configuration." alt="" coords="799,113,976,153"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="962,155,1074,193,1149,219,1147,224,1072,199,960,160"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="565,80,775,111,799,115,798,120,774,116,564,85"/>
+<area shape="rect" id="Node000009" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l_capabilities.html" title="OpenGL context capabilities (determined at compile time)" alt="" coords="351,113,573,153"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="587,131,798,131,798,136,587,136"/>
+<area shape="rect" id="Node000010" href="$structncine_1_1_app_configuration_1_1_audio.html" title="Audio related configuration." alt="" coords="799,247,976,287"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="990,253,1097,241,1098,247,990,258"/>
+<area shape="rect" id="Node000011" href="$structncine_1_1_app_configuration_1_1_job_system.html" title="Job system related configuration." alt="" coords="799,311,976,351"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="970,304,1072,272,1150,245,1152,250,1074,277,972,309"/>
+<area shape="rect" id="Node000012" href="$structncine_1_1_app_configuration_1_1_features.html" title="Feature switches." alt="" coords="799,375,976,415"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="958,367,975,360,1025,340,1072,315,1126,279,1168,245,1171,250,1129,283,1075,320,1027,345,977,365,960,372"/>
+</map>

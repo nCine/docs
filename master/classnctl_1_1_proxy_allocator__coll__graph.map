@@ -1,0 +1,6 @@
+<map id="nctl::ProxyAllocator" name="nctl::ProxyAllocator">
+<area shape="rect" id="Node000001" title="A proxy allocator." alt="" coords="5,99,155,124"/>
+<area shape="rect" id="Node000002" href="$classnctl_1_1_i_allocator.html" title="The allocator interface." alt="" coords="22,15,138,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,54,83,98,77,98,77,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="153,18,165,27,156,35,139,38,138,33,154,31,159,28,150,23"/>
+</map>

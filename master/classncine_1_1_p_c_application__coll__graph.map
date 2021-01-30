@@ -1,0 +1,50 @@
+<map id="ncine::PCApplication" name="ncine::PCApplication">
+<area shape="rect" id="Node000001" title="Handler class for nCine applications on PC." alt="" coords="1741,494,1896,519"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_application.html" title="Main entry point and handler for nCine applications." alt="" coords="1553,494,1692,519"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1706,504,1741,504,1741,509,1706,509"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_app_configuration.html" title="The class storing initialization settings for an nCine application." alt="" coords="1122,226,1299,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1311,222,1365,222,1423,228,1480,244,1506,257,1531,273,1556,297,1576,326,1592,357,1604,390,1618,450,1623,494,1618,494,1613,451,1599,391,1587,359,1572,328,1552,300,1528,277,1504,261,1478,249,1422,233,1365,227,1311,228"/>
+<area shape="rect" id="Node000004" href="$structncine_1_1_app_configuration_1_1_logging.html" title="Logging related configuration." alt="" coords="597,5,775,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="789,44,881,67,977,99,1027,121,1075,148,1192,224,1189,228,1072,153,1025,126,975,104,879,73,787,49"/>
+<area shape="rect" id="Node000005" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="35,57,127,82"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="141,54,181,47,293,35,406,27,597,22,597,28,406,33,293,40,182,52,141,59"/>
+<area shape="rect" id="Node000006" href="$structncine_1_1_app_configuration_1_1_window.html" title="Window related configuration." alt="" coords="799,183,976,223"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="116,87,218,143,283,171,351,192,410,203,471,211,592,218,705,216,798,210,799,215,705,221,592,223,470,216,409,209,350,197,281,176,215,148,113,92"/>
+<area shape="rect" id="Node000010" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l.html" title="OpenGL related configuration." alt="" coords="373,49,551,89"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="141,67,373,67,373,72,141,72"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="990,211,1122,226,1122,231,990,217"/>
+<area shape="rect" id="Node000007" href="$classncine_1_1_vector2.html" title=" " alt="" coords="381,257,543,282"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="557,277,608,279,663,276,720,268,773,252,785,243,797,232,822,220,824,225,800,237,789,247,776,257,721,273,664,282,608,284,557,283"/>
+<area shape="rect" id="Node000008" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="5,258,157,283"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="171,268,381,267,381,272,171,273"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="48,243,58,235,81,231,101,234,113,240,116,250,110,259,105,256,111,249,109,243,99,239,81,237,60,240,51,247"/>
+<area shape="rect" id="Node000009" href="$structncine_1_1_app_configuration_1_1_graphics.html" title="Graphics related configuration." alt="" coords="799,113,976,153"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="964,155,1171,223,1170,228,962,160"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="565,80,775,111,799,115,798,120,774,116,564,85"/>
+<area shape="rect" id="Node000011" href="$structncine_1_1_app_configuration_1_1_graphics_1_1_open_g_l_capabilities.html" title="OpenGL context capabilities (determined at compile time)" alt="" coords="351,113,573,153"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="587,131,798,131,798,136,587,136"/>
+<area shape="rect" id="Node000012" href="$structncine_1_1_app_configuration_1_1_audio.html" title="Audio related configuration." alt="" coords="799,247,976,287"/>
+<area shape="poly" id="edge14_Node000003_Node000012" title=" " alt="" coords="989,259,1073,253,1121,248,1122,253,1074,259,990,265"/>
+<area shape="rect" id="Node000013" href="$structncine_1_1_app_configuration_1_1_job_system.html" title="Job system related configuration." alt="" coords="799,311,976,351"/>
+<area shape="poly" id="edge15_Node000003_Node000013" title=" " alt="" coords="989,310,1031,297,1072,280,1084,271,1096,262,1131,249,1133,254,1099,266,1087,275,1075,285,1033,302,990,315"/>
+<area shape="rect" id="Node000014" href="$structncine_1_1_app_configuration_1_1_features.html" title="Feature switches." alt="" coords="799,375,976,415"/>
+<area shape="poly" id="edge16_Node000003_Node000014" title=" " alt="" coords="988,374,1033,355,1071,328,1081,312,1082,296,1084,279,1095,262,1121,247,1123,251,1099,266,1089,281,1088,296,1086,314,1075,331,1035,360,990,379"/>
+<area shape="rect" id="Node000015" href="$structncine_1_1_application_1_1_rendering_settings.html" title="Rendering settings that can be changed at run&#45;time." alt="" coords="1136,276,1285,316"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="1300,289,1355,292,1415,301,1476,318,1531,347,1566,381,1592,423,1610,463,1620,493,1615,495,1605,465,1588,425,1562,385,1528,351,1474,323,1414,306,1355,297,1300,294"/>
+<area shape="rect" id="Node000016" href="$structncine_1_1_application_1_1_gui_settings.html" title="GUI settings (for ImGui and Nuklear) that can be changed at run&#45;time." alt="" coords="1141,340,1280,380"/>
+<area shape="poly" id="edge18_Node000002_Node000016" title=" " alt="" coords="1294,360,1349,365,1409,376,1472,392,1531,416,1557,433,1580,454,1614,492,1610,495,1576,457,1554,437,1528,421,1470,397,1408,381,1348,370,1294,365"/>
+<area shape="rect" id="Node000017" href="$structncine_1_1_i_debug_overlay_1_1_display_settings.html" title=" " alt="" coords="1129,404,1292,444"/>
+<area shape="poly" id="edge19_Node000002_Node000017" title=" " alt="" coords="1306,430,1414,444,1530,468,1595,491,1593,496,1529,473,1413,449,1305,435"/>
+<area shape="rect" id="Node000018" href="$classncine_1_1_time_stamp.html" title="A class representing a point in time or a duration." alt="" coords="1141,469,1281,494"/>
+<area shape="poly" id="edge20_Node000002_Node000018" title=" " alt="" coords="1295,484,1553,500,1553,505,1295,489"/>
+<area shape="rect" id="Node000019" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1097,518,1324,543"/>
+<area shape="poly" id="edge21_Node000002_Node000019" title=" " alt="" coords="1338,531,1432,530,1529,523,1567,517,1568,522,1530,528,1432,535,1338,537"/>
+<area shape="rect" id="Node000020" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,568,1295,608"/>
+<area shape="poly" id="edge22_Node000002_Node000020" title=" " alt="" coords="1308,585,1416,575,1473,566,1529,552,1568,536,1601,517,1603,522,1570,541,1530,557,1474,571,1416,581,1309,590"/>
+<area shape="rect" id="Node000021" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,632,1295,672"/>
+<area shape="poly" id="edge23_Node000002_Node000021" title=" " alt="" coords="1308,651,1361,648,1417,640,1474,625,1528,603,1555,584,1579,561,1611,518,1616,521,1583,565,1559,588,1531,608,1476,630,1419,645,1361,653,1309,657"/>
+<area shape="rect" id="Node000022" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,696,1295,736"/>
+<area shape="poly" id="edge24_Node000002_Node000022" title=" " alt="" coords="1308,722,1362,720,1419,712,1476,696,1528,670,1547,654,1563,635,1589,592,1606,551,1616,519,1621,520,1611,553,1594,595,1568,638,1551,658,1531,674,1478,701,1421,718,1362,725,1308,727"/>
+<area shape="rect" id="Node000023" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="1127,760,1295,800"/>
+<area shape="poly" id="edge25_Node000002_Node000023" title=" " alt="" coords="1308,791,1363,792,1421,786,1477,770,1503,758,1528,742,1553,718,1572,689,1588,657,1599,625,1613,563,1618,519,1623,520,1618,564,1605,626,1593,660,1577,692,1557,721,1531,746,1506,762,1479,775,1422,791,1363,797,1308,796"/>
+</map>
