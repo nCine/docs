@@ -1,0 +1,6 @@
+<map id="ncine::IGfxDevice" name="ncine::IGfxDevice">
+<area shape="rect" id="node1" title="It represents the interface to the graphics device where everything is rendered." alt="" coords="169,124,296,151"/>
+<area shape="rect" id="node2" href="$structncine_1_1_i_gfx_device_1_1_video_mode.html" title="A structure representing a supported monitor video mode." alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node3" href="$classncine_1_1_display_mode.html" title="Display properties." alt="" coords="164,13,301,39"/>
+<area shape="rect" id="node4" href="$structncine_1_1_i_gfx_device_1_1_g_l_context_info.html" title="Contains the attributes to create an OpenGL context." alt="" coords="325,5,460,47"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="ncine::Object" name="ncine::Object">
+<area shape="rect" id="node2" href="$classncine_1_1_audio_buffer.html" title="A class representing an OpenAL buffer. " alt="" coords="163,5,304,32"/>
+<area shape="rect" id="node3" href="$classncine_1_1_font.html" title="A class holding every information needed to correctly render text. " alt="" coords="187,56,280,83"/>
+<area shape="rect" id="node4" href="$classncine_1_1_i_audio_player.html" title="Audio player interface class. " alt="" coords="160,107,307,133"/>
+<area shape="rect" id="node7" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy. " alt="" coords="164,157,303,184"/>
+<area shape="rect" id="node15" href="$classncine_1_1_texture.html" title="Texture class. " alt="" coords="177,208,290,235"/>
+<area shape="rect" id="node5" href="$classncine_1_1_audio_buffer_player.html" title="Audio buffer player class. " alt="" coords="359,56,541,83"/>
+<area shape="rect" id="node6" href="$classncine_1_1_audio_stream_player.html" title="Audio stream player class. " alt="" coords="355,107,545,133"/>
+<area shape="rect" id="node8" href="$classncine_1_1_drawable_node.html" title="A class for objects that can be drawn through the render queue. " alt="" coords="369,157,531,184"/>
+<area shape="rect" id="node14" href="$classncine_1_1_particle_system.html" title="The class representing a particle system. " alt="" coords="369,208,531,235"/>
+<area shape="rect" id="node9" href="$classncine_1_1_base_sprite.html" title="The base class for sprites. " alt="" coords="593,132,728,159"/>
+<area shape="rect" id="node13" href="$classncine_1_1_text_node.html" title="A scene node to draw a text label. " alt="" coords="597,183,724,209"/>
+<area shape="rect" id="node10" href="$classncine_1_1_mesh_sprite.html" title="A scene node representing a mesh with vertices and UVs. " alt="" coords="776,107,913,133"/>
+<area shape="rect" id="node11" href="$classncine_1_1_sprite.html" title="A scene node representing a regular sprite. " alt="" coords="793,157,896,184"/>
+<area shape="rect" id="node12" href="$classncine_1_1_animated_sprite.html" title="A class for an animated sprite. " alt="" coords="961,157,1128,184"/>
+</map>

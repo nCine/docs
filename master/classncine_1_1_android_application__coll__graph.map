@@ -1,0 +1,17 @@
+<map id="ncine::AndroidApplication" name="ncine::AndroidApplication">
+<area shape="rect" id="node2" href="$classncine_1_1_application.html" title="Main entry point and handler for nCine applications. " alt="" coords="1161,316,1300,343"/>
+<area shape="rect" id="node3" href="$structncine_1_1_application_1_1_rendering_settings.html" title="Rendering settings that can be changed at run&#45;time. " alt="" coords="741,17,889,58"/>
+<area shape="rect" id="node4" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; ncine\l::IDebugOverlay \&gt;" alt="" coords="731,82,899,123"/>
+<area shape="rect" id="node5" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; FrameTimer \&gt;" alt="" coords="701,148,928,175"/>
+<area shape="rect" id="node6" href="$classncine_1_1_app_configuration.html" title="The class storing initialization settings for an nCine application. " alt="" coords="726,199,903,225"/>
+<area shape="rect" id="node7" href="$classncine_1_1_vector2.html" title="ncine::Vector2\&lt; int \&gt;" alt="" coords="347,161,508,188"/>
+<area shape="rect" id="node8" href="$classncine_1_1_vector2.html" title="A two component vector based on templates. " alt="" coords="105,161,257,188"/>
+<area shape="rect" id="node10" href="$classnctl_1_1_string.html" title="A basic string class made of chars. " alt="" coords="381,236,473,263"/>
+<area shape="rect" id="node11" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; ncine\l::SceneNode \&gt;" alt="" coords="731,250,899,291"/>
+<area shape="rect" id="node12" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; RenderQueue \&gt;" alt="" coords="697,316,932,343"/>
+<area shape="rect" id="node13" href="$classncine_1_1_time_stamp.html" title="A class representing a point in time or a duration. " alt="" coords="745,367,885,393"/>
+<area shape="rect" id="node14" href="$structncine_1_1_i_debug_overlay_1_1_display_settings.html" title="ncine::IDebugOverlay\l::DisplaySettings" alt="" coords="733,418,896,459"/>
+<area shape="rect" id="node15" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; ncine\l::IGfxDevice \&gt;" alt="" coords="731,483,899,525"/>
+<area shape="rect" id="node16" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; ncine\l::IAppEventHandler \&gt;" alt="" coords="731,549,899,590"/>
+<area shape="rect" id="node17" href="$classnctl_1_1_unique_ptr.html" title="nctl::UniquePtr\&lt; ncine\l::IInputManager \&gt;" alt="" coords="731,614,899,655"/>
+</map>

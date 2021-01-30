@@ -1,0 +1,9 @@
+<map id="ncine::SceneNode" name="ncine::SceneNode">
+<area shape="rect" id="node2" href="$classncine_1_1_object.html" title="Static RRTI and identification index. " alt="" coords="417,5,524,32"/>
+<area shape="rect" id="node3" href="$classnctl_1_1_array.html" title="nctl::Array\&lt; ncine\l::SceneNode *\&gt;" alt="" coords="401,57,540,98"/>
+<area shape="rect" id="node4" href="$classncine_1_1_matrix4x4.html" title="ncine::Matrix4x4\&lt; float \&gt;" alt="" coords="376,124,565,151"/>
+<area shape="rect" id="node5" href="$classncine_1_1_matrix4x4.html" title="A four by four matrix based on templates. " alt="" coords="105,101,273,128"/>
+<area shape="rect" id="node6" href="$classncine_1_1_vector2.html" title="ncine::Vector2\&lt; float \&gt;" alt="" coords="384,199,557,225"/>
+<area shape="rect" id="node7" href="$classncine_1_1_vector2.html" title="A two component vector based on templates. " alt="" coords="113,220,265,247"/>
+<area shape="rect" id="node9" href="$classncine_1_1_color.html" title="A four channels unsigned char color. " alt="" coords="421,391,520,417"/>
+</map>

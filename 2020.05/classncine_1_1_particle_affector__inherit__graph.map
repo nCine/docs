@@ -1,0 +1,8 @@
+<map id="ncine::ParticleAffector" name="ncine::ParticleAffector">
+<area shape="rect" id="node1" title="Base class for particle affectors." alt="" coords="5,107,156,133"/>
+<area shape="rect" id="node2" href="$classncine_1_1_color_affector.html" title="Particle color affector." alt="" coords="213,5,350,32"/>
+<area shape="rect" id="node3" href="$classncine_1_1_position_affector.html" title="Particle position affector." alt="" coords="205,56,358,83"/>
+<area shape="rect" id="node4" href="$classncine_1_1_rotation_affector.html" title="Particle rotation affector." alt="" coords="204,107,359,133"/>
+<area shape="rect" id="node5" href="$classncine_1_1_size_affector.html" title="Particle size affector." alt="" coords="215,157,347,184"/>
+<area shape="rect" id="node6" href="$classncine_1_1_velocity_affector.html" title="Particle velocity affector." alt="" coords="205,208,357,235"/>
+</map>
