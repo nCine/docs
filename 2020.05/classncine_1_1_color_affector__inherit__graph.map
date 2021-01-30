@@ -1,0 +1,4 @@
+<map id="ncine::ColorAffector" name="ncine::ColorAffector">
+<area shape="rect" id="node1" title="Particle color affector." alt="" coords="12,80,149,107"/>
+<area shape="rect" id="node2" href="$classncine_1_1_particle_affector.html" title="Base class for particle affectors." alt="" coords="5,5,156,32"/>
+</map>

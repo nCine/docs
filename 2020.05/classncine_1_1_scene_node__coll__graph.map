@@ -1,0 +1,10 @@
+<map id="ncine::SceneNode" name="ncine::SceneNode">
+<area shape="rect" id="node1" title="The base class for the transformation nodes hierarchy." alt="" coords="564,156,693,183"/>
+<area shape="rect" id="node2" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="285,31,383,57"/>
+<area shape="rect" id="node3" href="$classncine_1_1_matrix4x4.html" title=" " alt="" coords="251,81,417,108"/>
+<area shape="rect" id="node4" href="$classncine_1_1_matrix4x4.html" title="A four by four matrix based on templates." alt="" coords="5,59,155,85"/>
+<area shape="rect" id="node5" href="$classncine_1_1_vector2.html" title=" " alt="" coords="257,144,411,171"/>
+<area shape="rect" id="node6" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="12,177,148,204"/>
+<area shape="rect" id="node7" href="$classncine_1_1_color.html" title="A four channels unsigned char color." alt="" coords="288,292,380,319"/>
+<area shape="rect" id="node8" href="$classnctl_1_1_array.html" title=" " alt="" coords="271,343,397,385"/>
+</map>
