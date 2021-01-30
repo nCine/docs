@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><strong>ncine.shader</strong></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.shader</code></h1>
+<p>The table containing shader related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.new">ncine.shader.new ()</a></td>
+	<td class="summary">Constructs a shader object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.delete">ncine.shader.delete (shader)</a></td>
+	<td class="summary">Destroys a shader object and releases its memory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_memory">ncine.shader.load_from_memory (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading shader sources from strings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_memory_default_vertex">ncine.shader.load_from_memory_default_vertex (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading the fragment shader source from a string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_memory_default_fragment">ncine.shader.load_from_memory_default_fragment (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading the vertex shader source from a string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_memory_with_hashes">ncine.shader.load_from_memory_with_hashes (shader, name, introspection, vertex, fragment, vertex_hash, fragment_hash)</a></td>
+	<td class="summary">Compiles a shader program after loading shader sources from strings.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_file">ncine.shader.load_from_file (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading shader sources from files</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_file_default_vertex">ncine.shader.load_from_file_default_vertex (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading the fragment shader source from a file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.load_from_file_default_fragment">ncine.shader.load_from_file_default_fragment (shader, name, introspection, vertex, fragment)</a></td>
+	<td class="summary">Compiles a shader program after loading the vertex shader source from a file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.set_attribute">ncine.shader.set_attribute (shader, attribute, stride, pointer)</a></td>
+	<td class="summary">Sets the VBO stride and pointer for the specified vertex attribute</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.is_linked">ncine.shader.is_linked (shader)</a></td>
+	<td class="summary">Returns <code>true</code> if the shader is linked and can therefore be used</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.retrieve_infolog_length">ncine.shader.retrieve_infolog_length (shader)</a></td>
+	<td class="summary">Returns the length of the information log including the null termination character</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.retrieve_infolog">ncine.shader.retrieve_infolog (shader)</a></td>
+	<td class="summary">Retrieves the information log</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.get_log_on_errors">ncine.shader.get_log_on_errors (shader)</a></td>
+	<td class="summary">Returns the automatic log on errors flag</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.set_log_on_errors">ncine.shader.set_log_on_errors (shader, should_log)</a></td>
+	<td class="summary">Sets the automatic log on errors flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.set_glshaderprogram_label">ncine.shader.set_glshaderprogram_label (shader, label)</a></td>
+	<td class="summary">Sets the OpenGL object label for the shader program</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.register_batched_shader">ncine.shader.register_batched_shader (shader, batched_shader)</a></td>
+	<td class="summary">Registers a shader to be used for batches of render commands</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.is_binary_cache_enabled">ncine.shader.is_binary_cache_enabled ()</a></td>
+	<td class="summary">Returns <code>true</code> if the binary shader cache is enabled</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader.set_binary_cache_enabled">ncine.shader.set_binary_cache_enabled (enable)</a></td>
+	<td class="summary">Enables or disables the binary shader cache</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#shaderObj">shaderObj</a></td>
+	<td class="summary">The light user data of a shader object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader_introspection">ncine.shader_introspection</a></td>
+	<td class="summary">Shader introspection states (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader_default_vertex">ncine.shader_default_vertex</a></td>
+	<td class="summary">Default vertex shaders (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.shader_default_fragment">ncine.shader_default_fragment</a></td>
+	<td class="summary">Default fragment shaders (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.shader.new"></a>
+    <strong>ncine.shader.new ()</strong>
+    </dt>
+    <dd>
+    Constructs a shader object. </p>
+
+<p>Don&rsquo;t forget to call <a href="../modules/ncine.shader.html#ncine.shader.delete">ncine.shader.delete</a> when you are done with it!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+        A new shader object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.delete"></a>
+    <strong>ncine.shader.delete (shader)</strong>
+    </dt>
+    <dd>
+    Destroys a shader object and releases its memory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+         The shader object to be destroyed
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_memory"></a>
+    <strong>ncine.shader.load_from_memory (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading shader sources from strings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The vertex shader GLSL source code
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The fragment shader GLSL source code
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_memory_default_vertex"></a>
+    <strong>ncine.shader.load_from_memory_default_vertex (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading the fragment shader source from a string. </p>
+
+<p>The vertex shader is a default one, in this case.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><span class="type">ncine.shader_default_vertex</span></span>
+         The default vertex shader
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The fragment shader GLSL source code
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_memory_default_fragment"></a>
+    <strong>ncine.shader.load_from_memory_default_fragment (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading the vertex shader source from a string. </p>
+
+<p>The fragment shader is a default one, in this case.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The vertex shader GLSL source code
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><span class="type">ncine.shader_default_fragment</span></span>
+         The default fragment shader
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_memory_with_hashes"></a>
+    <strong>ncine.shader.load_from_memory_with_hashes (shader, name, introspection, vertex, fragment, vertex_hash, fragment_hash)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading shader sources from strings. </p>
+
+<p>In this case custom hashes can be passed to the function.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The vertex shader GLSL source code
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The fragment shader GLSL source code
+        </li>
+        <li><span class="parameter">vertex_hash</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">fragment_hash</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_file"></a>
+    <strong>ncine.shader.load_from_file (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading shader sources from files
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The vertex shader source filename
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The fragment shader source filename
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_file_default_vertex"></a>
+    <strong>ncine.shader.load_from_file_default_vertex (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading the fragment shader source from a file. </p>
+
+<p>In this case the vertex shader is a default one.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><span class="type">ncine.shader_default_vertex</span></span>
+         The default vertex shader
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The fragment shader source filename
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.load_from_file_default_fragment"></a>
+    <strong>ncine.shader.load_from_file_default_fragment (shader, name, introspection, vertex, fragment)</strong>
+    </dt>
+    <dd>
+    Compiles a shader program after loading the vertex shader source from a file. </p>
+
+<p>In this case the fragment shader is a default one.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the shader
+        </li>
+        <li><span class="parameter">introspection</span>
+            <span class="types"><span class="type">ncine.shader_introspection</span></span>
+
+
+        </li>
+        <li><span class="parameter">vertex</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The vertex shader source filename
+        </li>
+        <li><span class="parameter">fragment</span>
+            <span class="types"><span class="type">ncine.shader_default_fragment</span></span>
+         The default fragment shader
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the shader program has been successfully linked
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.set_attribute"></a>
+    <strong>ncine.shader.set_attribute (shader, attribute, stride, pointer)</strong>
+    </dt>
+    <dd>
+    Sets the VBO stride and pointer for the specified vertex attribute
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">attribute</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         The name of the vertex attribute
+        </li>
+        <li><span class="parameter">stride</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">pointer</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the vertex attribute was found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.is_linked"></a>
+    <strong>ncine.shader.is_linked (shader)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the shader is linked and can therefore be used
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.retrieve_infolog_length"></a>
+    <strong>ncine.shader.retrieve_infolog_length (shader)</strong>
+    </dt>
+    <dd>
+    Returns the length of the information log including the null termination character
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.retrieve_infolog"></a>
+    <strong>ncine.shader.retrieve_infolog (shader)</strong>
+    </dt>
+    <dd>
+    Retrieves the information log
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.get_log_on_errors"></a>
+    <strong>ncine.shader.get_log_on_errors (shader)</strong>
+    </dt>
+    <dd>
+    Returns the automatic log on errors flag
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.set_log_on_errors"></a>
+    <strong>ncine.shader.set_log_on_errors (shader, should_log)</strong>
+    </dt>
+    <dd>
+    Sets the automatic log on errors flag. </p>
+
+<p>If the flag is set to <code>true</code>, the shader will automatically log compilation and linking errors.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">should_log</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.set_glshaderprogram_label"></a>
+    <strong>ncine.shader.set_glshaderprogram_label (shader, label)</strong>
+    </dt>
+    <dd>
+    Sets the OpenGL object label for the shader program
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">label</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.register_batched_shader"></a>
+    <strong>ncine.shader.register_batched_shader (shader, batched_shader)</strong>
+    </dt>
+    <dd>
+    Registers a shader to be used for batches of render commands
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">batched_shader</span>
+            <span class="types"><a class="type" href="../modules/ncine.shader.html#shaderObj">shaderObj</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.is_binary_cache_enabled"></a>
+    <strong>ncine.shader.is_binary_cache_enabled ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the binary shader cache is enabled
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader.set_binary_cache_enabled"></a>
+    <strong>ncine.shader.set_binary_cache_enabled (enable)</strong>
+    </dt>
+    <dd>
+    Enables or disables the binary shader cache
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enable</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "shaderObj"></a>
+    <strong>shaderObj</strong>
+    </dt>
+    <dd>
+    The light user data of a shader object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader_introspection"></a>
+    <strong>ncine.shader_introspection</strong>
+    </dt>
+    <dd>
+    Shader introspection states (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">ENABLED</span>
+
+
+        </li>
+        <li><span class="parameter">NO_UNIFORMS_IN_BLOCKS</span>
+
+
+        </li>
+        <li><span class="parameter">DISABLED</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader_default_vertex"></a>
+    <strong>ncine.shader_default_vertex</strong>
+    </dt>
+    <dd>
+    Default vertex shaders (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">SPRITE</span>
+
+
+        </li>
+        <li><span class="parameter">SPRITE_NOTEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">MESHSPRITE</span>
+
+
+        </li>
+        <li><span class="parameter">MESHSPRITE_NOTEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">TEXTNODE</span>
+
+
+        </li>
+        <li><span class="parameter">BATCHED_SPRITES</span>
+
+
+        </li>
+        <li><span class="parameter">BATCHED_SPRITES_NOTEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">BATCHED_MESHSPRITES</span>
+
+
+        </li>
+        <li><span class="parameter">BATCHED_MESHSPRITES_NOTEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">BATCHED_TEXTNODES</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.shader_default_fragment"></a>
+    <strong>ncine.shader_default_fragment</strong>
+    </dt>
+    <dd>
+    Default fragment shaders (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">SPRITE</span>
+
+
+        </li>
+        <li><span class="parameter">SPRITE_GRAY</span>
+
+
+        </li>
+        <li><span class="parameter">SPRITE_NOTEXTURE</span>
+
+
+        </li>
+        <li><span class="parameter">TEXTNODE_ALPHA</span>
+
+
+        </li>
+        <li><span class="parameter">TEXTNODE_RED</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
