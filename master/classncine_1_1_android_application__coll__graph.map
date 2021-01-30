@@ -1,0 +1,32 @@
+<map id="ncine::AndroidApplication" name="ncine::AndroidApplication">
+<area shape="rect" id="Node000001" title="Main entry point and handler for nCine Android applications." alt="" coords="1241,339,1429,365"/>
+<area shape="rect" id="Node000002" href="$classncine_1_1_application.html" title="Main entry point and handler for nCine applications." alt="" coords="1053,339,1192,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1206,349,1241,349,1241,355,1206,355"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_app_configuration.html" title="The class storing initialization settings for an nCine application." alt="" coords="622,71,799,97"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="811,68,865,67,923,73,980,89,1006,102,1031,118,1056,142,1076,171,1092,202,1104,235,1118,296,1123,339,1118,340,1113,297,1099,236,1087,205,1072,174,1052,146,1028,122,1004,107,978,94,922,79,865,73,811,73"/>
+<area shape="rect" id="Node000004" href="$classnctl_1_1_string.html" title="A basic string class made of chars." alt="" coords="281,42,373,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,57,622,75,622,80,387,62"/>
+<area shape="rect" id="Node000005" href="$classncine_1_1_vector2.html" title=" " alt="" coords="247,102,408,127"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="422,113,573,105,648,94,649,99,574,111,422,118"/>
+<area shape="rect" id="Node000006" href="$classncine_1_1_vector2.html" title="A two component vector based on templates." alt="" coords="5,102,157,127"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="171,112,247,112,247,117,171,117"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="57,87,65,79,81,75,96,78,104,84,106,94,102,103,97,101,101,93,100,87,93,83,81,81,67,83,61,91"/>
+<area shape="rect" id="Node000007" href="$structncine_1_1_application_1_1_rendering_settings.html" title="Rendering settings that can be changed at run&#45;time." alt="" coords="636,121,785,161"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="800,134,855,137,915,146,976,164,1031,193,1066,227,1092,268,1110,308,1120,338,1115,340,1105,310,1088,270,1062,230,1028,197,974,169,914,151,855,142,800,139"/>
+<area shape="rect" id="Node000008" href="$structncine_1_1_application_1_1_gui_settings.html" title="GUI settings (for ImGui and Nuklear) that can be changed at run&#45;time." alt="" coords="641,185,780,225"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="794,205,849,211,909,221,972,237,1031,262,1057,279,1080,299,1114,337,1110,341,1076,303,1054,283,1028,266,970,242,908,226,848,216,794,210"/>
+<area shape="rect" id="Node000009" href="$structncine_1_1_i_debug_overlay_1_1_display_settings.html" title=" " alt="" coords="629,249,792,289"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="806,275,914,289,1030,313,1095,337,1093,342,1029,319,913,295,805,280"/>
+<area shape="rect" id="Node000010" href="$classncine_1_1_time_stamp.html" title="A class representing a point in time or a duration." alt="" coords="641,314,781,339"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="795,329,1053,345,1053,350,795,334"/>
+<area shape="rect" id="Node000011" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="597,363,824,389"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="838,377,932,375,1029,368,1067,362,1068,367,1030,373,932,380,838,382"/>
+<area shape="rect" id="Node000012" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="627,413,795,453"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="808,430,916,421,973,411,1029,397,1068,381,1101,362,1103,367,1070,386,1030,403,974,416,916,426,809,435"/>
+<area shape="rect" id="Node000013" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="627,477,795,517"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="808,497,861,493,917,485,974,471,1028,448,1055,430,1079,406,1111,363,1116,366,1083,410,1059,434,1031,453,976,476,919,490,861,499,809,502"/>
+<area shape="rect" id="Node000014" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="627,541,795,581"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="808,567,862,565,919,558,976,542,1028,515,1047,499,1063,480,1089,438,1106,396,1116,364,1121,366,1111,398,1094,440,1068,484,1051,503,1031,520,978,547,921,563,862,571,808,572"/>
+<area shape="rect" id="Node000015" href="$classnctl_1_1_unique_ptr.html" title=" " alt="" coords="627,605,795,645"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="808,636,863,637,921,631,977,615,1003,603,1028,587,1053,563,1072,534,1088,503,1099,470,1113,409,1118,365,1123,365,1118,410,1105,472,1093,505,1077,537,1057,567,1031,591,1006,608,979,620,922,636,863,642,808,642"/>
+</map>
