@@ -1,0 +1,11 @@
+<map id="ncine::DrawableNode" name="ncine::DrawableNode">
+<area shape="rect" id="node1" title="A class for objects that can be drawn through the render queue." alt="" coords="143,155,305,181"/>
+<area shape="rect" id="node4" href="$classncine_1_1_base_sprite.html" title="The base class for sprites." alt="" coords="79,229,214,256"/>
+<area shape="rect" id="node9" href="$classncine_1_1_text_node.html" title="A scene node to draw a text label." alt="" coords="238,229,365,256"/>
+<area shape="rect" id="node2" href="$classncine_1_1_scene_node.html" title="The base class for the transformation nodes hierarchy." alt="" coords="155,80,293,107"/>
+<area shape="rect" id="node3" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="171,5,277,32"/>
+<area shape="rect" id="node5" href="$classncine_1_1_mesh_sprite.html" title="A scene node representing a mesh with vertices and UVs." alt="" coords="5,304,144,331"/>
+<area shape="rect" id="node6" href="$classncine_1_1_sprite.html" title="A scene node representing a regular sprite." alt="" coords="169,304,271,331"/>
+<area shape="rect" id="node7" href="$classncine_1_1_animated_sprite.html" title="A class for an animated sprite." alt="" coords="55,379,222,405"/>
+<area shape="rect" id="node8" href="$classncine_1_1_particle.html" title="The class holding all the relevant data for a single particle." alt="" coords="246,379,359,405"/>
+</map>
