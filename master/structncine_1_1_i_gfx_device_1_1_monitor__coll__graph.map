@@ -1,0 +1,6 @@
+<map id="ncine::IGfxDevice::Monitor" name="ncine::IGfxDevice::Monitor">
+<area shape="rect" id="node1" title="A structure representing a connected monitor." alt="" coords="191,124,336,165"/>
+<area shape="rect" id="node2" href="$classncine_1_1_vector2.html" title=" " alt="" coords="5,13,167,39"/>
+<area shape="rect" id="node3" href="$structncine_1_1_i_gfx_device_1_1_video_mode.html" title="A structure representing a video mode supported by a monitor." alt="" coords="191,5,336,47"/>
+<area shape="rect" id="node4" href="$classncine_1_1_vector2.html" title=" " alt="" coords="361,13,534,39"/>
+</map>

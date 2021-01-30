@@ -1,0 +1,5 @@
+<map id="ncine::ITextureSaver" name="ncine::ITextureSaver">
+<area shape="rect" id="node1" title="Texture saver interface class." alt="" coords="118,5,273,32"/>
+<area shape="rect" id="node2" href="$classncine_1_1_texture_saver_png.html" title="PNG texture saver." alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node3" href="$classncine_1_1_texture_saver_web_p.html" title="WebP texture saver." alt="" coords="205,80,391,107"/>
+</map>
