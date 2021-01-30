@@ -1,0 +1,1466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><strong>ncine.fs</strong></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><a href="../modules/ncine.input.html">ncine.input</a></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.fs</code></h1>
+<p>The table containing filesystem related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.join_path">ncine.fs.join_path (first, second)</a></td>
+	<td class="summary">Joins together two path components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.absolute_join_path">ncine.fs.absolute_join_path (first, second)</a></td>
+	<td class="summary">Returns the absolute path after joining together two path components</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.dirname">ncine.fs.dirname (path)</a></td>
+	<td class="summary">Returns the path up to, but not including, the final separator</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.basename">ncine.fs.basename (path)</a></td>
+	<td class="summary">Returns the path component after the final separator</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.absolute_path">ncine.fs.absolute_path (path)</a></td>
+	<td class="summary">Returns an absolute path from a relative one.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_extension">ncine.fs.get_extension (path)</a></td>
+	<td class="summary">Returns the extension position in the string or <code>nil</code> if it is not found</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.has_extension">ncine.fs.has_extension (path, extension)</a></td>
+	<td class="summary">Returns <code>true</code> if the path has the specified extension (case-insensitive comparison)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.logical_drives">ncine.fs.logical_drives ()</a></td>
+	<td class="summary">Returns a bitmask representing the currently available disk drives on Windows</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.logical_drive_strings">ncine.fs.logical_drive_strings ()</a></td>
+	<td class="summary">Returns a buffer with strings that specify valid drives in the system on Windows</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_executable_dir">ncine.fs.get_executable_dir ()</a></td>
+	<td class="summary">Returns the path of the directory where the executable resides</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_current_dir">ncine.fs.get_current_dir ()</a></td>
+	<td class="summary">Returns the path of the current working directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.set_current_dir">ncine.fs.set_current_dir (path)</a></td>
+	<td class="summary">Sets the current working directory, the starting point for interpreting relative paths</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_directory">ncine.fs.is_directory (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified path is a directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_file">ncine.fs.is_file (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified path is a file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.exists">ncine.fs.exists (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the file or directory exists</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_readable">ncine.fs.is_readable (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the file or directory is readable</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_writable">ncine.fs.is_writable (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the file or directory is writable</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_executable">ncine.fs.is_executable (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the file or directory is executable</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_readable_file">ncine.fs.is_readable_file (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the path is a file and is readable</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_writable_file">ncine.fs.is_writable_file (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the path is a file and is writeable</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.is_hidden">ncine.fs.is_hidden (path)</a></td>
+	<td class="summary">Returns <code>true</code> if the file or directory is hidden</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.set_hidden">ncine.fs.set_hidden (path, hidden)</a></td>
+	<td class="summary">Makes a file or a directory hidden or not</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.create_dir">ncine.fs.create_dir (path)</a></td>
+	<td class="summary">Creates a new directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.delete_empty_dir">ncine.fs.delete_empty_dir (path)</a></td>
+	<td class="summary">Deletes an empty directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.delete_file">ncine.fs.delete_file (path)</a></td>
+	<td class="summary">Deletes a file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.rename">ncine.fs.rename (old_path, new_path)</a></td>
+	<td class="summary">Renames or moves a file or a directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.copy">ncine.fs.copy (old_path, new_path)</a></td>
+	<td class="summary">Copies a file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.file_size">ncine.fs.file_size (path)</a></td>
+	<td class="summary">Returns the file size in bytes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.last_modification_time">ncine.fs.last_modification_time (path)</a></td>
+	<td class="summary">Returns the last time the file or directory was modified</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.last_access_time">ncine.fs.last_access_time (path)</a></td>
+	<td class="summary">Returns the last time the file or directory was accessed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_permissions">ncine.fs.get_permissions (path)</a></td>
+	<td class="summary">Returns the file or directory permissions in a mask</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.change_permissions">ncine.fs.change_permissions (path, mode)</a></td>
+	<td class="summary">Returns the file or directory permissions in a mask</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.add_permissions">ncine.fs.add_permissions (path, mode)</a></td>
+	<td class="summary">Adds the permissions in the mask to a file or a directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.remove_permissions">ncine.fs.remove_permissions (path, mode)</a></td>
+	<td class="summary">Removes the permissions in the mask from a file or a directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_data_path">ncine.fs.get_data_path ()</a></td>
+	<td class="summary">Returns the base directory for data loading</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_home_path">ncine.fs.get_home_path ()</a></td>
+	<td class="summary">Returns the current user home directory</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_save_path">ncine.fs.get_save_path ()</a></td>
+	<td class="summary">Returns the writable directory for saving data</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.fs.get_cache_path">ncine.fs.get_cache_path ()</a></td>
+	<td class="summary">Returns the writable directory for saving cache data</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#file_date">file_date</a></td>
+	<td class="summary">A table with date information used for file modification or access time</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.permission">ncine.permission</a></td>
+	<td class="summary">File and directory permission modes (enumeration)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.fs.join_path"></a>
+    <strong>ncine.fs.join_path (first, second)</strong>
+    </dt>
+    <dd>
+    Joins together two path components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">first</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">second</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.absolute_join_path"></a>
+    <strong>ncine.fs.absolute_join_path (first, second)</strong>
+    </dt>
+    <dd>
+    Returns the absolute path after joining together two path components
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">first</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">second</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.dirname"></a>
+    <strong>ncine.fs.dirname (path)</strong>
+    </dt>
+    <dd>
+    Returns the path up to, but not including, the final separator
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.basename"></a>
+    <strong>ncine.fs.basename (path)</strong>
+    </dt>
+    <dd>
+    Returns the path component after the final separator
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.absolute_path"></a>
+    <strong>ncine.fs.absolute_path (path)</strong>
+    </dt>
+    <dd>
+    Returns an absolute path from a relative one. </p>
+
+<p>It also resolves dot references to current and parent directories, and double separators.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_extension"></a>
+    <strong>ncine.fs.get_extension (path)</strong>
+    </dt>
+    <dd>
+    Returns the extension position in the string or <code>nil</code> if it is not found
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a> or <span class="type">nil</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.has_extension"></a>
+    <strong>ncine.fs.has_extension (path, extension)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the path has the specified extension (case-insensitive comparison)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">extension</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.logical_drives"></a>
+    <strong>ncine.fs.logical_drives ()</strong>
+    </dt>
+    <dd>
+    Returns a bitmask representing the currently available disk drives on Windows
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.logical_drive_strings"></a>
+    <strong>ncine.fs.logical_drive_strings ()</strong>
+    </dt>
+    <dd>
+    Returns a buffer with strings that specify valid drives in the system on Windows
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_executable_dir"></a>
+    <strong>ncine.fs.get_executable_dir ()</strong>
+    </dt>
+    <dd>
+    Returns the path of the directory where the executable resides
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_current_dir"></a>
+    <strong>ncine.fs.get_current_dir ()</strong>
+    </dt>
+    <dd>
+    Returns the path of the current working directory
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.set_current_dir"></a>
+    <strong>ncine.fs.set_current_dir (path)</strong>
+    </dt>
+    <dd>
+    Sets the current working directory, the starting point for interpreting relative paths
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the directory has been successfully changed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_directory"></a>
+    <strong>ncine.fs.is_directory (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified path is a directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_file"></a>
+    <strong>ncine.fs.is_file (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified path is a file
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.exists"></a>
+    <strong>ncine.fs.exists (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the file or directory exists
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_readable"></a>
+    <strong>ncine.fs.is_readable (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the file or directory is readable
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_writable"></a>
+    <strong>ncine.fs.is_writable (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the file or directory is writable
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_executable"></a>
+    <strong>ncine.fs.is_executable (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the file or directory is executable
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_readable_file"></a>
+    <strong>ncine.fs.is_readable_file (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the path is a file and is readable
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_writable_file"></a>
+    <strong>ncine.fs.is_writable_file (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the path is a file and is writeable
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.is_hidden"></a>
+    <strong>ncine.fs.is_hidden (path)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the file or directory is hidden
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.set_hidden"></a>
+    <strong>ncine.fs.set_hidden (path, hidden)</strong>
+    </dt>
+    <dd>
+    Makes a file or a directory hidden or not
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">hidden</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the new hidden state has been successfully set
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.create_dir"></a>
+    <strong>ncine.fs.create_dir (path)</strong>
+    </dt>
+    <dd>
+    Creates a new directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the new directory has been created
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.delete_empty_dir"></a>
+    <strong>ncine.fs.delete_empty_dir (path)</strong>
+    </dt>
+    <dd>
+    Deletes an empty directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the empty directory has been deleted
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.delete_file"></a>
+    <strong>ncine.fs.delete_file (path)</strong>
+    </dt>
+    <dd>
+    Deletes a file
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the file has been deleted
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.rename"></a>
+    <strong>ncine.fs.rename (old_path, new_path)</strong>
+    </dt>
+    <dd>
+    Renames or moves a file or a directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">old_path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">new_path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the file or directory has been renamed or moved
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.copy"></a>
+    <strong>ncine.fs.copy (old_path, new_path)</strong>
+    </dt>
+    <dd>
+    Copies a file
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">old_path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">new_path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the file has been copied
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.file_size"></a>
+    <strong>ncine.fs.file_size (path)</strong>
+    </dt>
+    <dd>
+    Returns the file size in bytes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.last_modification_time"></a>
+    <strong>ncine.fs.last_modification_time (path)</strong>
+    </dt>
+    <dd>
+    Returns the last time the file or directory was modified
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">file_date</span></span>
+
+
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#file_date">file_date</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.last_access_time"></a>
+    <strong>ncine.fs.last_access_time (path)</strong>
+    </dt>
+    <dd>
+    Returns the last time the file or directory was accessed
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">file_date</span></span>
+
+
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#file_date">file_date</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_permissions"></a>
+    <strong>ncine.fs.get_permissions (path)</strong>
+    </dt>
+    <dd>
+    Returns the file or directory permissions in a mask
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+        A mask created from values in <code>ncine.permission</code>
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#ncine.permission">ncine.permission</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.change_permissions"></a>
+    <strong>ncine.fs.change_permissions (path, mode)</strong>
+    </dt>
+    <dd>
+    Returns the file or directory permissions in a mask
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">mode</span>
+            <span class="types"><span class="type">integer</span></span>
+         A mask created from values in <code>ncine.permission</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the permission mode was changed
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#ncine.permission">ncine.permission</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.add_permissions"></a>
+    <strong>ncine.fs.add_permissions (path, mode)</strong>
+    </dt>
+    <dd>
+    Adds the permissions in the mask to a file or a directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">mode</span>
+            <span class="types"><span class="type">integer</span></span>
+         A mask created from values in <code>ncine.permission</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the new permission mode was added
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#ncine.permission">ncine.permission</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.remove_permissions"></a>
+    <strong>ncine.fs.remove_permissions (path, mode)</strong>
+    </dt>
+    <dd>
+    Removes the permissions in the mask from a file or a directory
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+        <li><span class="parameter">mode</span>
+            <span class="types"><span class="type">integer</span></span>
+         A mask created from values in <code>ncine.permission</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if the permission mode was removed
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../modules/ncine.fs.html#ncine.permission">ncine.permission</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_data_path"></a>
+    <strong>ncine.fs.get_data_path ()</strong>
+    </dt>
+    <dd>
+    Returns the base directory for data loading
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_home_path"></a>
+    <strong>ncine.fs.get_home_path ()</strong>
+    </dt>
+    <dd>
+    Returns the current user home directory
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_save_path"></a>
+    <strong>ncine.fs.get_save_path ()</strong>
+    </dt>
+    <dd>
+    Returns the writable directory for saving data
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.fs.get_cache_path"></a>
+    <strong>ncine.fs.get_cache_path ()</strong>
+    </dt>
+    <dd>
+    Returns the writable directory for saving cache data
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "file_date"></a>
+    <strong>file_date</strong>
+    </dt>
+    <dd>
+    A table with date information used for file modification or access time
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">year</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">month</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">day</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">week_day</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">hour</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">minute</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">second</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.permission"></a>
+    <strong>ncine.permission</strong>
+    </dt>
+    <dd>
+    File and directory permission modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">READ</span>
+
+
+        </li>
+        <li><span class="parameter">WRITE</span>
+
+
+        </li>
+        <li><span class="parameter">EXECUTE</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

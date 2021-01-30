@@ -1,0 +1,2224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>nCine documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>nCine</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Fields">Fields</a></li>
+<li><a href="#input_events_Functions">input_events Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/ncine.html">ncine</a></li>
+  <li><a href="../modules/ncine.animated_sprite.html">ncine.animated_sprite</a></li>
+  <li><a href="../modules/ncine.app_configuration.html">ncine.app_configuration</a></li>
+  <li><a href="../modules/ncine.application.html">ncine.application</a></li>
+  <li><a href="../modules/ncine.audio_buffer.html">ncine.audio_buffer</a></li>
+  <li><a href="../modules/ncine.audio_buffer_player.html">ncine.audio_buffer_player</a></li>
+  <li><a href="../modules/ncine.audio_device.html">ncine.audio_device</a></li>
+  <li><a href="../modules/ncine.audio_effect.html">ncine.audio_effect</a></li>
+  <li><a href="../modules/ncine.audio_effect_properties.html">ncine.audio_effect_properties</a></li>
+  <li><a href="../modules/ncine.audio_effect_slot.html">ncine.audio_effect_slot</a></li>
+  <li><a href="../modules/ncine.audio_filter.html">ncine.audio_filter</a></li>
+  <li><a href="../modules/ncine.audio_player.html">ncine.audio_player</a></li>
+  <li><a href="../modules/ncine.audio_stream_player.html">ncine.audio_stream_player</a></li>
+  <li><a href="../modules/ncine.base_sprite.html">ncine.base_sprite</a></li>
+  <li><a href="../modules/ncine.camera.html">ncine.camera</a></li>
+  <li><a href="../modules/ncine.color.html">ncine.color</a></li>
+  <li><a href="../modules/ncine.drawable_node.html">ncine.drawable_node</a></li>
+  <li><a href="../modules/EFX_Presets.html">EFX_Presets</a></li>
+  <li><a href="../modules/ncine.font.html">ncine.font</a></li>
+  <li><a href="../modules/ncine.frame_timer.html">ncine.frame_timer</a></li>
+  <li><a href="../modules/ncine.fs.html">ncine.fs</a></li>
+  <li><a href="../modules/ncine.gfx_device.html">ncine.gfx_device</a></li>
+  <li><a href="../modules/ncine.hash64.html">ncine.hash64</a></li>
+  <li><strong>ncine.input</strong></li>
+  <li><a href="../modules/ncine.keys.html">ncine.keys</a></li>
+  <li><a href="../modules/ncine.log.html">ncine.log</a></li>
+  <li><a href="../modules/ncine.mesh_sprite.html">ncine.mesh_sprite</a></li>
+  <li><a href="../modules/ncinelua.html">ncinelua</a></li>
+  <li><a href="../modules/ncine.particle_affector.html">ncine.particle_affector</a></li>
+  <li><a href="../modules/ncine.particle_system.html">ncine.particle_system</a></li>
+  <li><a href="../modules/ncine.rect.html">ncine.rect</a></li>
+  <li><a href="../modules/ncine.scenenode.html">ncine.scenenode</a></li>
+  <li><a href="../modules/ncine.shader.html">ncine.shader</a></li>
+  <li><a href="../modules/ncine.shaderstate.html">ncine.shaderstate</a></li>
+  <li><a href="../modules/ncine.sprite.html">ncine.sprite</a></li>
+  <li><a href="../modules/ncine.textnode.html">ncine.textnode</a></li>
+  <li><a href="../modules/ncine.texture.html">ncine.texture</a></li>
+  <li><a href="../modules/ncine.timestamp.html">ncine.timestamp</a></li>
+  <li><a href="../modules/ncine.vec2.html">ncine.vec2</a></li>
+  <li><a href="../modules/ncine.vec3.html">ncine.vec3</a></li>
+  <li><a href="../modules/ncine.vec4.html">ncine.vec4</a></li>
+  <li><a href="../modules/ncine.viewport.html">ncine.viewport</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ncine.input</code></h1>
+<p>The table containing the input manager related functions</p>
+<p>
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.mouse_state">ncine.input.mouse_state ()</a></td>
+	<td class="summary">Returns current mouse state</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.key_state">ncine.input.key_state ()</a></td>
+	<td class="summary">Returns current keyboard state</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_present">ncine.input.is_joy_present (joy_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified joystick is connected</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_name">ncine.input.joy_name (joy_id)</a></td>
+	<td class="summary">Returns the name of the specified joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_guid">ncine.input.joy_guid (joy_id)</a></td>
+	<td class="summary">Returns the GUID of the specified joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_num_buttons">ncine.input.joy_num_buttons (joy_id)</a></td>
+	<td class="summary">Returns the number of available buttons for the specified joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_num_hats">ncine.input.joy_num_hats (joy_id)</a></td>
+	<td class="summary">Returns the number of available hats for the specified joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_num_axes">ncine.input.joy_num_axes (joy_id)</a></td>
+	<td class="summary">Returns the number of available axes for the specified joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_state">ncine.input.joy_state ()</a></td>
+	<td class="summary">Returns the state of the joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_mapped">ncine.input.is_joy_mapped (joy_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the joystick has a valid mapping configuration</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_mapped_state">ncine.input.joy_mapped_state ()</a></td>
+	<td class="summary">Returns the state of the mapped joystick</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.deadzone_normalize">ncine.input.deadzone_normalize (joy_vector, deadzone_value)</a></td>
+	<td class="summary">Modifies the joystick axis vector to account for a dead zone</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.add_joymappings_from_file">ncine.input.add_joymappings_from_file (filename)</a></td>
+	<td class="summary">Adds joystick mapping configurations from a text file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.add_joymappings_from_strings">ncine.input.add_joymappings_from_strings (strings)</a></td>
+	<td class="summary">Adds joystick mapping configurations from a strings array</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.num_joymappings">ncine.input.num_joymappings (strings)</a></td>
+	<td class="summary">Returns the current number of valid joystick mappings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.has_joy_vibration">ncine.input.has_joy_vibration (joy_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified joystick supports vibration</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_vibrate">ncine.input.joy_vibrate (joy_id, low_freq_intensity, high_freq_intensity, duration)</a></td>
+	<td class="summary">Vibrates the low (left) and high (right) frequency motors for the specified number of milliseconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.get_mouse_cursor_mode">ncine.input.get_mouse_cursor_mode (joy_id)</a></td>
+	<td class="summary">Returns current mouse cursor mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.set_mouse_cursor_mode">ncine.input.set_mouse_cursor_mode (mouse_cursor_mode)</a></td>
+	<td class="summary">Sets the mouse cursor mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_mouse_button_down">ncine.input.is_mouse_button_down (mouse_state, button)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mouse button is down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_mouse_button_pressed">ncine.input.is_mouse_button_pressed (mouse_state, button)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mouse button went from not down to down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_mouse_button_released">ncine.input.is_mouse_button_released (mouse_state, button)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mouse button went from down to not down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_key_down">ncine.input.is_key_down (key_state, keysym)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified key is down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_key_pressed">ncine.input.is_key_pressed (key_state, keysym)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified key went from not down to down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_key_released">ncine.input.is_key_released (key_state, keysym)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified key went from down to not down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_down">ncine.input.is_joy_button_down (joystick_state, button_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified joystick button is down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_pressed">ncine.input.is_joy_button_pressed (joystick_state, button_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified joystick button went from not down to down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_released">ncine.input.is_joy_button_released (joystick_state, button_id)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified joystick button went from down to not down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_down">ncine.input.is_joy_button_down (joystick_state, button_name)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mapped joystick button is down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_pressed">ncine.input.is_joy_button_pressed (joystick_state, button_name)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mapped joystick button went from not down to down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.is_joy_button_released">ncine.input.is_joy_button_released (joystick_state, button_name)</a></td>
+	<td class="summary">Returns <code>true</code> if the specified mapped joystick button went from down to not down this frame</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_hat_state">ncine.input.joy_hat_state (joystick_state, hat_id)</a></td>
+	<td class="summary">Returns the state of the specified hat</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_axis_value">ncine.input.joy_axis_value (joystick_state, axis_id)</a></td>
+	<td class="summary">Returns a value between <code>-32768</code> and <code>32767</code> for a joystick axis</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_axis_value">ncine.input.joy_axis_value (joystick_state, axis_name)</a></td>
+	<td class="summary">Returns the value of the specified mapped joystick axis</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.input.joy_axis_normvalue">ncine.input.joy_axis_normvalue (joystick_state, axis_id)</a></td>
+	<td class="summary">Returns a normalized value between <code>-1.0</code> and <code>1.0</code> for a joystick axis</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#mousestateObj">mousestateObj</a></td>
+	<td class="summary">The light user data of a mouse state object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#keystateObj">keystateObj</a></td>
+	<td class="summary">The light user data of a keyboard state object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joystickstateObj">joystickstateObj</a></td>
+	<td class="summary">The light user data of a joystick state object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joymappedstateObj">joymappedstateObj</a></td>
+	<td class="summary">The light user data of a mapped joystick state object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#mouse_state">mouse_state</a></td>
+	<td class="summary">Table with information about the mouse state</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mouse_cursor_mode">ncine.mouse_cursor_mode</a></td>
+	<td class="summary">Mouse cursor modes (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.joy_dead_zone">ncine.joy_dead_zone</a></td>
+	<td class="summary">Joystick dead zone values for various axes.</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ncine.joy_max_vibration_value">ncine.joy_max_vibration_value</a></td>
+	<td class="summary">The maximum vibration value supported by the backend (65535 on SDL2 and 255 on Android)</td>
+	</tr>
+</table>
+<h2><a href="#input_events_Functions">input_events Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#keyboard_event">keyboard_event</a></td>
+	<td class="summary">Table with information about a keyboard event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#text_input_event">text_input_event</a></td>
+	<td class="summary">Table with information about a text input event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#pointer">pointer</a></td>
+	<td class="summary">Table with information about a single pointer touching the screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#touch_event">touch_event</a></td>
+	<td class="summary">Table with information about a screen touch event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#accelerometer_event">accelerometer_event</a></td>
+	<td class="summary">Table with information about an accelerometer event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.mouse_button">ncine.mouse_button</a></td>
+	<td class="summary">Mouse buttons (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#mouse_event">mouse_event</a></td>
+	<td class="summary">Table with information about a mouse event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#scroll_event">scroll_event</a></td>
+	<td class="summary">Table with information about a scroll event (mouse wheel, touchpad gesture, etc.)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_button_event">joy_button_event</a></td>
+	<td class="summary">Table with information about a joystick button event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.joy_hat_state">ncine.joy_hat_state</a></td>
+	<td class="summary">Joystick hat states (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_hat_event">joy_hat_event</a></td>
+	<td class="summary">Table with information about a joystick hat event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_axis_event">joy_axis_event</a></td>
+	<td class="summary">Table with information about a joystick axis event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.joy_button">ncine.joy_button</a></td>
+	<td class="summary">Joystick button names (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_mapped_button_event">joy_mapped_button_event</a></td>
+	<td class="summary">Table with information about a joystick mapped button event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ncine.joy_axis">ncine.joy_axis</a></td>
+	<td class="summary">Joystick axis names (enumeration)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_mapped_axis_event">joy_mapped_axis_event</a></td>
+	<td class="summary">Table with information about a joystick mapped axis event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joy_connection_event">joy_connection_event</a></td>
+	<td class="summary">Table with information about a joystick connection event</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.input.mouse_state"></a>
+    <strong>ncine.input.mouse_state ()</strong>
+    </dt>
+    <dd>
+    Returns current mouse state
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.input.html#mousestateObj">mousestateObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.key_state"></a>
+    <strong>ncine.input.key_state ()</strong>
+    </dt>
+    <dd>
+    Returns current keyboard state
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.input.html#keystateObj">keystateObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_present"></a>
+    <strong>ncine.input.is_joy_present (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified joystick is connected
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_name"></a>
+    <strong>ncine.input.joy_name (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns the name of the specified joystick
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_guid"></a>
+    <strong>ncine.input.joy_guid (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns the GUID of the specified joystick
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_num_buttons"></a>
+    <strong>ncine.input.joy_num_buttons (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns the number of available buttons for the specified joystick
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_num_hats"></a>
+    <strong>ncine.input.joy_num_hats (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns the number of available hats for the specified joystick
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_num_axes"></a>
+    <strong>ncine.input.joy_num_axes (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns the number of available axes for the specified joystick
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_state"></a>
+    <strong>ncine.input.joy_state ()</strong>
+    </dt>
+    <dd>
+    Returns the state of the joystick
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_mapped"></a>
+    <strong>ncine.input.is_joy_mapped (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the joystick has a valid mapping configuration
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_mapped_state"></a>
+    <strong>ncine.input.joy_mapped_state ()</strong>
+    </dt>
+    <dd>
+    Returns the state of the mapped joystick
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ncine.input.html#joymappedstateObj">joymappedstateObj</a></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.deadzone_normalize"></a>
+    <strong>ncine.input.deadzone_normalize (joy_vector, deadzone_value)</strong>
+    </dt>
+    <dd>
+    Modifies the joystick axis vector to account for a dead zone
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_vector</span>
+            <span class="types"><span class="type">ncine.vec2</span></span>
+
+
+        </li>
+        <li><span class="parameter">deadzone_value</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.add_joymappings_from_file"></a>
+    <strong>ncine.input.add_joymappings_from_file (filename)</strong>
+    </dt>
+    <dd>
+    Adds joystick mapping configurations from a text file
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">filename</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.add_joymappings_from_strings"></a>
+    <strong>ncine.input.add_joymappings_from_strings (strings)</strong>
+    </dt>
+    <dd>
+    Adds joystick mapping configurations from a strings array
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">strings</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string[]</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.num_joymappings"></a>
+    <strong>ncine.input.num_joymappings (strings)</strong>
+    </dt>
+    <dd>
+    Returns the current number of valid joystick mappings
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">strings</span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.has_joy_vibration"></a>
+    <strong>ncine.input.has_joy_vibration (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified joystick supports vibration
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_vibrate"></a>
+    <strong>ncine.input.joy_vibrate (joy_id, low_freq_intensity, high_freq_intensity, duration)</strong>
+    </dt>
+    <dd>
+    Vibrates the low (left) and high (right) frequency motors for the specified number of milliseconds. </p>
+
+<p>Intensity goes from 0 to 1. Each call to this function cancels any previous vibration effect, and calling it with zero intensity stops any vibrations.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">low_freq_intensity</span>
+            <span class="types"><span class="type">number</span></span>
+         An intensity value from 0 to 1 for the low frequency motor (left)
+        </li>
+        <li><span class="parameter">high_freq_intensity</span>
+            <span class="types"><span class="type">number</span></span>
+         An intensity value from 0 to 1 for the high frequency motor (right)
+        </li>
+        <li><span class="parameter">duration</span>
+            <span class="types"><span class="type">integer</span></span>
+         A time duration in milliseconds
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.get_mouse_cursor_mode"></a>
+    <strong>ncine.input.get_mouse_cursor_mode (joy_id)</strong>
+    </dt>
+    <dd>
+    Returns current mouse cursor mode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.mouse_cursor_mode</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.set_mouse_cursor_mode"></a>
+    <strong>ncine.input.set_mouse_cursor_mode (mouse_cursor_mode)</strong>
+    </dt>
+    <dd>
+    Sets the mouse cursor mode
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mouse_cursor_mode</span>
+            <span class="types"><span class="type">ncine.mouse_cursor_mode</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_mouse_button_down"></a>
+    <strong>ncine.input.is_mouse_button_down (mouse_state, button)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mouse button is down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mouse_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#mousestateObj">mousestateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button</span>
+            <span class="types"><span class="type">ncine.mouse_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_mouse_button_pressed"></a>
+    <strong>ncine.input.is_mouse_button_pressed (mouse_state, button)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mouse button went from not down to down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mouse_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#mousestateObj">mousestateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button</span>
+            <span class="types"><span class="type">ncine.mouse_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_mouse_button_released"></a>
+    <strong>ncine.input.is_mouse_button_released (mouse_state, button)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mouse button went from down to not down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mouse_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#mousestateObj">mousestateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button</span>
+            <span class="types"><span class="type">ncine.mouse_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_key_down"></a>
+    <strong>ncine.input.is_key_down (key_state, keysym)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified key is down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#keystateObj">keystateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">keysym</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_key_pressed"></a>
+    <strong>ncine.input.is_key_pressed (key_state, keysym)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified key went from not down to down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#keystateObj">keystateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">keysym</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_key_released"></a>
+    <strong>ncine.input.is_key_released (key_state, keysym)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified key went from down to not down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#keystateObj">keystateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">keysym</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_down"></a>
+    <strong>ncine.input.is_joy_button_down (joystick_state, button_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified joystick button is down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_pressed"></a>
+    <strong>ncine.input.is_joy_button_pressed (joystick_state, button_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified joystick button went from not down to down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_released"></a>
+    <strong>ncine.input.is_joy_button_released (joystick_state, button_id)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified joystick button went from down to not down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_down"></a>
+    <strong>ncine.input.is_joy_button_down (joystick_state, button_name)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mapped joystick button is down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joymappedstateObj">joymappedstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_name</span>
+            <span class="types"><span class="type">ncine.joy_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_pressed"></a>
+    <strong>ncine.input.is_joy_button_pressed (joystick_state, button_name)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mapped joystick button went from not down to down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joymappedstateObj">joymappedstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_name</span>
+            <span class="types"><span class="type">ncine.joy_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.is_joy_button_released"></a>
+    <strong>ncine.input.is_joy_button_released (joystick_state, button_name)</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the specified mapped joystick button went from down to not down this frame
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joymappedstateObj">joymappedstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">button_name</span>
+            <span class="types"><span class="type">ncine.joy_button</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_hat_state"></a>
+    <strong>ncine.input.joy_hat_state (joystick_state, hat_id)</strong>
+    </dt>
+    <dd>
+    Returns the state of the specified hat
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">hat_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">ncine.joy_hat_state</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_axis_value"></a>
+    <strong>ncine.input.joy_axis_value (joystick_state, axis_id)</strong>
+    </dt>
+    <dd>
+    Returns a value between <code>-32768</code> and <code>32767</code> for a joystick axis
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">axis_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_axis_value"></a>
+    <strong>ncine.input.joy_axis_value (joystick_state, axis_name)</strong>
+    </dt>
+    <dd>
+    Returns the value of the specified mapped joystick axis
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joymappedstateObj">joymappedstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">axis_name</span>
+            <span class="types"><span class="type">ncine.joy_axis</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.input.joy_axis_normvalue"></a>
+    <strong>ncine.input.joy_axis_normvalue (joystick_state, axis_id)</strong>
+    </dt>
+    <dd>
+    Returns a normalized value between <code>-1.0</code> and <code>1.0</code> for a joystick axis
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">joystick_state</span>
+            <span class="types"><a class="type" href="../modules/ncine.input.html#joystickstateObj">joystickstateObj</a></span>
+
+
+        </li>
+        <li><span class="parameter">axis_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "mousestateObj"></a>
+    <strong>mousestateObj</strong>
+    </dt>
+    <dd>
+    The light user data of a mouse state object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "keystateObj"></a>
+    <strong>keystateObj</strong>
+    </dt>
+    <dd>
+    The light user data of a keyboard state object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joystickstateObj"></a>
+    <strong>joystickstateObj</strong>
+    </dt>
+    <dd>
+    The light user data of a joystick state object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joymappedstateObj"></a>
+    <strong>joymappedstateObj</strong>
+    </dt>
+    <dd>
+    The light user data of a mapped joystick state object
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mouse_state"></a>
+    <strong>mouse_state</strong>
+    </dt>
+    <dd>
+    Table with information about the mouse state Only used in the <code>on_mouse_moved()</code> callback event.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+         Pointer position on the X axis
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+         Pointer position on the Y axis
+        </li>
+        <li><span class="parameter">is_left_down</span>
+            <span class="types"><span class="type">boolean</span></span>
+         It is <code>true</code> if the left mouse button is down
+        </li>
+        <li><span class="parameter">is_middle_down</span>
+            <span class="types"><span class="type">boolean</span></span>
+         It is <code>true</code> if the middle mouse button is down
+        </li>
+        <li><span class="parameter">is_right_down</span>
+            <span class="types"><span class="type">boolean</span></span>
+         It is <code>true</code> if the right mouse button is down
+        </li>
+        <li><span class="parameter">is_fourth_down</span>
+            <span class="types"><span class="type">boolean</span></span>
+         It is <code>true</code> if the fourth mouse button is down
+        </li>
+        <li><span class="parameter">is_fifth_down</span>
+            <span class="types"><span class="type">boolean</span></span>
+         It is <code>true</code> if the fifth mouse button is down
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mouse_cursor_mode"></a>
+    <strong>ncine.mouse_cursor_mode</strong>
+    </dt>
+    <dd>
+    Mouse cursor modes (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">NORMAL</span>
+
+
+        </li>
+        <li><span class="parameter">HIDDEN</span>
+
+
+        </li>
+        <li><span class="parameter">DISABLED</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.joy_dead_zone"></a>
+    <strong>ncine.joy_dead_zone</strong>
+    </dt>
+    <dd>
+    Joystick dead zone values for various axes. </p>
+
+<p>From <code>XInput.h</code> in DirectX SDK.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">LEFT_STICK</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT_STICK</span>
+
+
+        </li>
+        <li><span class="parameter">TRIGGER</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ncine.joy_max_vibration_value"></a>
+    <strong>ncine.joy_max_vibration_value</strong>
+    </dt>
+    <dd>
+    The maximum vibration value supported by the backend (65535 on SDL2 and 255 on Android) The reciprocal of this number can be used as the vibration resolution value.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="input_events_Functions"></a>input_events Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "keyboard_event"></a>
+    <strong>keyboard_event</strong>
+    </dt>
+    <dd>
+    Table with information about a keyboard event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">scancode</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">sym</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">mod</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "text_input_event"></a>
+    <strong>text_input_event</strong>
+    </dt>
+    <dd>
+    Table with information about a text input event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "pointer"></a>
+    <strong>pointer</strong>
+    </dt>
+    <dd>
+    Table with information about a single pointer touching the screen
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "touch_event"></a>
+    <strong>touch_event</strong>
+    </dt>
+    <dd>
+    <p>Table with information about a screen touch event. </p>
+
+<p>To access a pointer table use the subscript operator:</p>
+
+<pre><code>local pointer0 = event[0]
+</code></pre>
+
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">pointers</span>
+         (pointer[])
+        </li>
+        <li><span class="parameter">count</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">action_index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "accelerometer_event"></a>
+    <strong>accelerometer_event</strong>
+    </dt>
+    <dd>
+    Table with information about an accelerometer event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">z</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.mouse_button"></a>
+    <strong>ncine.mouse_button</strong>
+    </dt>
+    <dd>
+    Mouse buttons (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">MIDDLE</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT</span>
+
+
+        </li>
+        <li><span class="parameter">FOURTH</span>
+
+
+        </li>
+        <li><span class="parameter">FIFTH</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mouse_event"></a>
+    <strong>mouse_event</strong>
+    </dt>
+    <dd>
+    Table with information about a mouse event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">button</span>
+         (ncine.mouse_button)
+        </li>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "scroll_event"></a>
+    <strong>scroll_event</strong>
+    </dt>
+    <dd>
+    Table with information about a scroll event (mouse wheel, touchpad gesture, etc.)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_button_event"></a>
+    <strong>joy_button_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick button event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">button_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.joy_hat_state"></a>
+    <strong>ncine.joy_hat_state</strong>
+    </dt>
+    <dd>
+    Joystick hat states (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">CENTERED</span>
+
+
+        </li>
+        <li><span class="parameter">UP</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT</span>
+
+
+        </li>
+        <li><span class="parameter">DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT_UP</span>
+
+
+        </li>
+        <li><span class="parameter">RIGHT_DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">LEFT_UP</span>
+
+
+        </li>
+        <li><span class="parameter">LEFT_DOWN</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_hat_event"></a>
+    <strong>joy_hat_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick hat event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">hat_state</span>
+         (ncine.joy_hat_state)
+        </li>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">hat_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_axis_event"></a>
+    <strong>joy_axis_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick axis event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">axis_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+        <li><span class="parameter">norm_value</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.joy_button"></a>
+    <strong>ncine.joy_button</strong>
+    </dt>
+    <dd>
+    Joystick button names (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">UNKNOWN</span>
+
+
+        </li>
+        <li><span class="parameter">A</span>
+
+
+        </li>
+        <li><span class="parameter">B</span>
+
+
+        </li>
+        <li><span class="parameter">X</span>
+
+
+        </li>
+        <li><span class="parameter">Y</span>
+
+
+        </li>
+        <li><span class="parameter">BACK</span>
+
+
+        </li>
+        <li><span class="parameter">GUIDE</span>
+
+
+        </li>
+        <li><span class="parameter">START</span>
+
+
+        </li>
+        <li><span class="parameter">LSTICK</span>
+
+
+        </li>
+        <li><span class="parameter">RSTICK</span>
+
+
+        </li>
+        <li><span class="parameter">LBUMPER</span>
+
+
+        </li>
+        <li><span class="parameter">RBUMPER</span>
+
+
+        </li>
+        <li><span class="parameter">DPAD_UP</span>
+
+
+        </li>
+        <li><span class="parameter">DPAD_DOWN</span>
+
+
+        </li>
+        <li><span class="parameter">DPAD_LEFT</span>
+
+
+        </li>
+        <li><span class="parameter">DPAD_RIGHT</span>
+
+
+        </li>
+        <li><span class="parameter">MISC1</span>
+
+
+        </li>
+        <li><span class="parameter">PADDLE1</span>
+
+
+        </li>
+        <li><span class="parameter">PADDLE2</span>
+
+
+        </li>
+        <li><span class="parameter">PADDLE3</span>
+
+
+        </li>
+        <li><span class="parameter">PADDLE4</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_mapped_button_event"></a>
+    <strong>joy_mapped_button_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick mapped button event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">button</span>
+         (ncine.joy_button)
+        </li>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ncine.joy_axis"></a>
+    <strong>ncine.joy_axis</strong>
+    </dt>
+    <dd>
+    Joystick axis names (enumeration)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">UNKNOWN</span>
+
+
+        </li>
+        <li><span class="parameter">LX</span>
+
+
+        </li>
+        <li><span class="parameter">LY</span>
+
+
+        </li>
+        <li><span class="parameter">RX</span>
+
+
+        </li>
+        <li><span class="parameter">RY</span>
+
+
+        </li>
+        <li><span class="parameter">LTRIGGER</span>
+
+
+        </li>
+        <li><span class="parameter">RTRIGGER</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_mapped_axis_event"></a>
+    <strong>joy_mapped_axis_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick mapped axis event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">axis</span>
+         (ncine.joy_axis)
+        </li>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joy_connection_event"></a>
+    <strong>joy_connection_event</strong>
+    </dt>
+    <dd>
+    Table with information about a joystick connection event
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">joy_id</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-07-13 18:10:35 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
