@@ -1,0 +1,6 @@
+<map id="ncine::IAudioPlayer" name="ncine::IAudioPlayer">
+<area shape="rect" id="node1" title="Audio player interface class." alt="" coords="35,260,170,287"/>
+<area shape="rect" id="node2" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="5,171,104,197"/>
+<area shape="rect" id="node3" href="$classncine_1_1_vector3.html" title=" " alt="" coords="128,171,283,197"/>
+<area shape="rect" id="node4" href="$classncine_1_1_vector3.html" title="A three component vector based on templates." alt="" coords="137,21,273,48"/>
+</map>

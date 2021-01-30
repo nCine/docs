@@ -1,0 +1,5 @@
+<map id="ncine::AudioStreamPlayer" name="ncine::AudioStreamPlayer">
+<area shape="rect" id="node1" title="Audio stream player class." alt="" coords="5,155,179,181"/>
+<area shape="rect" id="node2" href="$classncine_1_1_i_audio_player.html" title="Audio player interface class." alt="" coords="25,80,159,107"/>
+<area shape="rect" id="node3" href="$classncine_1_1_object.html" title="Static RRTI and identification index." alt="" coords="43,5,141,32"/>
+</map>
