@@ -1,0 +1,7 @@
+<map id="ncine::IDebugOverlay" name="ncine::IDebugOverlay">
+<area shape="rect" id="Node000001" title="Interface for debug overlays." alt="" coords="93,108,256,133"/>
+<area shape="rect" id="Node000002" href="$structncine_1_1_i_debug_overlay_1_1_display_settings.html" title=" " alt="" coords="5,5,168,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,53,165,106,162,109,112,57"/>
+<area shape="rect" id="Node000003" href="$classncine_1_1_time_stamp.html" title="A class representing a point in time or a duration." alt="" coords="193,13,333,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,50,187,110,184,106,241,46"/>
+</map>

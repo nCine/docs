@@ -1,0 +1,26 @@
+var classncine_1_1_base_sprite =
+[
+    [ "BaseSprite", "classncine_1_1_base_sprite.html#a2e391c04b61f75cb395c8348f86f8a1a", null ],
+    [ "BaseSprite", "classncine_1_1_base_sprite.html#a48458f5cff97c9f29eff1d6e69345a9c", null ],
+    [ "BaseSprite", "classncine_1_1_base_sprite.html#a72d7a8be8395dd5914e18930faecd0c5", null ],
+    [ "BaseSprite", "classncine_1_1_base_sprite.html#ae97640019cd797f0877bfc42543fd54d", null ],
+    [ "isFlippedX", "classncine_1_1_base_sprite.html#ad039d3e64b3776f837fb5d9c54ae7ed0", null ],
+    [ "isFlippedY", "classncine_1_1_base_sprite.html#a30829951e59a746e68c2fcf51e3420e2", null ],
+    [ "operator=", "classncine_1_1_base_sprite.html#aa1829941eab6ab0af9b3e20d1e687702", null ],
+    [ "resetTexture", "classncine_1_1_base_sprite.html#ac4707cdba84051e41caedc5cba478712", null ],
+    [ "setFlippedX", "classncine_1_1_base_sprite.html#a9426de574b97c0172bf7cb0f2cf7b954", null ],
+    [ "setFlippedY", "classncine_1_1_base_sprite.html#a2a1681b7e93448cca53adcdbf056b7ce", null ],
+    [ "setSize", "classncine_1_1_base_sprite.html#ae255a7ed28e8899c78ac95014f9ddb36", null ],
+    [ "setSize", "classncine_1_1_base_sprite.html#a159b6188d175581f3b2c4082c48ad2e0", null ],
+    [ "setTexRect", "classncine_1_1_base_sprite.html#a4f18eb9759c26221479eb31e7eff5e49", null ],
+    [ "setTexture", "classncine_1_1_base_sprite.html#a3b85a851918132e5f904b66095ab3262", null ],
+    [ "shaderHasChanged", "classncine_1_1_base_sprite.html#a0450d7bfe2285774a9b10a969d07d84c", null ],
+    [ "texRect", "classncine_1_1_base_sprite.html#a26f07a30eb3c9d4f0ec2fd292e14b5cf", null ],
+    [ "texture", "classncine_1_1_base_sprite.html#a98e191e2ad3b5972528d76634c5bf536", null ],
+    [ "textureHasChanged", "classncine_1_1_base_sprite.html#a122d7490bf8dd9da705c685f3a3dcc4b", null ],
+    [ "updateRenderCommand", "classncine_1_1_base_sprite.html#a203e9e13d90350bc78798f2946c6a629", null ],
+    [ "flippedX_", "classncine_1_1_base_sprite.html#a0e14904d787a60ed13734dbc23782493", null ],
+    [ "flippedY_", "classncine_1_1_base_sprite.html#a68c3d130512b38529565f6d29e4fdd24", null ],
+    [ "texRect_", "classncine_1_1_base_sprite.html#a534738fc0a176e5184a2ac3e66ff29b5", null ],
+    [ "texture_", "classncine_1_1_base_sprite.html#a0d2de67137146ca2c73981910ef29bea", null ]
+];
